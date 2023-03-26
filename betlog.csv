@@ -15,7 +15,7 @@
 13,2022-10-30,BetMGM,Football,Laghezza,,"Chicago Bears +10
 Carolina Panthers +4
 Arizona Cardinals +3.5",,,Futures,Y,50.0,611.0,L,,611.0,305.5,355.5,0.14,-35.0,0.0
-14,2022-10-30,BetMGM,Football,Laghezza picks,,"Dallas Cowboys, Philadelphia Eagles, Buffalo Bills, Cincinnati Bengals Moneylines",,,Free,Y,50.0,171.0,L,,171.0,85.5,135.5,0.37,-12.5,0.0
+14,2022-10-30,BetMGM,Football,Laghezza,,"Dallas Cowboys, Philadelphia Eagles, Buffalo Bills, Cincinnati Bengals Moneylines",,,Free,Y,50.0,171.0,L,,171.0,85.5,135.5,0.37,-12.5,0.0
 15,2022-11-05,BetMGM,Baseball,Internet,,Houston Astros Win World Series,,,Futures,Y,10.0,115.0,W,,115.0,11.5,21.5,0.47,-0.3,11.5
 16,2022-11-05,FanDuel,Basketball,Intuition,,"Minnesota Timberwolves -12.5
 Milwaukee Bucks -11.5",,,Teaser,N,1.0,470.0,L,,470.0,4.7,5.7,0.18,0.18,-1.0
@@ -108,9 +108,9 @@ Devin Singletary over 10.5 receiving yards",,,Prop,Y,1.0,565.0,L,,565.0,5.65,6.6
 97,2022-12-02,FanDuel,Soccer,Promo,,7 or more goals in 1pm world Cup games,,,Prop,N,0.09,250.0,L,,250.0,0.22,0.31,0.29,0.94,-0.09
 98,2022-12-02,FanDuel,College Basketball,CBS,,NC State,,-8.5,Spread,N,0.09,-118.0,L,,118.0,0.08,0.17,0.54,0.96,-0.09
 99,2022-12-02,FanDuel,College Basketball,CBS,,Mercer,,,Moneyline,N,0.09,-196.0,L,,196.0,0.05,0.14,0.66,0.97,-0.09
-100,2022-12-02,FanDuel,College Basketball,Englestad,,Mercer winning margin 6-10 points,,,Moneyline,N,0.09,400.0,L,,400.0,0.36,0.45,0.2,0.93,-0.09
+100,2022-12-02,FanDuel,College Basketball,Engelstad,,Mercer winning margin 6-10 points,,,Moneyline,N,0.09,400.0,L,,400.0,0.36,0.45,0.2,0.93,-0.09
 101,2022-12-02,FanDuel,Hockey,CBS,,Columbus,,,Moneyline,N,0.09,198.0,W,,198.0,0.18,0.27,0.34,0.94,0.27
-102,2022-12-02,FanDuel,Basketball,Englestad,,Golden State Warriors 11+ winning margin,,,Moneyline,N,0.09,140.0,L,,140.0,0.13,0.22,0.42,0.95,-0.09
+102,2022-12-02,FanDuel,Basketball,Engelstad,,Golden State Warriors 11+ winning margin,,,Moneyline,N,0.09,140.0,L,,140.0,0.13,0.22,0.42,0.95,-0.09
 103,2022-12-03,FanDuel,Soccer,Promo,Odds boost,USA,,,Moneyline,Y,1.0,190.0,L,,190.0,1.9,2.9,0.34,0.34,0.0
 104,2022-12-03,FanDuel,Soccer,Sheehan Newsletter,,Australia,,,Moneyline,N,0.09,1100.0,L,,1100.0,0.99,1.08,0.08,0.92,-0.09
 105,2022-12-03,FanDuel,College Football,CBS,,Toledo-Ohio,O 54.5,,Over/Under,N,0.09,-110.0,L,,110.0,0.08,0.17,0.52,0.96,-0.09
@@ -155,9 +155,9 @@ Davante Adams>88.5 receiving yds",,,Prop,Y,1.0,1131.0,L,,1131.0,11.31,12.31,0.08
 135,2022-12-08,FanDuel,Basketball,Mr Over Under NBA Daily Method,,"Anfernee Simons 5+ 3s, Damian Lillard 4+ 3s, Jerami Grant 3+ 3s, Jamal Murray 2+ 3s",,,Parlay,Y,0.09,1915.0,L,,1915.0,1.72,1.81,0.05,0.91,0.0
 136,2022-12-08,FanDuel,Basketball,Promo,Odds boost,"Joel Embed, Luka, and Giannis to all score 25+ points",,,Parlay,Y,0.18,120.0,W,,120.0,0.22,0.4,0.45,0.9,0.22
 137,2022-12-08,FanDuel,Basketball,CBS,,Cleveland Cavaliers,,-6.0,Spread,Y,0.09,-108.0,L,,108.0,0.08,0.17,0.52,0.96,0.0
-138,2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over Under,Y,0.09,104.0,L,,104.0,0.09,0.18,0.49,0.95,0.0
+138,2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over/Under,Y,0.09,104.0,L,,104.0,0.09,0.18,0.49,0.95,0.0
 139,2022-12-08,FanDuel,Football,CBS,,LA Chargers,,3.5,Spread,Y,0.09,-114.0,P,0.06,114.0,0.08,0.17,0.53,0.96,0.06
-140,2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over Under,Y,0.09,104.0,L,,104.0,0.09,0.18,0.49,0.95,0.0
+140,2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over/Under,Y,0.09,104.0,L,,104.0,0.09,0.18,0.49,0.95,0.0
 141,2022-12-09,FanDuel,Soccer,Intuition,,Brazil and Netherlands to advance parlay,,,Parlay,Y,0.09,165.0,L,,165.0,0.15,0.24,0.38,0.94,0.0
 142,2022-12-09,FanDuel,Soccer,Promo,Odds boost,Brazil & Argentina to qualify for Semi finals,,,Parlay,Y,0.09,120.0,L,,120.0,0.11,0.2,0.45,0.95,0.0
 143,2022-12-09,FanDuel,Soccer,Intuition,,Netherlands to advance,,,Futures,Y,0.09,130.0,L,,130.0,0.12,0.21,0.43,0.95,0.0

@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
-import math
+import matplotlib.pyplot as plt
+import seaborn as sns; sns.set_theme()
 
 df = pd.read_csv('bet.csv')
 cols = ['Amount', 'Odds']
@@ -42,11 +43,14 @@ for i, row in df.iterrows():
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
+df = pd.DataFrame(df)
+
 df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index()
 df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index()
 df5 = df.groupby(['System'])['ActualPayout'].sum().reset_index()
 df6 = df.groupby(['BetType'])['ActualPayout'].sum().reset_index()
-df7 = df.groupby(df['Date'].dt.strftime('%B %Y'))['ActualPayout'].sum().sort_values()
+df7 = df.groupby(df['Date'].dt.strftime('%m-%Y'))['ActualPayout'].sum().sort_values()
+df6 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index()
 
 print(df.head)
 
@@ -57,3 +61,4 @@ print(df6)
 print(df7)
 
 df.to_csv('betlog.csv')
+
