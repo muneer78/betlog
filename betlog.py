@@ -1,3 +1,4 @@
+import numpy
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -43,7 +44,32 @@ for i, row in df.iterrows():
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
-df = pd.DataFrame(df)
+
+df2 = pd.DataFrame()
+#count1 = df['Result'].str.count("W").apply(pd.to_numeric, errors='coerce')
+#count2 = df['Result'].str.count("L").apply(pd.to_numeric, errors='coerce')
+df2['Wins'] = df['Result'].value_counts()['W']
+df2['Losses'] = df['Result'].value_counts()['L']
+
+#df2['Results'] = df.groupby('Result').transform('count')
+print(df2)
+
+#df2['GamblerZ'] = (df2['Wins'] - df2['Losses'])/(numpy.sqrt(df2['Wins'] + df2['Losses']))
+#df2['GamblerZ'] = sqrt
+
+# Calculate the occurrences of string W in column Wins
+#df2['Wins'] = df['Result'].str.count('W').apply(pd.to_numeric, errors='coerce')
+#df2['WinsTotal'] = df2.groupby('Wins').sum()
+
+# Calculate the occurrences of string L in column Losses
+#df2['Losses'] = df['Result'].str.count('L').apply(pd.to_numeric, errors='coerce')
+#df2['LossesTotal'] = df2.groupby('Losses').sum()
+
+# Create GamblerZ column using the provided formula
+#df2['GamblerZ'] = (df2['Wins'] - df2['Losses']) / (np.sqrt(df2['Wins'] + df2['Losses']))
+#df2['sqrt'] = (df2['WinsTotal'] - df2['LossesTotal'])/(np.sqrt(df2['WinsTotal'] + df2['LossesTotal']))
+
+
 
 df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index()
 df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index()
@@ -61,4 +87,5 @@ print(df6)
 print(df7)
 
 df.to_csv('betlog.csv')
+df2.to_csv('gamblerz.csv')
 
