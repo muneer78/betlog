@@ -71,12 +71,12 @@ print(df2)
 
 
 
-df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index()
-df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index()
-df5 = df.groupby(['System'])['ActualPayout'].sum().reset_index()
-df6 = df.groupby(['BetType'])['ActualPayout'].sum().reset_index()
-df7 = df.groupby(df['Date'].dt.strftime('%m-%Y'))['ActualPayout'].sum().reset_index().sort_values(by=['Date'])
-df6 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index()
+df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index().round(2)
+df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index().round(2)
+df5 = df.groupby(['System'])['ActualPayout'].sum().reset_index().round(2)
+df6 = df.groupby(['BetType'])['ActualPayout'].sum().reset_index().round(2)
+df7 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
+df6 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index().round(2)
 
 df.to_csv('betlog.csv', index=False)
 

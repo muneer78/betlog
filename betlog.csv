@@ -1,220 +1,220 @@
-Date,Sportsbook,Sport,System,Notes,Pick,0/U,Spread,BetType,FreeBet,Amount,Odds,Result,PushAmount,Unnamed: 14,CleanedOdds,Winnings,PotentialPayout,BreakEvenPercentage,Expected Value,ActualPayout
-2022-09-01,FanDuel,Football,Internet,,Jaguars Wins 2022-23,O 6.5,,Futures,Y,10.0,115.0,W,,,115.0,11.5,21.5,0.47,-0.3,11.5
-2022-09-01,FanDuel,Football,Internet,,Chiefs Wins 2022-23,O 10.5,,Futures,Y,10.0,-115.0,W,,,115.0,8.7,18.7,0.53,1.3,8.7
-2022-09-01,FanDuel,Football,Internet,,Lions Wins 2022-23,O 6.5,,Futures,Y,10.0,-125.0,W,,,125.0,8.0,18.0,0.56,1.6,8.0
-2022-09-01,FanDuel,Football,Internet,,Chiefs Make  It To Super Bowl LVII,,,Futures,Y,20.0,1000.0,P,9.26,,1000.0,200.0,220.0,0.09,-16.2,9.26
-2022-09-01,FanDuel,Basketball,Internet,,Golden State Warriors Win Western Conference,,,Futures,Y,10.0,320.0,Pe,,,320.0,32.0,42.0,0.24,-4.6,0.0
-2022-09-01,FanDuel,Basketball,Internet,,Luka Doncic MVP,,,Futures,Y,10.0,450.0,Pe,,,450.0,45.0,55.0,0.18,-6.2,0.0
-2022-10-15,FanDuel,Baseball,Sheehan Newsletter,,Dodgers to Make World Series,,,Futures,Y,10.0,300.0,L,,,300.0,30.0,40.0,0.25,-4.5,0.0
-2022-10-15,FanDuel,Baseball,Sheehan Newsletter,,Braves to Win NL Division Series,,,Futures,N,10.0,120.0,L,,,120.0,12.0,22.0,0.45,-0.5,-10.0
-2022-10-18,FanDuel,Baseball,Sheehan Newsletter,,Yankees to Make World Series,,,Futures,Y,10.0,480.0,L,,,480.0,48.0,58.0,0.17,-6.3,0.0
-2022-10-20,BetMGM,Basketball,Internet,,New Orleans Pelicans over 45.5 wins,,,Futures,N,10.0,100.0,L,,,100.0,10.0,20.0,0.5,0.0,-10.0
-2022-10-20,BetMGM,Basketball,Internet,,Golden State Warriors Win NBA Finals,,,Futures,Y,5.0,600.0,Pe,,,600.0,30.0,35.0,0.14,-3.3,0.0
-2022-10-29,BetMGM,Basketball,538,,Celtics and Nuggets to Reach NBA Finals,,,Futures,Y,50.0,3000.0,Pe,,,3000.0,1500.0,1550.0,0.03,-46.5,0.0
-2022-10-29,BetMGM,Hockey,538,,Avalanche to Win Stanley Cup,,,Futures,Y,50.0,425.0,Pe,,,425.0,212.5,262.5,0.19,-30.5,0.0
+Date,Sportsbook,Sport,System,Notes,Pick,0/U,Spread,BetType,FreeBet,Amount,Odds,Result,PushAmount,CleanedOdds,Winnings,PotentialPayout,BreakEvenPercentage,Expected Value,ActualPayout
+2022-09-01,FanDuel,Football,Internet,,Jaguars Wins 2022-23,O 6.5,,Futures,Y,10.0,115.0,W,,115.0,11.5,21.5,0.47,-0.3,11.5
+2022-09-01,FanDuel,Football,Internet,,Chiefs Wins 2022-23,O 10.5,,Futures,Y,10.0,-115.0,W,,115.0,8.7,18.7,0.53,1.3,8.7
+2022-09-01,FanDuel,Football,Internet,,Lions Wins 2022-23,O 6.5,,Futures,Y,10.0,-125.0,W,,125.0,8.0,18.0,0.56,1.6,8.0
+2022-09-01,FanDuel,Football,Internet,,Chiefs Make  It To Super Bowl LVII,,,Futures,Y,20.0,1000.0,P,9.26,1000.0,200.0,220.0,0.09,-16.2,9.26
+2022-09-01,FanDuel,Basketball,Internet,,Golden State Warriors Win Western Conference,,,Futures,Y,10.0,320.0,Pe,,320.0,32.0,42.0,0.24,-4.6,0.0
+2022-09-01,FanDuel,Basketball,Internet,,Luka Doncic MVP,,,Futures,Y,10.0,450.0,Pe,,450.0,45.0,55.0,0.18,-6.2,0.0
+2022-10-15,FanDuel,Baseball,Sheehan Newsletter,,Dodgers to Make World Series,,,Futures,Y,10.0,300.0,L,,300.0,30.0,40.0,0.25,-4.5,0.0
+2022-10-15,FanDuel,Baseball,Sheehan Newsletter,,Braves to Win NL Division Series,,,Futures,N,10.0,120.0,L,,120.0,12.0,22.0,0.45,-0.5,-10.0
+2022-10-18,FanDuel,Baseball,Sheehan Newsletter,,Yankees to Make World Series,,,Futures,Y,10.0,480.0,L,,480.0,48.0,58.0,0.17,-6.3,0.0
+2022-10-20,BetMGM,Basketball,Internet,,New Orleans Pelicans over 45.5 wins,,,Futures,N,10.0,100.0,L,,100.0,10.0,20.0,0.5,0.0,-10.0
+2022-10-20,BetMGM,Basketball,Internet,,Golden State Warriors Win NBA Finals,,,Futures,Y,5.0,600.0,Pe,,600.0,30.0,35.0,0.14,-3.3,0.0
+2022-10-29,BetMGM,Basketball,538,,Celtics and Nuggets to Reach NBA Finals,,,Futures,Y,50.0,3000.0,Pe,,3000.0,1500.0,1550.0,0.03,-46.5,0.0
+2022-10-29,BetMGM,Hockey,538,,Avalanche to Win Stanley Cup,,,Futures,Y,50.0,425.0,Pe,,425.0,212.5,262.5,0.19,-30.5,0.0
 2022-10-30,BetMGM,Football,Laghezza,,"Chicago Bears +10
 Carolina Panthers +4
-Arizona Cardinals +3.5",,,Futures,Y,50.0,611.0,L,,,611.0,305.5,355.5,0.14,-35.0,0.0
-2022-10-30,BetMGM,Football,Laghezza,,"Dallas Cowboys, Philadelphia Eagles, Buffalo Bills, Cincinnati Bengals Moneylines",,,Free,Y,50.0,171.0,L,,,171.0,85.5,135.5,0.37,-12.5,0.0
-2022-11-05,BetMGM,Baseball,Internet,,Houston Astros Win World Series,,,Futures,Y,10.0,115.0,W,,,115.0,11.5,21.5,0.47,-0.3,11.5
+Arizona Cardinals +3.5",,,Futures,Y,50.0,611.0,L,,611.0,305.5,355.5,0.14,-35.0,0.0
+2022-10-30,BetMGM,Football,Laghezza,,"Dallas Cowboys, Philadelphia Eagles, Buffalo Bills, Cincinnati Bengals Moneylines",,,Free,Y,50.0,171.0,L,,171.0,85.5,135.5,0.37,-12.5,0.0
+2022-11-05,BetMGM,Baseball,Internet,,Houston Astros Win World Series,,,Futures,Y,10.0,115.0,W,,115.0,11.5,21.5,0.47,-0.3,11.5
 2022-11-05,FanDuel,Basketball,Intuition,,"Minnesota Timberwolves -12.5
-Milwaukee Bucks -11.5",,,Teaser,N,1.0,470.0,L,,,470.0,4.7,5.7,0.18,0.18,-1.0
-2022-11-05,FanDuel,Basketball,Intuition,,Shai Gilgeous Alexander Scoring,O 27.5,,Prop,N,1.0,-122.0,L,,,122.0,0.82,1.82,0.55,0.55,-1.0
-2022-11-05,FanDuel,Basketball,Intuition,,New Orleans Pelicans,,,Moneyline,N,1.0,102.0,L,,,102.0,1.02,2.02,0.5,0.5,-1.0
+Milwaukee Bucks -11.5",,,Teaser,N,1.0,470.0,L,,470.0,4.7,5.7,0.18,0.18,-1.0
+2022-11-05,FanDuel,Basketball,Intuition,,Shai Gilgeous Alexander Scoring,O 27.5,,Prop,N,1.0,-122.0,L,,122.0,0.82,1.82,0.55,0.55,-1.0
+2022-11-05,FanDuel,Basketball,Intuition,,New Orleans Pelicans,,,Moneyline,N,1.0,102.0,L,,102.0,1.02,2.02,0.5,0.5,-1.0
 2022-11-05,FanDuel,Basketball,Intuition,,"Brooklyn Nets -4.5
 New Orleans Pelicans Moneyline
-Portland Trail Blazers over 216.5 points",,,Parlay,N,1.0,636.0,L,,,636.0,6.36,7.36,0.14,0.14,-1.0
+Portland Trail Blazers over 216.5 points",,,Parlay,N,1.0,636.0,L,,636.0,6.36,7.36,0.14,0.14,-1.0
 2022-11-05,FanDuel,Basketball,Intuition,,"Sacramento Kings -8
-Brooklyn Nets -9",,,Teaser,N,1.0,500.0,L,,,500.0,5.0,6.0,0.17,0.17,-1.0
+Brooklyn Nets -9",,,Teaser,N,1.0,500.0,L,,500.0,5.0,6.0,0.17,0.17,-1.0
 2022-11-06,Barstool,Football,Intuition,,"Kansas City Chiefs -6.5
-Cincinnati Bengals +1.5",,,Teaser,N,10.0,-104.0,L,,,104.0,9.62,19.62,0.51,1.1,-10.0
-2022-11-09,Barstool,Basketball,>-215 line,,Portland Trail Blazers,,,Moneyline,N,0.5,-240.0,W,,,240.0,0.21,0.71,0.71,0.86,0.71
-2022-11-09,Barstool,Basketball,>-215 line,,Memphis Grizzlies,,,Moneyline,N,0.5,-220.0,W,,,220.0,0.23,0.73,0.69,0.84,0.73
-2022-11-09,Barstool,Basketball,>-215 line,,Indiana Pacers,,,Moneyline,N,0.5,-278.0,L,,,278.0,0.18,0.68,0.74,0.87,-0.5
-2022-11-09,Barstool,Basketball,>-215 line,,Portland Trail Blazers,,,Moneyline,N,0.5,-240.0,W,,,240.0,0.21,0.71,0.71,0.86,0.71
-2022-11-09,Barstool,Basketball,>-215 line,,Toronto Raptors,,,Moneyline,N,0.5,-286.0,W,,,286.0,0.17,0.67,0.74,0.87,0.67
-2022-11-09,Barstool,Tennis,>-215 line,,Momoko Kobori,,,Moneyline,N,0.5,-278.0,W,,,278.0,0.18,0.68,0.74,0.87,0.68
-2022-11-09,Barstool,Football,Internet,The Athletic,Tua Tagavailoa MVP,,,Prop,N,2.5,1100.0,P,1.92,,1100.0,27.5,30.0,0.08,-1.3,1.92
-2022-11-10,Barstool,Football,>-215 line,,Marcus Mariota TD Passes,O 0.5,,Prop,N,0.5,-235.0,W,,,235.0,0.21,0.71,0.7,0.85,0.71
-2022-11-10,Barstool,Basketball,>-215 line,,New Orleans Pelicans,,,Moneyline,N,0.5,-250.0,L,,,250.0,0.2,0.7,0.71,0.86,-0.5
-2022-11-10,Barstool,Basketball,>-215 line,,Stephen F. Austin,,,Moneyline,N,0.5,-245.0,W,,,245.0,0.2,0.7,0.71,0.86,0.7
-2022-11-10,Barstool,Hockey,>-215 line,,LA Kings,,,Moneyline,N,0.5,-265.0,W,,,265.0,0.19,0.69,0.73,0.86,0.69
-2022-11-10,FanDuel,Cricket,Intuition,,India To Win World Cup,,,Futures,Y,10.0,300.0,L,,,300.0,30.0,40.0,0.25,-4.5,0.0
-2022-11-12,Barstool,College Football,>-215 line,,"James Madison, Western Kentucky, Georgia State",,,Parlay,N,0.5,-114.0,L,,,114.0,0.44,0.94,0.53,0.76,-0.5
-2022-11-12,Barstool,College Football,>-215 line,,Illinois,,,Moneyline,N,0.5,-240.0,L,,,240.0,0.21,0.71,0.71,0.86,-0.5
-2022-11-12,Barstool,College Football,>-215 line,,Oklahoma,,,Moneyline,N,0.5,-286.0,L,,,286.0,0.17,0.67,0.74,0.87,-0.5
-2022-11-12,Barstool,College Football,>-215 line,,Memphis Tigers,,,Moneyline,N,0.5,-275.0,W,,,275.0,0.18,0.68,0.73,0.86,0.68
-2022-11-12,DraftKings,Basketball,>-215 line,,Miami Heat,,,Moneyline,Y,50.0,-390.0,W,,,390.0,12.82,62.82,0.8,30.0,12.82
-2022-11-12,DraftKings,College Football,>-215 line,,TCU,,,Moneyline,N,5.0,-725.0,W,,,725.0,0.69,5.69,0.88,4.4,5.69
-2022-11-13,Barstool,Football,>-215 line,,Dallas Cowboys,,,Moneyline,N,0.5,-235.0,L,,,235.0,0.21,0.71,0.7,0.85,-0.5
-2022-11-13,Barstool,Football,>-215 line,,Raiders,,,Moneyline,N,0.5,-225.0,L,,,225.0,0.22,0.72,0.69,0.84,-0.5
-2022-11-13,Barstool,Football,Internet,,Jaguars,,,Moneyline,N,0.51,330.0,L,,,330.0,1.68,2.19,0.23,0.61,-0.51
-2022-11-13,Barstool,Football,ParlayIQ,,Cardinals-Rams,O 40.5,,Over/Under,N,0.5,-112.0,W,,,112.0,0.45,0.95,0.53,0.76,0.95
-2022-11-13,Barstool,Football,ParlayIQ,,Kansas City Chiefs,U 30.5,,Over/Under,N,0.5,-121.0,W,,,121.0,0.41,0.91,0.55,0.78,0.91
-2022-11-13,Barstool,Football,>-215 line,,Giants,,,Moneyline,N,0.5,-230.0,W,,,230.0,0.22,0.72,0.7,0.85,0.72
-2022-11-13,Barstool,Football,>-215 line,,Colts,,,Moneyline,N,0.5,-205.0,W,,,205.0,0.24,0.74,0.67,0.84,0.74
-2022-11-13,Barstool,College Basketball,Sheehan Newsletter,,Georgia Tech to win ACC regular season,,,Prop,N,0.5,15000.0,L,,,15000.0,75.0,75.5,0.01,0.5,-0.5
-2022-11-13,Barstool,Soccer,Sheehan Newsletter,,Uruguay World Cup Winner,,,Prop,N,0.27,5000.0,P,0.27,,5000.0,13.5,13.77,0.02,0.74,0.27
-2022-11-15,DraftKings,Basketball,>-215 line,,"Mavericks, Grizzlies",,,Parlay,Y,20.0,-143.0,W,,,143.0,13.99,33.99,0.59,3.8,13.99
-2022-11-15,DraftKings,Hockey,>-215 line,,Vegas Golden Knights Moneyline,,,Moneyline,Y,0.25,-260.0,L,,,260.0,0.1,0.35,0.72,0.93,0.0
-2022-11-15,DraftKings,College Basketball,Internet,,Kansas Moneyline,,,Moneyline,Y,0.25,-120.0,W,,,120.0,0.21,0.46,0.55,0.89,0.21
-2022-11-15,DraftKings,College Basketball,>-215 line,,New Mexico moneyline,,,Moneyline,Y,20.0,-575.0,W,,,575.0,3.48,23.48,0.85,14.0,3.48
-2022-11-15,DraftKings,Soccer,Intuition,,Verona Tie No Bet,,,Moneyline,Y,0.25,200.0,P,0.09,,200.0,0.5,0.75,0.33,0.83,0.09
-2022-11-16,DraftKings,College Basketball,Hedge,,UNC to win ACC regular season,,,Futures,N,0.7,150.0,L,,,150.0,1.05,1.75,0.4,0.58,-0.7
-2022-11-19,Barstool,College Basketball,Intuition,,KU to win Big 12,,,Futures,N,0.52,240.0,W,,,240.0,1.25,1.77,0.29,0.63,1.77
-2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Ohio State,,5.0,Spread,N,0.1,-110.0,L,,,110.0,0.09,0.19,0.52,0.95,-0.1
-2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Louisville,,15.5,Spread,N,0.1,-115.0,L,,,115.0,0.09,0.19,0.53,0.95,-0.1
-2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Texas Tech,,3.0,Spread,N,0.1,-105.0,L,,,105.0,0.1,0.2,0.51,0.95,-0.1
-2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Albany,,3.0,Spread,N,0.1,130.0,L,,,130.0,0.13,0.23,0.43,0.94,-0.1
-2022-11-21,DraftKings,Basketball,KillerSports,po:points<90 and p:total>206,Cleveland Cavaliers,,,Moneyline,N,0.1,-235.0,W,,,235.0,0.04,0.14,0.7,0.97,0.14
-2022-11-21,DraftKings,Basketball,KillerSports,rest=0 and o:rest>0 and line<=4,New York Knicks,,,Moneyline,N,0.1,105.0,W,,,105.0,0.11,0.21,0.49,0.95,0.21
-2022-11-21,DraftKings,Basketball,KillerSports,HD and p:margin>-30,Chicago Bulls,O 230.0,,Over/Under,N,0.1,-110.0,W,,,110.0,0.09,0.19,0.52,0.95,0.19
-2022-11-21,DraftKings,Basketball,KillerSports,line<-8 and rest>0 and o:rest>0,Milwaukee Bucks,,,Moneyline,N,0.1,-285.0,W,,,285.0,0.04,0.14,0.74,0.97,0.14
-2022-11-24,DraftKings,Football,Internet,BettingPros Discord server,"SGPx: Under 54.5 Points in Bills game, Bills -9.5 spread, under 45.5 in Cowboys game, Cowboys -10.5 spread",,,Parlay,Y,5.0,1519.0,L,,,1519.0,75.95,80.95,0.06,-3.7,0.0
-2022-11-25,DraftKings,Basketball,Promo,,"Parlay: Celtics moneyline, Kings to score under 124.5, Jayson Tatum under 26.5 points",,,Parlay,Y,5.0,290.0,L,,,290.0,14.5,19.5,0.26,-1.7,0.0
-2022-11-25,DraftKings,Basketball,Promo,,"SGPx: Magic moneyline, Magic to score under 112.5, Hawks moneyline, Trae Young to score over 26.5 points",,,Parlay,Y,5.0,705.0,L,,,705.0,35.25,40.25,0.12,-3.4,0.0
-2022-11-27,DraftKings,Football,KillerSports,3DP>=55 and A and D,Miami Dolphins,,,Over/Under,N,0.1,-110.0,P,0.1,,110.0,0.09,0.19,0.52,0.95,0.1
-2022-11-27,DraftKings,Football,Promo,,"SGP: Chiefs over 23.5 points, Over 9.5 total points in Q1, Rams score under 12.5 points",,,Parlay,N,5.0,425.0,L,,,425.0,21.25,26.25,0.19,-3.05,-5.0
-2022-11-30,FanDuel,Basketball,CBS,,San Antonio Spurs,,5.0,Spread,N,0.09,-110.0,P,0.09,,110.0,0.08,0.17,0.52,0.96,0.09
-2022-11-30,FanDuel,College Basketball,CBS,,Navy,,,Moneyline,N,0.09,162.0,P,0.09,,162.0,0.15,0.24,0.38,0.94,0.09
-2022-11-30,FanDuel,College Basketball,CBS,,Navy +4.5,,4.5,Spread,N,0.09,-110.0,L,,,110.0,0.08,0.17,0.52,0.96,-0.09
-2022-11-30,FanDuel,Basketball,CBS,,San Antonio Spurs,,,Moneyline,N,0.09,164.0,P,0.1,,164.0,0.15,0.24,0.38,0.94,0.1
-2022-11-30,FanDuel,Basketball,CBS,,Clippers-Jazz,U 225.0,,Over/Under,N,0.09,-110.0,P,0.09,,110.0,0.08,0.17,0.52,0.96,0.09
-2022-11-30,FanDuel,College Basketball,CBS,,Georgetown,,16.5,Spread,N,0.09,-105.0,P,0.09,,105.0,0.09,0.18,0.51,0.96,0.09
-2022-11-30,FanDuel,College Basketball,CBS,,George Mason,,,Moneyline,N,0.09,162.0,P,0.12,,162.0,0.15,0.24,0.38,0.94,0.12
-2022-11-30,FanDuel,Basketball,CBS,,Rockets +11.5,,11.5,Spread,N,0.09,-114.0,P,0.09,,114.0,0.08,0.17,0.53,0.96,0.09
-2022-11-30,FanDuel,College Basketball,CBS,,LaSalle +4.5,,4.5,Spread,N,0.09,-105.0,L,,,105.0,0.09,0.18,0.51,0.96,-0.09
-2022-11-30,FanDuel,College Basketball,CBS,,LaSalle +16.5,,16.5,Spread,N,0.09,116.0,W,,,116.0,0.1,0.19,0.46,0.95,0.19
-2022-11-30,FanDuel,College Basketball,CBS,,Marshall by 11+,,,Prop,N,0.09,230.0,W,,,230.0,0.21,0.3,0.3,0.94,0.3
-2022-11-30,FanDuel,College Basketball,CBS,,Rutgers-Miami,,,Over/Under,N,0.09,-114.0,L,,,114.0,0.08,0.17,0.53,0.96,-0.09
-2022-11-30,FanDuel,Basketball,CBS,,Hawks-Magic,O 227.5,,Over/Under,N,0.09,-110.0,W,,,110.0,0.08,0.17,0.52,0.96,0.17
-2022-11-30,FanDuel,College Basketball,CBS,,Coastal Carolina,,-0.5,Spread,N,0.09,-102.0,L,,,102.0,0.09,0.18,0.5,0.96,-0.09
-2022-11-30,FanDuel,Basketball,CBS,,Bucks-Knicks,O 231.5,,Over/Under,N,0.09,-110.0,W,,,110.0,0.08,0.17,0.52,0.96,0.17
-2022-11-30,FanDuel,Basketball,CBS,,Pacers-Kings,O 243.0,,Over/Under,N,0.09,-110.0,P,0.09,,110.0,0.08,0.17,0.52,0.96,0.09
-2022-11-30,FanDuel,Basketball,ParlayIQ,,Dyson Daniels Points,U 8.5,,Prop,N,0.09,-110.0,L,,,110.0,0.08,0.17,0.52,0.96,-0.09
-2022-11-30,FanDuel,Basketball,ParlayIQ,,Dyson Daniels Points+Rebs,U 12.5,,Prop,N,0.09,-104.0,L,,,104.0,0.09,0.18,0.51,0.96,-0.09
-2022-11-30,FanDuel,Basketball,ParlayIQ,,Zion Williamson,U 5.5,,Prop,N,0.09,106.0,W,,,106.0,0.1,0.19,0.49,0.95,0.19
-2022-11-30,FanDuel,Basketball,ParlayIQ,,Ivica Zubac Rebounds,U 12.5,,Prop,N,0.09,-122.0,W,,,122.0,0.07,0.16,0.55,0.96,0.16
-2022-12-01,FanDuel,College Basketball,CBS,,Manhattan,,,Moneyline,N,0.09,118.0,P,0.12,,118.0,0.11,0.2,0.46,0.95,0.12
-2022-12-01,FanDuel,Basketball,CBS,,Detroit Pistons +7.5,,7.5,Spread,N,0.09,-110.0,P,0.15,,110.0,0.08,0.17,0.52,0.96,0.15
-2022-12-01,FanDuel,College Basketball,CBS,,Pacific +8.5,,8.5,Spread,N,0.09,-110.0,W,,,110.0,0.08,0.17,0.52,0.96,0.17
-2022-12-01,FanDuel,Football,ParlayIQ,,Rhamondre Stevenson,O 63.5,,Over/Under,N,0.09,-113.0,L,,,113.0,0.08,0.17,0.53,0.96,-0.09
+Cincinnati Bengals +1.5",,,Teaser,N,10.0,-104.0,L,,104.0,9.62,19.62,0.51,1.1,-10.0
+2022-11-09,Barstool,Basketball,>-215 line,,Portland Trail Blazers,,,Moneyline,N,0.5,-240.0,W,,240.0,0.21,0.71,0.71,0.86,0.71
+2022-11-09,Barstool,Basketball,>-215 line,,Memphis Grizzlies,,,Moneyline,N,0.5,-220.0,W,,220.0,0.23,0.73,0.69,0.84,0.73
+2022-11-09,Barstool,Basketball,>-215 line,,Indiana Pacers,,,Moneyline,N,0.5,-278.0,L,,278.0,0.18,0.68,0.74,0.87,-0.5
+2022-11-09,Barstool,Basketball,>-215 line,,Portland Trail Blazers,,,Moneyline,N,0.5,-240.0,W,,240.0,0.21,0.71,0.71,0.86,0.71
+2022-11-09,Barstool,Basketball,>-215 line,,Toronto Raptors,,,Moneyline,N,0.5,-286.0,W,,286.0,0.17,0.67,0.74,0.87,0.67
+2022-11-09,Barstool,Tennis,>-215 line,,Momoko Kobori,,,Moneyline,N,0.5,-278.0,W,,278.0,0.18,0.68,0.74,0.87,0.68
+2022-11-09,Barstool,Football,Internet,The Athletic,Tua Tagavailoa MVP,,,Prop,N,2.5,1100.0,P,1.92,1100.0,27.5,30.0,0.08,-1.3,1.92
+2022-11-10,Barstool,Football,>-215 line,,Marcus Mariota TD Passes,O 0.5,,Prop,N,0.5,-235.0,W,,235.0,0.21,0.71,0.7,0.85,0.71
+2022-11-10,Barstool,Basketball,>-215 line,,New Orleans Pelicans,,,Moneyline,N,0.5,-250.0,L,,250.0,0.2,0.7,0.71,0.86,-0.5
+2022-11-10,Barstool,Basketball,>-215 line,,Stephen F. Austin,,,Moneyline,N,0.5,-245.0,W,,245.0,0.2,0.7,0.71,0.86,0.7
+2022-11-10,Barstool,Hockey,>-215 line,,LA Kings,,,Moneyline,N,0.5,-265.0,W,,265.0,0.19,0.69,0.73,0.86,0.69
+2022-11-10,FanDuel,Cricket,Intuition,,India To Win World Cup,,,Futures,Y,10.0,300.0,L,,300.0,30.0,40.0,0.25,-4.5,0.0
+2022-11-12,Barstool,College Football,>-215 line,,"James Madison, Western Kentucky, Georgia State",,,Parlay,N,0.5,-114.0,L,,114.0,0.44,0.94,0.53,0.76,-0.5
+2022-11-12,Barstool,College Football,>-215 line,,Illinois,,,Moneyline,N,0.5,-240.0,L,,240.0,0.21,0.71,0.71,0.86,-0.5
+2022-11-12,Barstool,College Football,>-215 line,,Oklahoma,,,Moneyline,N,0.5,-286.0,L,,286.0,0.17,0.67,0.74,0.87,-0.5
+2022-11-12,Barstool,College Football,>-215 line,,Memphis Tigers,,,Moneyline,N,0.5,-275.0,W,,275.0,0.18,0.68,0.73,0.86,0.68
+2022-11-12,DraftKings,Basketball,>-215 line,,Miami Heat,,,Moneyline,Y,50.0,-390.0,W,,390.0,12.82,62.82,0.8,30.0,12.82
+2022-11-12,DraftKings,College Football,>-215 line,,TCU,,,Moneyline,N,5.0,-725.0,W,,725.0,0.69,5.69,0.88,4.4,5.69
+2022-11-13,Barstool,Football,>-215 line,,Dallas Cowboys,,,Moneyline,N,0.5,-235.0,L,,235.0,0.21,0.71,0.7,0.85,-0.5
+2022-11-13,Barstool,Football,>-215 line,,Raiders,,,Moneyline,N,0.5,-225.0,L,,225.0,0.22,0.72,0.69,0.84,-0.5
+2022-11-13,Barstool,Football,Internet,,Jaguars,,,Moneyline,N,0.51,330.0,L,,330.0,1.68,2.19,0.23,0.61,-0.51
+2022-11-13,Barstool,Football,ParlayIQ,,Cardinals-Rams,O 40.5,,Over/Under,N,0.5,-112.0,W,,112.0,0.45,0.95,0.53,0.76,0.95
+2022-11-13,Barstool,Football,ParlayIQ,,Kansas City Chiefs,U 30.5,,Over/Under,N,0.5,-121.0,W,,121.0,0.41,0.91,0.55,0.78,0.91
+2022-11-13,Barstool,Football,>-215 line,,Giants,,,Moneyline,N,0.5,-230.0,W,,230.0,0.22,0.72,0.7,0.85,0.72
+2022-11-13,Barstool,Football,>-215 line,,Colts,,,Moneyline,N,0.5,-205.0,W,,205.0,0.24,0.74,0.67,0.84,0.74
+2022-11-13,Barstool,College Basketball,Sheehan Newsletter,,Georgia Tech to win ACC regular season,,,Prop,N,0.5,15000.0,L,,15000.0,75.0,75.5,0.01,0.5,-0.5
+2022-11-13,Barstool,Soccer,Sheehan Newsletter,,Uruguay World Cup Winner,,,Prop,N,0.27,5000.0,P,0.27,5000.0,13.5,13.77,0.02,0.74,0.27
+2022-11-15,DraftKings,Basketball,>-215 line,,"Mavericks, Grizzlies",,,Parlay,Y,20.0,-143.0,W,,143.0,13.99,33.99,0.59,3.8,13.99
+2022-11-15,DraftKings,Hockey,>-215 line,,Vegas Golden Knights Moneyline,,,Moneyline,Y,0.25,-260.0,L,,260.0,0.1,0.35,0.72,0.93,0.0
+2022-11-15,DraftKings,College Basketball,Internet,,Kansas Moneyline,,,Moneyline,Y,0.25,-120.0,W,,120.0,0.21,0.46,0.55,0.89,0.21
+2022-11-15,DraftKings,College Basketball,>-215 line,,New Mexico moneyline,,,Moneyline,Y,20.0,-575.0,W,,575.0,3.48,23.48,0.85,14.0,3.48
+2022-11-15,DraftKings,Soccer,Intuition,,Verona Tie No Bet,,,Moneyline,Y,0.25,200.0,P,0.09,200.0,0.5,0.75,0.33,0.83,0.09
+2022-11-16,DraftKings,College Basketball,Hedge,,UNC to win ACC regular season,,,Futures,N,0.7,150.0,L,,150.0,1.05,1.75,0.4,0.58,-0.7
+2022-11-19,Barstool,College Basketball,Intuition,,KU to win Big 12,,,Futures,N,0.52,240.0,W,,240.0,1.25,1.77,0.29,0.63,1.77
+2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Ohio State,,5.0,Spread,N,0.1,-110.0,L,,110.0,0.09,0.19,0.52,0.95,-0.1
+2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Louisville,,15.5,Spread,N,0.1,-115.0,L,,115.0,0.09,0.19,0.53,0.95,-0.1
+2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Texas Tech,,3.0,Spread,N,0.1,-105.0,L,,105.0,0.1,0.2,0.51,0.95,-0.1
+2022-11-21,DraftKings,College Basketball,Sam Wolff system,,Albany,,3.0,Spread,N,0.1,130.0,L,,130.0,0.13,0.23,0.43,0.94,-0.1
+2022-11-21,DraftKings,Basketball,KillerSports,po:points<90 and p:total>206,Cleveland Cavaliers,,,Moneyline,N,0.1,-235.0,W,,235.0,0.04,0.14,0.7,0.97,0.14
+2022-11-21,DraftKings,Basketball,KillerSports,rest=0 and o:rest>0 and line<=4,New York Knicks,,,Moneyline,N,0.1,105.0,W,,105.0,0.11,0.21,0.49,0.95,0.21
+2022-11-21,DraftKings,Basketball,KillerSports,HD and p:margin>-30,Chicago Bulls,O 230.0,,Over/Under,N,0.1,-110.0,W,,110.0,0.09,0.19,0.52,0.95,0.19
+2022-11-21,DraftKings,Basketball,KillerSports,line<-8 and rest>0 and o:rest>0,Milwaukee Bucks,,,Moneyline,N,0.1,-285.0,W,,285.0,0.04,0.14,0.74,0.97,0.14
+2022-11-24,DraftKings,Football,Internet,BettingPros Discord server,"SGPx: Under 54.5 Points in Bills game, Bills -9.5 spread, under 45.5 in Cowboys game, Cowboys -10.5 spread",,,Parlay,Y,5.0,1519.0,L,,1519.0,75.95,80.95,0.06,-3.7,0.0
+2022-11-25,DraftKings,Basketball,Promo,,"Parlay: Celtics moneyline, Kings to score under 124.5, Jayson Tatum under 26.5 points",,,Parlay,Y,5.0,290.0,L,,290.0,14.5,19.5,0.26,-1.7,0.0
+2022-11-25,DraftKings,Basketball,Promo,,"SGPx: Magic moneyline, Magic to score under 112.5, Hawks moneyline, Trae Young to score over 26.5 points",,,Parlay,Y,5.0,705.0,L,,705.0,35.25,40.25,0.12,-3.4,0.0
+2022-11-27,DraftKings,Football,KillerSports,3DP>=55 and A and D,Miami Dolphins,,,Over/Under,N,0.1,-110.0,P,0.1,110.0,0.09,0.19,0.52,0.95,0.1
+2022-11-27,DraftKings,Football,Promo,,"SGP: Chiefs over 23.5 points, Over 9.5 total points in Q1, Rams score under 12.5 points",,,Parlay,N,5.0,425.0,L,,425.0,21.25,26.25,0.19,-3.05,-5.0
+2022-11-30,FanDuel,Basketball,CBS,,San Antonio Spurs,,5.0,Spread,N,0.09,-110.0,P,0.09,110.0,0.08,0.17,0.52,0.96,0.09
+2022-11-30,FanDuel,College Basketball,CBS,,Navy,,,Moneyline,N,0.09,162.0,P,0.09,162.0,0.15,0.24,0.38,0.94,0.09
+2022-11-30,FanDuel,College Basketball,CBS,,Navy +4.5,,4.5,Spread,N,0.09,-110.0,L,,110.0,0.08,0.17,0.52,0.96,-0.09
+2022-11-30,FanDuel,Basketball,CBS,,San Antonio Spurs,,,Moneyline,N,0.09,164.0,P,0.1,164.0,0.15,0.24,0.38,0.94,0.1
+2022-11-30,FanDuel,Basketball,CBS,,Clippers-Jazz,U 225.0,,Over/Under,N,0.09,-110.0,P,0.09,110.0,0.08,0.17,0.52,0.96,0.09
+2022-11-30,FanDuel,College Basketball,CBS,,Georgetown,,16.5,Spread,N,0.09,-105.0,P,0.09,105.0,0.09,0.18,0.51,0.96,0.09
+2022-11-30,FanDuel,College Basketball,CBS,,George Mason,,,Moneyline,N,0.09,162.0,P,0.12,162.0,0.15,0.24,0.38,0.94,0.12
+2022-11-30,FanDuel,Basketball,CBS,,Rockets +11.5,,11.5,Spread,N,0.09,-114.0,P,0.09,114.0,0.08,0.17,0.53,0.96,0.09
+2022-11-30,FanDuel,College Basketball,CBS,,LaSalle +4.5,,4.5,Spread,N,0.09,-105.0,L,,105.0,0.09,0.18,0.51,0.96,-0.09
+2022-11-30,FanDuel,College Basketball,CBS,,LaSalle +16.5,,16.5,Spread,N,0.09,116.0,W,,116.0,0.1,0.19,0.46,0.95,0.19
+2022-11-30,FanDuel,College Basketball,CBS,,Marshall by 11+,,,Prop,N,0.09,230.0,W,,230.0,0.21,0.3,0.3,0.94,0.3
+2022-11-30,FanDuel,College Basketball,CBS,,Rutgers-Miami,,,Over/Under,N,0.09,-114.0,L,,114.0,0.08,0.17,0.53,0.96,-0.09
+2022-11-30,FanDuel,Basketball,CBS,,Hawks-Magic,O 227.5,,Over/Under,N,0.09,-110.0,W,,110.0,0.08,0.17,0.52,0.96,0.17
+2022-11-30,FanDuel,College Basketball,CBS,,Coastal Carolina,,-0.5,Spread,N,0.09,-102.0,L,,102.0,0.09,0.18,0.5,0.96,-0.09
+2022-11-30,FanDuel,Basketball,CBS,,Bucks-Knicks,O 231.5,,Over/Under,N,0.09,-110.0,W,,110.0,0.08,0.17,0.52,0.96,0.17
+2022-11-30,FanDuel,Basketball,CBS,,Pacers-Kings,O 243.0,,Over/Under,N,0.09,-110.0,P,0.09,110.0,0.08,0.17,0.52,0.96,0.09
+2022-11-30,FanDuel,Basketball,ParlayIQ,,Dyson Daniels Points,U 8.5,,Prop,N,0.09,-110.0,L,,110.0,0.08,0.17,0.52,0.96,-0.09
+2022-11-30,FanDuel,Basketball,ParlayIQ,,Dyson Daniels Points+Rebs,U 12.5,,Prop,N,0.09,-104.0,L,,104.0,0.09,0.18,0.51,0.96,-0.09
+2022-11-30,FanDuel,Basketball,ParlayIQ,,Zion Williamson,U 5.5,,Prop,N,0.09,106.0,W,,106.0,0.1,0.19,0.49,0.95,0.19
+2022-11-30,FanDuel,Basketball,ParlayIQ,,Ivica Zubac Rebounds,U 12.5,,Prop,N,0.09,-122.0,W,,122.0,0.07,0.16,0.55,0.96,0.16
+2022-12-01,FanDuel,College Basketball,CBS,,Manhattan,,,Moneyline,N,0.09,118.0,P,0.12,118.0,0.11,0.2,0.46,0.95,0.12
+2022-12-01,FanDuel,Basketball,CBS,,Detroit Pistons +7.5,,7.5,Spread,N,0.09,-110.0,P,0.15,110.0,0.08,0.17,0.52,0.96,0.15
+2022-12-01,FanDuel,College Basketball,CBS,,Pacific +8.5,,8.5,Spread,N,0.09,-110.0,W,,110.0,0.08,0.17,0.52,0.96,0.17
+2022-12-01,FanDuel,Football,ParlayIQ,,Rhamondre Stevenson,O 63.5,,Over/Under,N,0.09,-113.0,L,,113.0,0.08,0.17,0.53,0.96,-0.09
 2022-12-01,FanDuel,Football,ParlayIQ,,"Josh Allen over 41.5 rushing yards
 Devin Singletary under 51.5 rushing yards
-Devin Singletary over 10.5 receiving yards",,,Prop,Y,1.0,565.0,L,,,565.0,5.65,6.65,0.15,0.15,0.0
-2022-12-02,FanDuel,Soccer,CBS,,Portugal Tie No Bet,,,Moneyline,N,0.37,-300.0,L,,,300.0,0.12,0.49,0.75,0.91,-0.37
-2022-12-02,FanDuel,Soccer,CBS,,Uruguay Tie No Bet,,,Moneyline,N,0.09,-330.0,W,,,330.0,0.03,0.12,0.77,0.98,0.12
-2022-12-02,FanDuel,Soccer,CBS,,Brazil Tie No Bet,,,Moneyline,N,0.09,-950.0,P,0.04,,950.0,0.01,0.1,0.9,0.99,0.04
-2022-12-02,FanDuel,Soccer,Promo,,7 or more goals in 1pm world Cup games,,,Prop,N,0.09,250.0,L,,,250.0,0.22,0.31,0.29,0.94,-0.09
-2022-12-02,FanDuel,College Basketball,CBS,,NC State,,-8.5,Spread,N,0.09,-118.0,L,,,118.0,0.08,0.17,0.54,0.96,-0.09
-2022-12-02,FanDuel,College Basketball,CBS,,Mercer,,,Moneyline,N,0.09,-196.0,L,,,196.0,0.05,0.14,0.66,0.97,-0.09
-2022-12-02,FanDuel,College Basketball,Engelstad,,Mercer winning margin 6-10 points,,,Moneyline,N,0.09,400.0,L,,,400.0,0.36,0.45,0.2,0.93,-0.09
-2022-12-02,FanDuel,Hockey,CBS,,Columbus,,,Moneyline,N,0.09,198.0,W,,,198.0,0.18,0.27,0.34,0.94,0.27
-2022-12-02,FanDuel,Basketball,Engelstad,,Golden State Warriors 11+ winning margin,,,Moneyline,N,0.09,140.0,L,,,140.0,0.13,0.22,0.42,0.95,-0.09
-2022-12-03,FanDuel,Soccer,Promo,Odds boost,USA,,,Moneyline,Y,1.0,190.0,L,,,190.0,1.9,2.9,0.34,0.34,0.0
-2022-12-03,FanDuel,Soccer,Sheehan Newsletter,,Australia,,,Moneyline,N,0.09,1100.0,L,,,1100.0,0.99,1.08,0.08,0.92,-0.09
-2022-12-03,FanDuel,College Football,CBS,,Toledo-Ohio,O 54.5,,Over/Under,N,0.09,-110.0,L,,,110.0,0.08,0.17,0.52,0.96,-0.09
-2022-12-03,FanDuel,College Basketball,CBS,,Tulsa,,3.5,Spread,N,0.09,-120.0,L,,,120.0,0.08,0.17,0.55,0.96,-0.09
-2022-12-03,FanDuel,College Basketball,Intuition,,16 leg parlay,,,Parlay,N,0.09,100.0,L,,,100.0,0.09,0.18,0.5,0.96,-0.09
-2022-12-03,FanDuel,Basketball,Intuition,,13 leg parlay,,,Parlay,Y,0.09,209.0,L,,,209.0,0.19,0.28,0.32,0.94,0.0
-2022-12-03,FanDuel,Basketball,Promo,Odds boost,Rudy Gobert +15 points/Minnesota win,,,Parlay,Y,0.09,160.0,L,,,160.0,0.14,0.23,0.38,0.94,0.0
-2022-12-04,FanDuel,Football,CBS,,Giants,,,Moneyline,Y,0.09,108.0,P,0.09,,108.0,0.1,0.19,0.48,0.95,0.09
-2022-12-04,FanDuel,Football,Engelstad,,Raiders 1-13 winning margin,,,Prop,Y,0.09,150.0,W,,,150.0,0.14,0.23,0.4,0.95,0.14
-2022-12-04,FanDuel,Football,Engelstad,,Chiefs 1-13 winning margin,,,Prop,Y,0.09,150.0,L,,,150.0,0.14,0.23,0.4,0.95,0.0
-2022-12-04,FanDuel,Football,Engelstad,,Giants 1-13 winning margin,,,Prop,Y,0.09,185.0,P,0.09,,185.0,0.17,0.26,0.35,0.94,0.09
-2022-12-04,FanDuel,Football,Promo,Odds boost,Patrick Mahomes has 1+ passing TDs in each half,,,Prop,Y,0.09,120.0,L,,,120.0,0.11,0.2,0.45,0.95,0.0
-2022-12-04,FanDuel,Football,Promo,Odds boost,"Tua, Joe Burrow and Justin Herbert to each throw for >225 yds",,,Prop,Y,0.09,150.0,W,,,150.0,0.14,0.23,0.4,0.95,0.14
-2022-12-04,FanDuel,Football,Intuition,,16 bet same game parlay with odds <-500,,,Parlay,N,0.09,-104.0,W,,,104.0,0.09,0.18,0.51,0.96,0.18
-2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,5-4-3-2 made threes parlay in Nuggets game,,,Parlay,Y,0.09,10453.0,L,,,10453.0,9.41,9.5,0.01,0.91,0.0
-2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,All unders  on points scored for top 6 players,,,Parlay,Y,0.09,4309.0,L,,,4309.0,3.88,3.97,0.02,0.91,0.0
-2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,"Top 2 scorers of 25+, 20+, and 15+ points parlay",,,Parlay,Y,0.09,3446.0,L,,,3446.0,3.1,3.19,0.03,0.91,0.0
-2022-12-04,FanDuel,Football,Promo,Odds boost,Tony Pollard and Jonathan Taylor to both rush >50 yards,,,Parlay,Y,0.09,125.0,W,,,125.0,0.11,0.2,0.44,0.95,0.11
-2022-12-04,BetMGM,Football,Intuition,,"Bucs -3.5, Over 40.5 points, Brady >3 Passing TDs",,,Parlay,Y,10.0,425.0,L,,,425.0,42.5,52.5,0.19,-6.1,0.0
-2022-12-04,BetMGM,Basketball,Engelstad,,Bucks and Sixers 6-10 Winning Margin parlay,,,Parlay,Y,5.0,1706.0,L,,,1706.0,85.3,90.3,0.06,-3.7,0.0
-2022-12-04,BetMGM,Soccer,>-215 line,,"Croatia, Brazil, Spain moneyline parlay",,,Parlay,Y,5.0,103.0,L,,,103.0,5.15,10.15,0.49,0.45,0.0
-2022-12-04,BetMGM,Basketball,>-215 line,,8 leg international basketball moneyline parlay,,,Parlay,Y,5.0,117.0,L,,,117.0,5.85,10.85,0.46,0.3,0.0
-2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,"Anfernee Simons 20+ points, Buddy Hield 15+ points, Myles Turner 10+ points parlay",,,Parlay,Y,0.09,139.0,W,,,139.0,0.13,0.22,0.42,0.95,0.13
+Devin Singletary over 10.5 receiving yards",,,Prop,Y,1.0,565.0,L,,565.0,5.65,6.65,0.15,0.15,0.0
+2022-12-02,FanDuel,Soccer,CBS,,Portugal Tie No Bet,,,Moneyline,N,0.37,-300.0,L,,300.0,0.12,0.49,0.75,0.91,-0.37
+2022-12-02,FanDuel,Soccer,CBS,,Uruguay Tie No Bet,,,Moneyline,N,0.09,-330.0,W,,330.0,0.03,0.12,0.77,0.98,0.12
+2022-12-02,FanDuel,Soccer,CBS,,Brazil Tie No Bet,,,Moneyline,N,0.09,-950.0,P,0.04,950.0,0.01,0.1,0.9,0.99,0.04
+2022-12-02,FanDuel,Soccer,Promo,,7 or more goals in 1pm world Cup games,,,Prop,N,0.09,250.0,L,,250.0,0.22,0.31,0.29,0.94,-0.09
+2022-12-02,FanDuel,College Basketball,CBS,,NC State,,-8.5,Spread,N,0.09,-118.0,L,,118.0,0.08,0.17,0.54,0.96,-0.09
+2022-12-02,FanDuel,College Basketball,CBS,,Mercer,,,Moneyline,N,0.09,-196.0,L,,196.0,0.05,0.14,0.66,0.97,-0.09
+2022-12-02,FanDuel,College Basketball,Engelstad,,Mercer winning margin 6-10 points,,,Moneyline,N,0.09,400.0,L,,400.0,0.36,0.45,0.2,0.93,-0.09
+2022-12-02,FanDuel,Hockey,CBS,,Columbus,,,Moneyline,N,0.09,198.0,W,,198.0,0.18,0.27,0.34,0.94,0.27
+2022-12-02,FanDuel,Basketball,Engelstad,,Golden State Warriors 11+ winning margin,,,Moneyline,N,0.09,140.0,L,,140.0,0.13,0.22,0.42,0.95,-0.09
+2022-12-03,FanDuel,Soccer,Promo,Odds boost,USA,,,Moneyline,Y,1.0,190.0,L,,190.0,1.9,2.9,0.34,0.34,0.0
+2022-12-03,FanDuel,Soccer,Sheehan Newsletter,,Australia,,,Moneyline,N,0.09,1100.0,L,,1100.0,0.99,1.08,0.08,0.92,-0.09
+2022-12-03,FanDuel,College Football,CBS,,Toledo-Ohio,O 54.5,,Over/Under,N,0.09,-110.0,L,,110.0,0.08,0.17,0.52,0.96,-0.09
+2022-12-03,FanDuel,College Basketball,CBS,,Tulsa,,3.5,Spread,N,0.09,-120.0,L,,120.0,0.08,0.17,0.55,0.96,-0.09
+2022-12-03,FanDuel,College Basketball,Intuition,,16 leg parlay,,,Parlay,N,0.09,100.0,L,,100.0,0.09,0.18,0.5,0.96,-0.09
+2022-12-03,FanDuel,Basketball,Intuition,,13 leg parlay,,,Parlay,Y,0.09,209.0,L,,209.0,0.19,0.28,0.32,0.94,0.0
+2022-12-03,FanDuel,Basketball,Promo,Odds boost,Rudy Gobert +15 points/Minnesota win,,,Parlay,Y,0.09,160.0,L,,160.0,0.14,0.23,0.38,0.94,0.0
+2022-12-04,FanDuel,Football,CBS,,Giants,,,Moneyline,Y,0.09,108.0,P,0.09,108.0,0.1,0.19,0.48,0.95,0.09
+2022-12-04,FanDuel,Football,Engelstad,,Raiders 1-13 winning margin,,,Prop,Y,0.09,150.0,W,,150.0,0.14,0.23,0.4,0.95,0.14
+2022-12-04,FanDuel,Football,Engelstad,,Chiefs 1-13 winning margin,,,Prop,Y,0.09,150.0,L,,150.0,0.14,0.23,0.4,0.95,0.0
+2022-12-04,FanDuel,Football,Engelstad,,Giants 1-13 winning margin,,,Prop,Y,0.09,185.0,P,0.09,185.0,0.17,0.26,0.35,0.94,0.09
+2022-12-04,FanDuel,Football,Promo,Odds boost,Patrick Mahomes has 1+ passing TDs in each half,,,Prop,Y,0.09,120.0,L,,120.0,0.11,0.2,0.45,0.95,0.0
+2022-12-04,FanDuel,Football,Promo,Odds boost,"Tua, Joe Burrow and Justin Herbert to each throw for >225 yds",,,Prop,Y,0.09,150.0,W,,150.0,0.14,0.23,0.4,0.95,0.14
+2022-12-04,FanDuel,Football,Intuition,,16 bet same game parlay with odds <-500,,,Parlay,N,0.09,-104.0,W,,104.0,0.09,0.18,0.51,0.96,0.18
+2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,5-4-3-2 made threes parlay in Nuggets game,,,Parlay,Y,0.09,10453.0,L,,10453.0,9.41,9.5,0.01,0.91,0.0
+2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,All unders  on points scored for top 6 players,,,Parlay,Y,0.09,4309.0,L,,4309.0,3.88,3.97,0.02,0.91,0.0
+2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,"Top 2 scorers of 25+, 20+, and 15+ points parlay",,,Parlay,Y,0.09,3446.0,L,,3446.0,3.1,3.19,0.03,0.91,0.0
+2022-12-04,FanDuel,Football,Promo,Odds boost,Tony Pollard and Jonathan Taylor to both rush >50 yards,,,Parlay,Y,0.09,125.0,W,,125.0,0.11,0.2,0.44,0.95,0.11
+2022-12-04,BetMGM,Football,Intuition,,"Bucs -3.5, Over 40.5 points, Brady >3 Passing TDs",,,Parlay,Y,10.0,425.0,L,,425.0,42.5,52.5,0.19,-6.1,0.0
+2022-12-04,BetMGM,Basketball,Engelstad,,Bucks and Sixers 6-10 Winning Margin parlay,,,Parlay,Y,5.0,1706.0,L,,1706.0,85.3,90.3,0.06,-3.7,0.0
+2022-12-04,BetMGM,Soccer,>-215 line,,"Croatia, Brazil, Spain moneyline parlay",,,Parlay,Y,5.0,103.0,L,,103.0,5.15,10.15,0.49,0.45,0.0
+2022-12-04,BetMGM,Basketball,>-215 line,,8 leg international basketball moneyline parlay,,,Parlay,Y,5.0,117.0,L,,117.0,5.85,10.85,0.46,0.3,0.0
+2022-12-04,FanDuel,Basketball,Mr Over Under NBA Daily Method,,"Anfernee Simons 20+ points, Buddy Hield 15+ points, Myles Turner 10+ points parlay",,,Parlay,Y,0.09,139.0,W,,139.0,0.13,0.22,0.42,0.95,0.13
 2022-12-05,FanDuel,Football,Promo,Odds boost,"Over 21.5 points in 1st half Under 44.5 total points
 Raiders -0.5 1st quarter spread
-Raiders -3.5 1st half spread",,,Parlay,Y,1.0,1459.0,L,,,1459.0,14.59,15.59,0.06,0.06,0.0
-2022-12-06,FanDuel,Basketball,Poisson,,Lamar Stevens rebounds,U 3.5,,Prop,N,0.57,-104.0,L,,,104.0,0.55,1.12,0.51,0.72,-0.57
+Raiders -3.5 1st half spread",,,Parlay,Y,1.0,1459.0,L,,1459.0,14.59,15.59,0.06,0.06,0.0
+2022-12-06,FanDuel,Basketball,Poisson,,Lamar Stevens rebounds,U 3.5,,Prop,N,0.57,-104.0,L,,104.0,0.55,1.12,0.51,0.72,-0.57
 2022-12-06,FanDuel,Basketball,Promo,,"Points:
 Luka Doncic Over 32.5
 Nikola Jokic Under 24.5
 Jamal Murray Under 20.5
-Aaron Gordon Under 15.5",,,Parlay,N,2.0,1160.0,L,,,1160.0,23.2,25.2,0.08,-0.84,-2.0
-2022-12-07,DraftKings,Basketball,CBS,,"Milwaukee Bucks -6.5, Clippers -6, Suns money line +100",,,Parlay,N,5.0,613.0,L,,,613.0,30.65,35.65,0.14,-3.3,-5.0
-2022-12-07,FanDuel,Basketball,Promo,Odds boost,Trae Young and Zion Williamson to score 50+ total points,,,Parlay,Y,0.09,100.0,L,,,100.0,0.09,0.18,0.5,0.96,0.0
+Aaron Gordon Under 15.5",,,Parlay,N,2.0,1160.0,L,,1160.0,23.2,25.2,0.08,-0.84,-2.0
+2022-12-07,DraftKings,Basketball,CBS,,"Milwaukee Bucks -6.5, Clippers -6, Suns money line +100",,,Parlay,N,5.0,613.0,L,,613.0,30.65,35.65,0.14,-3.3,-5.0
+2022-12-07,FanDuel,Basketball,Promo,Odds boost,Trae Young and Zion Williamson to score 50+ total points,,,Parlay,Y,0.09,100.0,L,,100.0,0.09,0.18,0.5,0.96,0.0
 2022-12-07,FanDuel,Football,ParlayIQ,,"Kyren Williams <25.5 rushing yds
 Josh Jacobs >21.5 receiving yds
 Mack Hollins <45.5 receiving yds
-Davante Adams>88.5 receiving yds",,,Prop,Y,1.0,1131.0,L,,,1131.0,11.31,12.31,0.08,0.08,0.0
-2022-12-07,DraftKings,Basketball,CBS,,Iowa,,-5.0,Moneyline,Y,5.0,-110.0,W,,,110.0,4.55,9.55,0.52,0.6,4.55
-2022-12-07,FanDuel,Basketball,CBS,,San Antonio Spurs,,,Moneyline,Y,0.09,104.0,W,,,104.0,0.09,0.18,0.49,0.95,0.09
-2022-12-08,FanDuel,Basketball,ParlayIQ,,Jerami Grant 3’s,,2.5,Prop,Y,0.09,112.0,W,,,112.0,0.1,0.19,0.47,0.95,0.1
-2022-12-08,FanDuel,Basketball,Mr Over Under NBA Daily Method,,"Anfernee Simons 5+ 3s, Damian Lillard 4+ 3s, Jerami Grant 3+ 3s, Jamal Murray 2+ 3s",,,Parlay,Y,0.09,1915.0,L,,,1915.0,1.72,1.81,0.05,0.91,0.0
-2022-12-08,FanDuel,Basketball,Promo,Odds boost,"Joel Embed, Luka, and Giannis to all score 25+ points",,,Parlay,Y,0.18,120.0,W,,,120.0,0.22,0.4,0.45,0.9,0.22
-2022-12-08,FanDuel,Basketball,CBS,,Cleveland Cavaliers,,-6.0,Spread,Y,0.09,-108.0,L,,,108.0,0.08,0.17,0.52,0.96,0.0
-2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over/Under,Y,0.09,104.0,L,,,104.0,0.09,0.18,0.49,0.95,0.0
-2022-12-08,FanDuel,Football,CBS,,LA Chargers,,3.5,Spread,Y,0.09,-114.0,P,0.06,,114.0,0.08,0.17,0.53,0.96,0.06
-2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over/Under,Y,0.09,104.0,L,,,104.0,0.09,0.18,0.49,0.95,0.0
-2022-12-09,FanDuel,Soccer,Intuition,,Brazil and Netherlands to advance parlay,,,Parlay,Y,0.09,165.0,L,,,165.0,0.15,0.24,0.38,0.94,0.0
-2022-12-09,FanDuel,Soccer,Promo,Odds boost,Brazil & Argentina to qualify for Semi finals,,,Parlay,Y,0.09,120.0,L,,,120.0,0.11,0.2,0.45,0.95,0.0
-2022-12-09,FanDuel,Soccer,Intuition,,Netherlands to advance,,,Futures,Y,0.09,130.0,L,,,130.0,0.12,0.21,0.43,0.95,0.0
-2022-12-09,FanDuel,Hockey,CBS,,Columbus,,,Moneyline,Y,0.09,205.0,W,,,205.0,0.18,0.27,0.33,0.94,0.18
-2022-12-09,FanDuel,Hockey,CBS,,Arizona Coyotes,,1.5,Moneyline,Y,0.09,110.0,W,,,110.0,0.1,0.19,0.48,0.95,0.1
-2022-12-10,FanDuel,Basketball,CBS,,UNC Wilmington,,,Moneyline,Y,0.09,-110.0,W,,,110.0,0.08,0.17,0.52,0.96,0.08
-2022-12-10,FanDuel,Basketball,Intuition,,KU lead after 1st half,,16.0,Prop,N,0.09,180.0,W,,,180.0,0.16,0.25,0.36,0.94,0.25
-2022-12-10,FanDuel,Hockey,CBS,,New York Islanders,,,Moneyline,Y,10.0,120.0,W,,,120.0,12.0,22.0,0.45,-0.5,12.0
-2022-12-10,FanDuel,Basketball,Poisson,,Buddy Hield assists,U 2.5,,Prop,N,0.09,132.0,W,,,132.0,0.12,0.21,0.43,0.95,0.21
-2022-12-10,FanDuel,Basketball,Poisson,,Rudy Gobert rebounds,U 12.5,,Prop,N,0.09,102.0,W,,,102.0,0.09,0.18,0.5,0.96,0.18
-2022-12-10,FanDuel,Basketball,Promo,Odds boost,Jayson Tatum and Steph to score 25+ points,,,Prop,N,0.09,120.0,L,,,120.0,0.11,0.2,0.45,0.95,-0.09
-2022-12-11,FanDuel,Football,Promo,Odds boost,Chiefs and Seahawks to win,,,Parlay,N,0.09,110.0,L,,,110.0,0.1,0.19,0.48,0.95,-0.09
-2022-12-11,FanDuel,Basketball,Poisson,,Quentin Grimes rebounds,U 3.5,,Prop,N,0.09,126.0,L,,,126.0,0.11,0.2,0.44,0.95,-0.09
-2022-12-11,FanDuel,Basketball,Poisson,,Quentin Grimes 3s,U 1.5,,Prop,N,0.09,108.0,W,,,108.0,0.1,0.19,0.48,0.95,0.19
-2022-12-11,FanDuel,Football,Promo,Odds boost,Austin Ekeler 25+ and Jaylen Waddle 40+ receiving yards,,,Parlay,N,0.09,100.0,L,,,100.0,0.09,0.18,0.5,0.96,-0.09
-2022-12-13,FanDuel,Basketball,Promo,Odds boost,"Zion, Tatum, Lebrun and Anthony Davis to score over 20",,,Parlay,N,0.09,100.0,W,,,100.0,0.09,0.18,0.5,0.96,0.18
-2022-12-13,DraftKings,Basketball,Promo,Odds boost,Giannis to get double double,,,Prop,N,5.0,100.0,W,,,100.0,5.0,10.0,0.5,0.5,10.0
-2022-12-17,BetMGM,Hockey,Promo,NHL promo,"Oilers, Connor McDavid to score and more than 6.5 goals",,,Parlay,Y,5.0,200.0,L,,,200.0,10.0,15.0,0.33,-1.35,0.0
-2022-12-17,BetMGM,Football,Promo,NFL promo,"Chiefs, Pacheco over 54.5 rushing yards, Mahomes 2+ passing TDs, Travis Kelce over 64.5 receiving yards and Travis Kelce TD",,,Parlay,Y,5.0,240.0,L,,,240.0,12.0,17.0,0.29,-1.55,0.0
-2022-12-18,BetMGM,Soccer,Promo,World Cup promo,"Argentina to win 2-1, 3-1 or 4-1",,,Prop,Y,5.0,160.0,L,,,160.0,8.0,13.0,0.38,-1.1,0.0
-2022-12-22,BetMGM,Football,Promo,NFL promo,New York Jets,,15.5,Spread,Y,5.0,150.0,L,,,150.0,7.5,12.5,0.4,-1.0,0.0
-2022-12-22,FanDuel,Football,Promo,NFL promo,Chiefs to complete 1+ passes,,,Prop,N,50.0,100.0,W,,,100.0,50.0,100.0,0.5,0.0,100.0
-2022-12-23,BetMGM,Basketball,Promo,,Giannis and Nic Claxton to get double double,,,Parlay,Y,5.0,500.0,L,,,500.0,25.0,30.0,0.17,-3.15,0.0
-2022-12-31,Barstool,Basketball,KenPom,Checked  defensive rankings,Saint Mary’s- Regular Season Winner of WCC,,,Futures,N,0.52,900.0,W,,,900.0,4.68,5.2,0.1,0.53,5.2
-2022-12-31,DraftKings,Football,Promo,,Chiefs to complete 1+ passes,,,Prop,N,25.0,100.0,W,,,100.0,25.0,50.0,0.5,0.5,50.0
-2023-01-04,DraftKings,Basketball,CBS,,Milwaukee Bucks,,,Moneyline,N,0.25,155.0,W,,,155.0,0.39,0.64,0.39,0.85,0.64
-2023-01-05,DraftKings,Hockey,CBS,,"Seattle Kraken money line, over 6.5 goals and Auston Matthews to score",,,Parlay,N,0.63,750.0,L,,,750.0,4.72,5.35,0.12,0.45,-0.63
-2023-01-07,DraftKings,College Basketball,CBS,,George Washington,,,Moneyline,Y,0.63,100.0,W,,,100.0,0.63,1.26,0.5,0.68,0.63
-2023-01-07,DraftKings,College Basketball,CBS,,Idaho,,,Moneyline,N,0.63,105.0,L,,,105.0,0.66,1.29,0.49,0.68,-0.63
-2023-02-11,DraftKings,Basketball,ParlayIQ,,Darius Garland Assists,U 7.5,,Prop,Y,5.0,110.0,W,,,110.0,5.5,10.5,0.48,0.4,5.5
-2023-02-16,FanDuel,College Basketball,ParlayIQ,,Idaho,,,Moneyline,Y,50.0,104.0,W,,,104.0,52.0,102.0,0.49,-0.5,52.0
-2023-02-16,FanDuel,Baseball,Intuition,,Cleveland Guardians to win AL Central,,,Futures,Y,5.0,135.0,Pe,,,135.0,6.75,11.75,0.43,0.15,0.0
-2023-03-21,BetMGM,College Basketball,KenPom,,Houston to win NCAA Tournament,,,Futures,Y,10.0,400.0,L,,,400.0,40.0,50.0,0.2,-6.0,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Guardians 2nd place in AL Central,,,Futures,N,0.5,215.0,Pe,,,215.0,1.08,1.58,0.32,0.66,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,White Sox 1st place in AL Central,,,Futures,N,0.5,250.0,Pe,,,250.0,1.25,1.75,0.29,0.64,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Padres 1st in NL West,,,Futures,N,0.5,120.0,Pe,,,120.0,0.6,1.1,0.45,0.72,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Angels 2nd in AL West,,,Futures,N,0.5,310.0,Pe,,,310.0,1.55,2.05,0.24,0.62,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Tigers 5th in AL Central,,,Futures,N,0.5,115.0,Pe,,,115.0,0.57,1.07,0.47,0.74,0.0
-2023-03-25,DraftKings,Baseball,Intuition,,Royals 3rd in AL Central,,,Futures,N,0.5,475.0,Pe,,,475.0,2.38,2.88,0.17,0.58,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Royals 4th in AL Central,,,Futures,N,0.5,180.0,Pe,,,180.0,0.9,1.4,0.36,0.68,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Braves to win World Series,,,Futures,N,1.0,670.0,Pe,,,670.0,6.7,7.7,0.13,0.13,0.0
-2023-03-25,DraftKings,Baseball,Internet,Read it on several sites,Angels to Win AL West,,,Futures,N,0.5,750.0,Pe,,,750.0,3.75,4.25,0.12,0.56,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Shane McClanahan to win AL Cy Young,,,Futures,N,0.25,1200.0,Pe,,,1200.0,3.0,3.25,0.08,0.77,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Luis Castillo to win AL Cy Young,,,Futures,N,0.25,1700.0,Pe,,,1700.0,4.25,4.5,0.06,0.76,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Masataka Yoshida to win AL Rookie of the Year,,,Futures,N,0.25,500.0,Pe,,,500.0,1.25,1.5,0.17,0.79,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Kyle Tucker over 154.5 hits,,,Futures,N,0.25,-105.0,Pe,,,105.0,0.24,0.49,0.51,0.88,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Kyle Tucker to win AL MVP,,,Futures,N,0.25,2500.0,Pe,,,2500.0,6.25,6.5,0.04,0.76,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Steven Kwan Hits Leader,,,Futures,N,0.25,3500.0,Pe,,,3500.0,8.75,9.0,0.03,0.76,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Steven Kwan Runs Leader,,,Futures,N,0.25,7000.0,Pe,,,7000.0,17.5,17.75,0.01,0.75,0.0
-2023-03-26,DraftKings,Baseball,Laghezza,,Esteury Ruiz SB Leader,,,Futures,N,0.25,700.0,Pe,,,700.0,1.75,2.0,0.12,0.78,0.0
-2023-03-26,DraftKings,Baseball,Sheehan Newsletter,,Toronto Blue Jays AL Winner,,,Futures,N,0.25,650.0,Pe,,,650.0,1.62,1.87,0.13,0.78,0.0
-2023-03-26,DraftKings,Baseball,Intuition,,Royals to win 67-72 games,,,Futures,N,0.25,265.0,Pe,,,265.0,0.66,0.91,0.27,0.82,0.0
-2023-03-26,DraftKings,Baseball,Intuition,,Shohei Ohtani to win AL MVP,,,Futures,N,0.25,190.0,Pe,,,190.0,0.48,0.73,0.34,0.84,0.0
-2023-03-26,DraftKings,Baseball,Intuition,,Blake Snell under 183.5 K's,,,Futures,N,0.25,-120.0,Pe,,,120.0,0.21,0.46,0.55,0.89,0.0
-2023-03-26,DraftKings,Baseball,Intuition,,Jacob deGrom under 198.5 K's,,,Futures,N,0.25,-120.0,Pe,,,120.0,0.21,0.46,0.55,0.89,0.0
-2023-03-26,DraftKings,Baseball,Intuition,,Spencer Strider over 206.5 K's,,,Futures,N,0.25,-105.0,Pe,,,105.0,0.24,0.49,0.51,0.88,0.0
-2023-03-26,DraftKings,Basketball,Promo,Live SGP odds boost,Warriors moneyline and Warriors to score over 109.5 points,,,Parlay,N,0.25,-105.0,L,,,105.0,0.24,0.49,0.51,0.88,-0.25
-2023-03-27,DraftKings,Hockey,CBS,,New Jersey Devils,,,Moneyline,N,0.75,-130.0,Pe,,,130.0,0.58,1.33,0.57,0.68,0.0
-2023-03-27,DraftKings,Hockey,CBS,,Ottawa Senators,,,Moneyline,N,0.25,130.0,Pe,,,130.0,0.32,0.57,0.43,0.86,0.0
-,,,,,,,,,,0.0,0.0,,,,0.0,,,0.0,0.0,
+Davante Adams>88.5 receiving yds",,,Prop,Y,1.0,1131.0,L,,1131.0,11.31,12.31,0.08,0.08,0.0
+2022-12-07,DraftKings,Basketball,CBS,,Iowa,,-5.0,Moneyline,Y,5.0,-110.0,W,,110.0,4.55,9.55,0.52,0.6,4.55
+2022-12-07,FanDuel,Basketball,CBS,,San Antonio Spurs,,,Moneyline,Y,0.09,104.0,W,,104.0,0.09,0.18,0.49,0.95,0.09
+2022-12-08,FanDuel,Basketball,ParlayIQ,,Jerami Grant 3’s,,2.5,Prop,Y,0.09,112.0,W,,112.0,0.1,0.19,0.47,0.95,0.1
+2022-12-08,FanDuel,Basketball,Mr Over Under NBA Daily Method,,"Anfernee Simons 5+ 3s, Damian Lillard 4+ 3s, Jerami Grant 3+ 3s, Jamal Murray 2+ 3s",,,Parlay,Y,0.09,1915.0,L,,1915.0,1.72,1.81,0.05,0.91,0.0
+2022-12-08,FanDuel,Basketball,Promo,Odds boost,"Joel Embed, Luka, and Giannis to all score 25+ points",,,Parlay,Y,0.18,120.0,W,,120.0,0.22,0.4,0.45,0.9,0.22
+2022-12-08,FanDuel,Basketball,CBS,,Cleveland Cavaliers,,-6.0,Spread,Y,0.09,-108.0,L,,108.0,0.08,0.17,0.52,0.96,0.0
+2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over/Under,Y,0.09,104.0,L,,104.0,0.09,0.18,0.49,0.95,0.0
+2022-12-08,FanDuel,Football,CBS,,LA Chargers,,3.5,Spread,Y,0.09,-114.0,P,0.06,114.0,0.08,0.17,0.53,0.96,0.06
+2022-12-08,FanDuel,Football,CBS,,Chiefs Total Points,U 26.5,,Over/Under,Y,0.09,104.0,L,,104.0,0.09,0.18,0.49,0.95,0.0
+2022-12-09,FanDuel,Soccer,Intuition,,Brazil and Netherlands to advance parlay,,,Parlay,Y,0.09,165.0,L,,165.0,0.15,0.24,0.38,0.94,0.0
+2022-12-09,FanDuel,Soccer,Promo,Odds boost,Brazil & Argentina to qualify for Semi finals,,,Parlay,Y,0.09,120.0,L,,120.0,0.11,0.2,0.45,0.95,0.0
+2022-12-09,FanDuel,Soccer,Intuition,,Netherlands to advance,,,Futures,Y,0.09,130.0,L,,130.0,0.12,0.21,0.43,0.95,0.0
+2022-12-09,FanDuel,Hockey,CBS,,Columbus,,,Moneyline,Y,0.09,205.0,W,,205.0,0.18,0.27,0.33,0.94,0.18
+2022-12-09,FanDuel,Hockey,CBS,,Arizona Coyotes,,1.5,Moneyline,Y,0.09,110.0,W,,110.0,0.1,0.19,0.48,0.95,0.1
+2022-12-10,FanDuel,Basketball,CBS,,UNC Wilmington,,,Moneyline,Y,0.09,-110.0,W,,110.0,0.08,0.17,0.52,0.96,0.08
+2022-12-10,FanDuel,Basketball,Intuition,,KU lead after 1st half,,16.0,Prop,N,0.09,180.0,W,,180.0,0.16,0.25,0.36,0.94,0.25
+2022-12-10,FanDuel,Hockey,CBS,,New York Islanders,,,Moneyline,Y,10.0,120.0,W,,120.0,12.0,22.0,0.45,-0.5,12.0
+2022-12-10,FanDuel,Basketball,Poisson,,Buddy Hield assists,U 2.5,,Prop,N,0.09,132.0,W,,132.0,0.12,0.21,0.43,0.95,0.21
+2022-12-10,FanDuel,Basketball,Poisson,,Rudy Gobert rebounds,U 12.5,,Prop,N,0.09,102.0,W,,102.0,0.09,0.18,0.5,0.96,0.18
+2022-12-10,FanDuel,Basketball,Promo,Odds boost,Jayson Tatum and Steph to score 25+ points,,,Prop,N,0.09,120.0,L,,120.0,0.11,0.2,0.45,0.95,-0.09
+2022-12-11,FanDuel,Football,Promo,Odds boost,Chiefs and Seahawks to win,,,Parlay,N,0.09,110.0,L,,110.0,0.1,0.19,0.48,0.95,-0.09
+2022-12-11,FanDuel,Basketball,Poisson,,Quentin Grimes rebounds,U 3.5,,Prop,N,0.09,126.0,L,,126.0,0.11,0.2,0.44,0.95,-0.09
+2022-12-11,FanDuel,Basketball,Poisson,,Quentin Grimes 3s,U 1.5,,Prop,N,0.09,108.0,W,,108.0,0.1,0.19,0.48,0.95,0.19
+2022-12-11,FanDuel,Football,Promo,Odds boost,Austin Ekeler 25+ and Jaylen Waddle 40+ receiving yards,,,Parlay,N,0.09,100.0,L,,100.0,0.09,0.18,0.5,0.96,-0.09
+2022-12-13,FanDuel,Basketball,Promo,Odds boost,"Zion, Tatum, Lebrun and Anthony Davis to score over 20",,,Parlay,N,0.09,100.0,W,,100.0,0.09,0.18,0.5,0.96,0.18
+2022-12-13,DraftKings,Basketball,Promo,Odds boost,Giannis to get double double,,,Prop,N,5.0,100.0,W,,100.0,5.0,10.0,0.5,0.5,10.0
+2022-12-17,BetMGM,Hockey,Promo,NHL promo,"Oilers, Connor McDavid to score and more than 6.5 goals",,,Parlay,Y,5.0,200.0,L,,200.0,10.0,15.0,0.33,-1.35,0.0
+2022-12-17,BetMGM,Football,Promo,NFL promo,"Chiefs, Pacheco over 54.5 rushing yards, Mahomes 2+ passing TDs, Travis Kelce over 64.5 receiving yards and Travis Kelce TD",,,Parlay,Y,5.0,240.0,L,,240.0,12.0,17.0,0.29,-1.55,0.0
+2022-12-18,BetMGM,Soccer,Promo,World Cup promo,"Argentina to win 2-1, 3-1 or 4-1",,,Prop,Y,5.0,160.0,L,,160.0,8.0,13.0,0.38,-1.1,0.0
+2022-12-22,BetMGM,Football,Promo,NFL promo,New York Jets,,15.5,Spread,Y,5.0,150.0,L,,150.0,7.5,12.5,0.4,-1.0,0.0
+2022-12-22,FanDuel,Football,Promo,NFL promo,Chiefs to complete 1+ passes,,,Prop,N,50.0,100.0,W,,100.0,50.0,100.0,0.5,0.0,100.0
+2022-12-23,BetMGM,Basketball,Promo,,Giannis and Nic Claxton to get double double,,,Parlay,Y,5.0,500.0,L,,500.0,25.0,30.0,0.17,-3.15,0.0
+2022-12-31,Barstool,Basketball,KenPom,Checked  defensive rankings,Saint Mary’s- Regular Season Winner of WCC,,,Futures,N,0.52,900.0,W,,900.0,4.68,5.2,0.1,0.53,5.2
+2022-12-31,DraftKings,Football,Promo,,Chiefs to complete 1+ passes,,,Prop,N,25.0,100.0,W,,100.0,25.0,50.0,0.5,0.5,50.0
+2023-01-04,DraftKings,Basketball,CBS,,Milwaukee Bucks,,,Moneyline,N,0.25,155.0,W,,155.0,0.39,0.64,0.39,0.85,0.64
+2023-01-05,DraftKings,Hockey,CBS,,"Seattle Kraken money line, over 6.5 goals and Auston Matthews to score",,,Parlay,N,0.63,750.0,L,,750.0,4.72,5.35,0.12,0.45,-0.63
+2023-01-07,DraftKings,College Basketball,CBS,,George Washington,,,Moneyline,Y,0.63,100.0,W,,100.0,0.63,1.26,0.5,0.68,0.63
+2023-01-07,DraftKings,College Basketball,CBS,,Idaho,,,Moneyline,N,0.63,105.0,L,,105.0,0.66,1.29,0.49,0.68,-0.63
+2023-02-11,DraftKings,Basketball,ParlayIQ,,Darius Garland Assists,U 7.5,,Prop,Y,5.0,110.0,W,,110.0,5.5,10.5,0.48,0.4,5.5
+2023-02-16,FanDuel,College Basketball,ParlayIQ,,Idaho,,,Moneyline,Y,50.0,104.0,W,,104.0,52.0,102.0,0.49,-0.5,52.0
+2023-02-16,FanDuel,Baseball,Intuition,,Cleveland Guardians to win AL Central,,,Futures,Y,5.0,135.0,Pe,,135.0,6.75,11.75,0.43,0.15,0.0
+2023-03-21,BetMGM,College Basketball,KenPom,,Houston to win NCAA Tournament,,,Futures,Y,10.0,400.0,L,,400.0,40.0,50.0,0.2,-6.0,0.0
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Guardians 2nd place in AL Central,,,Futures,N,0.5,215.0,Pe,,215.0,1.08,1.58,0.32,0.66,0.0
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,White Sox 1st place in AL Central,,,Futures,N,0.5,250.0,Pe,,250.0,1.25,1.75,0.29,0.64,0.0
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Padres 1st in NL West,,,Futures,N,0.5,120.0,Pe,,120.0,0.6,1.1,0.45,0.72,0.0
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Angels 2nd in AL West,,,Futures,N,0.5,310.0,Pe,,310.0,1.55,2.05,0.24,0.62,0.0
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Tigers 5th in AL Central,,,Futures,N,0.5,115.0,Pe,,115.0,0.57,1.07,0.47,0.74,0.0
+2023-03-25,DraftKings,Baseball,Intuition,,Royals 3rd in AL Central,,,Futures,N,0.5,475.0,Pe,,475.0,2.38,2.88,0.17,0.58,0.0
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Royals 4th in AL Central,,,Futures,N,0.5,180.0,Pe,,180.0,0.9,1.4,0.36,0.68,0.0
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Braves to win World Series,,,Futures,N,1.0,670.0,Pe,,670.0,6.7,7.7,0.13,0.13,0.0
+2023-03-25,DraftKings,Baseball,Internet,Read it on several sites,Angels to Win AL West,,,Futures,N,0.5,750.0,Pe,,750.0,3.75,4.25,0.12,0.56,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Shane McClanahan to win AL Cy Young,,,Futures,N,0.25,1200.0,Pe,,1200.0,3.0,3.25,0.08,0.77,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Luis Castillo to win AL Cy Young,,,Futures,N,0.25,1700.0,Pe,,1700.0,4.25,4.5,0.06,0.76,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Masataka Yoshida to win AL Rookie of the Year,,,Futures,N,0.25,500.0,Pe,,500.0,1.25,1.5,0.17,0.79,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Kyle Tucker over 154.5 hits,,,Futures,N,0.25,-105.0,Pe,,105.0,0.24,0.49,0.51,0.88,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Kyle Tucker to win AL MVP,,,Futures,N,0.25,2500.0,Pe,,2500.0,6.25,6.5,0.04,0.76,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Steven Kwan Hits Leader,,,Futures,N,0.25,3500.0,Pe,,3500.0,8.75,9.0,0.03,0.76,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Steven Kwan Runs Leader,,,Futures,N,0.25,7000.0,Pe,,7000.0,17.5,17.75,0.01,0.75,0.0
+2023-03-26,DraftKings,Baseball,Laghezza,,Esteury Ruiz SB Leader,,,Futures,N,0.25,700.0,Pe,,700.0,1.75,2.0,0.12,0.78,0.0
+2023-03-26,DraftKings,Baseball,Sheehan Newsletter,,Toronto Blue Jays AL Winner,,,Futures,N,0.25,650.0,Pe,,650.0,1.62,1.87,0.13,0.78,0.0
+2023-03-26,DraftKings,Baseball,Intuition,,Royals to win 67-72 games,,,Futures,N,0.25,265.0,Pe,,265.0,0.66,0.91,0.27,0.82,0.0
+2023-03-26,DraftKings,Baseball,Intuition,,Shohei Ohtani to win AL MVP,,,Futures,N,0.25,190.0,Pe,,190.0,0.48,0.73,0.34,0.84,0.0
+2023-03-26,DraftKings,Baseball,Intuition,,Blake Snell under 183.5 K's,,,Futures,N,0.25,-120.0,Pe,,120.0,0.21,0.46,0.55,0.89,0.0
+2023-03-26,DraftKings,Baseball,Intuition,,Jacob deGrom under 198.5 K's,,,Futures,N,0.25,-120.0,Pe,,120.0,0.21,0.46,0.55,0.89,0.0
+2023-03-26,DraftKings,Baseball,Intuition,,Spencer Strider over 206.5 K's,,,Futures,N,0.25,-105.0,Pe,,105.0,0.24,0.49,0.51,0.88,0.0
+2023-03-26,DraftKings,Basketball,Promo,Live SGP odds boost,Warriors moneyline and Warriors to score over 109.5 points,,,Parlay,N,0.25,-105.0,L,,105.0,0.24,0.49,0.51,0.88,-0.25
+2023-03-27,DraftKings,Hockey,CBS,,New Jersey Devils,,,Moneyline,N,0.75,-130.0,Pe,,130.0,0.58,1.33,0.57,0.68,0.0
+2023-03-27,DraftKings,Hockey,CBS,,Ottawa Senators,,,Moneyline,N,0.25,130.0,Pe,,130.0,0.32,0.57,0.43,0.86,0.0
+,,,,,,,,,,0.0,0.0,,,0.0,,,0.0,0.0,
