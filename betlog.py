@@ -78,8 +78,6 @@ df6 = df.groupby(['BetType'])['ActualPayout'].sum().reset_index()
 df7 = df.groupby(df['Date'].dt.strftime('%m-%Y'))['ActualPayout'].sum().sort_values()
 df6 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index()
 
-print(df.head)
-
 print(df3)
 print(df4)
 print(df5)
@@ -87,5 +85,11 @@ print(df6)
 print(df7)
 
 df.to_csv('betlog.csv')
-df2.to_csv('gamblerz.csv')
+
+list_of_dfs = [df3, df4, df5, df6, df7]
+with open('all_dfs.csv','a') as f:
+    for df in list_of_dfs:
+        df.to_csv(f)
+        f.write("\n")
+#df2.to_csv('gamblerz.csv')
 
