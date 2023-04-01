@@ -28,6 +28,7 @@ df['Expected Value'] = df['Expected Value'].apply(pd.to_numeric, errors='coerce'
 df['Expected Value'] = df['Expected Value'].round(2)
 
 df['ActualPayout'] = np.nan
+df['ActualPayout'] = df['ActualPayout'].apply(pd.to_numeric, errors='coerce')
 df['ActualPayout'] = df['ActualPayout'].astype('float')
 
 for i, row in df.iterrows():
@@ -44,12 +45,13 @@ for i, row in df.iterrows():
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
+df['ROI'] = (df['ActualPayout']/df['Amount']).round(2)
 
 df2 = pd.DataFrame()
 #count1 = df['Result'].str.count("W").apply(pd.to_numeric, errors='coerce')
 #count2 = df['Result'].str.count("L").apply(pd.to_numeric, errors='coerce')
-df2['Wins'] = df['Result'].value_counts()['W']
-df2['Losses'] = df['Result'].value_counts()['L']
+#df2['Wins'] = df['Result'].value_counts()['W']
+#df2['Losses'] = df['Result'].value_counts()['L']
 
 #df2['Results'] = df.groupby('Result').transform('count')
 print(df2)
@@ -76,14 +78,21 @@ df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index().round(2)
 df5 = df.groupby(['System'])['ActualPayout'].sum().reset_index().round(2)
 df6 = df.groupby(['BetType'])['ActualPayout'].sum().reset_index().round(2)
 df7 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
-df6 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index().round(2)
+df8 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index().round(2)
+df9 = df.groupby(['FreeBet'])['Amount'].sum().reset_index().round(2)
+df10 = df.groupby(['BetType'])['Amount'].sum().reset_index().round(2)
+df11 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
+df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
+
 
 df.to_csv('betlog.csv', index=False)
 
-list_of_dfs = [df3, df4, df5, df6, df7]
+#with open('analytics.csv', 'w') as f:
+#    pd.concat([df3, df4, df5, df6, df7, df8, df9, df10, df11, df12], axis=1).to_csv(f, index=False)
 
-with open('analytics.csv', 'w') as f:
-    pd.concat([df3, df4, df5, df6, df7], axis=1).to_csv(f, index=False)
-
-#df2.to_csv('gamblerz.csv')
+list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12]
+with open('analytics.csv','w+') as f:
+    for df in list_of_dfs:
+        df.to_csv(f, index=False)
+        f.write("\n")
 
