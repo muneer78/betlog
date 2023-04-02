@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns; sns.set_theme()
+import csv
 
 df = pd.read_csv('bet.csv')
 cols = ['Amount', 'Odds']
 df[cols] = df[cols].astype('float').fillna(0)
 df['Date'] = pd.to_datetime(arg=df['Date'],format='%m/%d/%Y')
-
 
 df['CleanedOdds'] = df['Odds'].abs()
 
@@ -47,36 +47,24 @@ for i, row in df.iterrows():
 
 df['ROI'] = (df['ActualPayout']/df['Amount']).round(2)
 
-df2 = pd.DataFrame()
-#count1 = df['Result'].str.count('W').apply(pd.to_numeric, errors='coerce')
-#count2 = df['Result'].str.count('L').apply(pd.to_numeric, errors='coerce')
-#df2['Wins'] = count1.value_counts()['W']
-#df2['Losses'] = count2.value_counts()['L']
+substr1 = 'W'
+wins = (df.Result.str.count(substr1).sum())
 
-df2['WinCount'] = df['Result'].value_counts()['W']
-df2['LossCount'] = df['Result'].value_counts()['L']
+substr2 = 'L'
+losses = (df.Result.str.count(substr2).sum())
 
-#df2['Results'] = df.groupby('Result').transform('count')
-#print(df2)
+squareroot = float((wins + losses) ** (1/2))
 
-squareroot = (df2['WinCount'] + df2['LossCount']) ** (1/2)
+gamblerz = (wins - losses)/squareroot
 
-df2['GamblerZ'] = (df2['WinCount'] - df2['LossCount'])/squareroot
+# This line opens a file named "student.txt" in write mode (w)
+file = open("gamblerz.txt", "w+")
 
-print(df2)
-#df2['GamblerZ'] = sqrt
+# This line converts the "student" dictionary to a string using the str() function and writes it to the file
+file.write(str(gamblerz))
 
-# Calculate the occurrences of string W in column Wins
-#df2['Wins'] = df['Result'].str.count('W').apply(pd.to_numeric, errors='coerce')
-#df2['WinsTotal'] = df2.groupby('Wins').sum()
-
-# Calculate the occurrences of string L in column Losses
-#df2['Losses'] = df['Result'].str.count('L').apply(pd.to_numeric, errors='coerce')
-#df2['LossesTotal'] = df2.groupby('Losses').sum()
-
-# Create GamblerZ column using the provided formula
-#df2['GamblerZ'] = (df2['Wins'] - df2['Losses']) / (np.sqrt(df2['Wins'] + df2['Losses']))
-#df2['sqrt'] = (df2['WinsTotal'] - df2['LossesTotal'])/(np.sqrt(df2['WinsTotal'] + df2['LossesTotal']))
+# This line closes the "student.txt" file
+file.close()
 
 df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index().round(2)
 df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index().round(2)
@@ -89,11 +77,7 @@ df10 = df.groupby(['BetType'])['Amount'].sum().reset_index().round(2)
 df11 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
 df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
 
-
 df.to_csv('betlog.csv', index=False)
-
-#with open('analytics.csv', 'w') as f:
-#    pd.concat([df3, df4, df5, df6, df7, df8, df9, df10, df11, df12], axis=1).to_csv(f, index=False)
 
 list_of_dfs = [df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12]
 with open('analytics.csv','w+') as f:
