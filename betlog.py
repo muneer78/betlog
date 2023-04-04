@@ -12,12 +12,12 @@ df['Date'] = pd.to_datetime(arg=df['Date'],format='%m/%d/%Y')
 
 df['CleanedOdds'] = df['Odds'].abs()
 
-df['Winnings'] = np.where(df['Odds'] > 0, ((df['CleanedOdds']/100)*df['Amount']), (100/(df['CleanedOdds'])*df['Amount'])).round(2)
+df['PotentialProfit'] = np.where(df['Odds'] > 0, ((df['CleanedOdds']/100)*df['Amount']), (100/(df['CleanedOdds'])*df['Amount'])).round(2)
 
-cols2 = ['Winnings','CleanedOdds']
+cols2 = ['PotentialProfit','CleanedOdds']
 df[cols2] = df[cols2].apply(pd.to_numeric, errors='coerce', axis=1)
 
-df['PotentialPayout'] = df['Winnings'] + df['Amount'].apply(pd.to_numeric, errors='coerce')
+df['PotentialPayout'] = df['PotentialProfit'] + df['Amount'].apply(pd.to_numeric, errors='coerce')
 df['PotentialPayout'] = df['PotentialPayout'].round(2)
 
 df['BreakEvenPercentage'] = np.where(df['Odds'] > 0, ((100 / (100 + df['CleanedOdds']))), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))).round(2)
@@ -33,11 +33,11 @@ df['ActualPayout'] = df['ActualPayout'].astype('float')
 
 for i, row in df.iterrows():
     if row['Result'] == 'L' and row['FreeBet'] == 'N':
-        df.at[i, 'ActualPayout'] = 0 - row['Amount']
+        df.at[i, 'ActualPayout'] = row['Amount'] * -1
     elif row['Result'] == 'L' and row['FreeBet'] == 'Y':
         df.at[i, 'ActualPayout'] = 0
     elif row['Result'] == 'W' and row['FreeBet'] == 'Y':
-        df.at[i, 'ActualPayout'] = row['Winnings']
+        df.at[i, 'ActualPayout'] = row['PotentialProfit']
     elif row['Result'] == 'W' and row['FreeBet'] == 'N':
         df.at[i, 'ActualPayout'] = row['PotentialPayout']
     elif row['Result'] == 'Pe':
@@ -45,7 +45,7 @@ for i, row in df.iterrows():
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
-df['ROI'] = (df['ActualPayout']/df['Amount']).round(2)
+df['ROI'] = (df['ActualPayout']/df['Amount']*100).round(2)
 
 substr1 = 'W'
 wins = (df.Result.str.count(substr1).sum())
@@ -79,7 +79,7 @@ df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
 
 df.to_csv('betlog.csv', index=False)
 
-list_of_dfs = [df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12]
+list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12]
 with open('analytics.csv','w+') as f:
     for df in list_of_dfs:
         df.to_csv(f, index=False)
