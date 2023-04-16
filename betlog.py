@@ -1,9 +1,10 @@
-import numpy
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import seaborn as sns; sns.set_theme()
 import csv
+import scipy
+from scipy.stats import norm
+
 
 df = pd.read_csv('bet.csv')
 cols = ['Amount', 'Odds']
@@ -56,12 +57,18 @@ losses = (df.Result.str.count(substr2).sum())
 squareroot = float((wins + losses) ** (1/2))
 
 gamblerz = (wins - losses)/squareroot
+gamblerz = gamblerz.round(2)
+gamblerz_str = str(gamblerz)
+p_value = scipy.stats.norm.sf(abs(gamblerz))*100
+p_value = p_value.round(2)
+p_value_str = str(p_value)
 
 # This line opens a file named "student.txt" in write mode (w)
 file = open("gamblerz.txt", "w+")
 
-# This line converts the "student" dictionary to a string using the str() function and writes it to the file
-file.write(str(gamblerz))
+# This line converts the variables to a string using the str() function and writes it to the file
+file.write(str("The Gambler Z-Score is " + gamblerz_str + "\n"))
+file.write(str("The P-value is " + p_value_str + "%" + "\n"))
 
 # This line closes the "student.txt" file
 file.close()
