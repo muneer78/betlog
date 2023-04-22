@@ -59,7 +59,7 @@ squareroot = float((wins + losses) ** (1/2))
 gamblerz = (wins - losses)/squareroot
 gamblerz = gamblerz.round(2)
 gamblerz_str = str(gamblerz)
-p_value = scipy.stats.norm.sf(abs(gamblerz))*100
+p_value = scipy.stats.norm.sf(abs(gamblerz))
 p_value = p_value.round(2)
 p_value_str = str(p_value)
 
@@ -68,7 +68,7 @@ file = open("gamblerz.txt", "w+")
 
 # This line converts the variables to a string using the str() function and writes it to the file
 file.write(str("The Gambler Z-Score is " + gamblerz_str + "\n"))
-file.write(str("The P-value is " + p_value_str + "%" + "\n"))
+file.write(str("The P-value is " + p_value_str + "\n"))
 
 # This line closes the "student.txt" file
 file.close()
