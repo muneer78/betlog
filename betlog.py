@@ -84,6 +84,9 @@ df10 = df.groupby(['BetType'])['Amount'].sum().reset_index().round(2)
 df11 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
 df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
 
+for df in [df9, df10, df11, df12]:
+    df.rename(columns={'Amount': 'MoneyRisked'}, inplace=True)
+
 df.to_csv('betlog.csv', index=False)
 
 list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12]
