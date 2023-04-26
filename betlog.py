@@ -73,6 +73,8 @@ file.write(str("The P-value is " + p_value_str + "\n"))
 # This line closes the "student.txt" file
 file.close()
 
+df.to_csv('betlog.csv', index=False)
+
 df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index().round(2)
 df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index().round(2)
 df5 = df.groupby(['System'])['ActualPayout'].sum().reset_index().round(2)
@@ -86,8 +88,6 @@ df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
 
 for df in [df9, df10, df11, df12]:
     df.rename(columns={'Amount': 'MoneyRisked'}, inplace=True)
-
-df.to_csv('betlog.csv', index=False)
 
 list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12]
 with open('analytics.csv','w+') as f:
