@@ -48,35 +48,6 @@ for i, row in df.iterrows():
 
 df['ROI'] = (df['ActualPayout']/df['Amount']*100).round(2)
 
-substr1 = 'W'
-wins = (df.Result.str.count(substr1).sum())
-
-substr2 = 'L'
-losses = (df.Result.str.count(substr2).sum())
-
-# squareroot = float((wins + losses) ** (1/2))
-squareroot = np.sqrt((wins + losses))
-
-gamblerz = (wins - losses)/squareroot
-gamblerz = gamblerz.round(2)
-gamblerz_str = str(gamblerz)
-p_value = scipy.stats.norm.sf(abs(gamblerz))
-p_value = p_value.round(2)
-p_value_str = str(p_value)
-winning_pct = (wins / (wins + losses)) *100
-winning_pct = winning_pct.round(2)
-win_pct_str = str(winning_pct)
-
-# This line opens a file named "student.txt" in write mode (w)
-file = open("gamblerz.txt", "w+")
-
-# This line converts the variables to a string using the str() function and writes it to the file
-file.write(str("Your Gambler Z-Score is " + gamblerz_str + "\n"))
-file.write(str("Your winning percentage is " + win_pct_str + "%" + "\n"))
-
-# This line closes the "student.txt" file
-file.close()
-
 df.to_csv('betlog.csv', index=False)
 
 df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index().round(2)
@@ -100,10 +71,25 @@ df13 = pd.DataFrame({'TotalWon':sum_a, 'TotalRisked':sum_b}, index=[0])
 # Divide sum of A by sum of B
 df13['TotalROI'] = (df13['TotalWon'] / df13['TotalRisked'] * 100).round(2)
 
+substr1 = 'W'
+wins = (df.Result.str.count(substr1).sum())
+
+substr2 = 'L'
+losses = (df.Result.str.count(substr2).sum())
+
+squareroot = np.sqrt((wins + losses))
+
+df14 = pd.DataFrame({'TotalWon': wins, 'TotalLost': losses}, index=[0])
+
+gamblerz = (wins - losses)/squareroot
+df14['gamblerz'] = gamblerz.round(2)
+winning_pct = (wins / (wins + losses)) *100
+df14['winning_pct'] = winning_pct.round(2)
+
 for df in [df9, df10, df11, df12]:
     df.rename(columns={'Amount': 'MoneyRisked'}, inplace=True)
 
-list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13]
+list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14]
 with open('analytics.csv','w+') as f:
     for df in list_of_dfs:
         df.to_csv(f, index=False)
