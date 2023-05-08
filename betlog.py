@@ -70,6 +70,8 @@ sum_b = df['Amount'].sum()
 
 # Write only the sums to new data frame
 df13 = pd.DataFrame({'TotalWon':sum_a, 'TotalRisked':sum_b}, index=[0])
+columns = ['TotalWon', 'TotalRisked']
+df13[columns] = df13[columns].round(2)
 
 # Divide sum of A by sum of B
 df13['TotalROI'] = (df13['TotalWon'] / df13['TotalRisked'] * 100).round(2)
