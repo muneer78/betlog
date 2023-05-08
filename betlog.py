@@ -21,12 +21,15 @@ df[cols2] = df[cols2].apply(pd.to_numeric, errors='coerce', axis=1)
 df['PotentialPayout'] = df['PotentialProfit'] + df['Amount'].apply(pd.to_numeric, errors='coerce')
 df['PotentialPayout'] = df['PotentialPayout'].round(2)
 
-df['ImpliedProbability'] = np.where(df['Odds'] > 0, ((100 / (100 + df['CleanedOdds']))*100), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))*100).round(2)
-df['ImpliedProbability'] = (df['ImpliedProbability']).apply(pd.to_numeric, errors='coerce')
+df['ImpliedProbability'] = np.where(df['Odds'] > 0, ((100 / (100 + df['CleanedOdds']))), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))).round(2)
+# df['ImpliedProbability'] = (df['ImpliedProbability']).apply(pd.to_numeric, errors='coerce')
 
 df['Expected Value'] = np.ceil(df['ImpliedProbability'] * df['Amount']) - ((1 - df['ImpliedProbability']) * df['Amount'])
 df['Expected Value'] = df['Expected Value'].apply(pd.to_numeric, errors='coerce')
 df['Expected Value'] = df['Expected Value'].round(2)
+
+df['ImpliedProbability'] = (df['ImpliedProbability']*100).apply(pd.to_numeric, errors='coerce')
+df['ImpliedProbability'] = (df['ImpliedProbability']).round(2)
 
 df['ActualPayout'] = np.nan
 df['ActualPayout'] = df['ActualPayout'].apply(pd.to_numeric, errors='coerce')
@@ -45,8 +48,6 @@ for i, row in df.iterrows():
         df.at[i, 'ActualPayout'] = 0
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
-
-
 
 df['ROI'] = (df['ActualPayout']/df['Amount']*100).round(2)
 
@@ -96,4 +97,3 @@ with open('analytics.csv','w+') as f:
     for df in list_of_dfs:
         df.to_csv(f, index=False)
         f.write("\n")
-
