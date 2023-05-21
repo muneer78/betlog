@@ -65,8 +65,10 @@ df11 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
 df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
 
 df15 = df[["Sport", "Amount", "ActualPayout"]]
-df15 = df15.groupby("Sport").apply(lambda x: x["ActualPayout"].sum() / x["Amount"].sum()).reset_index(name="ROI")
-df15["ROI"] = (df15["ROI"]*100).round(2)
+df15 = df15.groupby("Sport").sum().reset_index()
+df15["ROI"] = df15["ActualPayout"] / df15["Amount"]
+df15["ROI"] = (df15["ROI"] * 100).round(2)
+
 
 # Sum column values for A, B and C
 sum_a = df['ActualPayout'].sum()
