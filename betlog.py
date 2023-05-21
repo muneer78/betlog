@@ -64,6 +64,21 @@ df10 = df.groupby(['BetType'])['Amount'].sum().reset_index().round(2)
 df11 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
 df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
 
+df15 = df[["Sport", "Amount", "ActualPayout"]]
+# df15 = df.groupby(['Sport'])['ActualPayout'].apply(df15['ActualPayout'] / df15['Amount'])
+# df15 = df.groupby(['Sport'])['ActualPayout'].apply(lambda x: x['ActualPayout'].values / x['Amount'].values)
+# df15 = df15.groupby(['Sport'])['ActualPayout'].apply(lambda x: x.get('ActualPayout', 0) / x.get['Amount', 0].values)
+# df15 = df15.groupby(['Sport'])['ActualPayout'].apply(lambda x: x.get('ActualPayout', 0) / x.get_value('Amount', 0))
+# df15 = df15.groupby(['Sport'])['ActualPayout'].apply(lambda x: x.get('ActualPayout', 0) / x['Amount'].iloc[0])
+# df15 = df15.groupby(['Sport'])['ActualPayout'].apply(lambda x: x.get('ActualPayout', 0) / x['Amount'].get_level_values(0)[0])
+# df15 = df15.groupby(["Sport"])["ActualPayout"].apply(lambda x: x.get("ActualPayout", 0) / x["Amount"].values[0])
+# df15 = df15.groupby("Sport").apply(lambda x: x["ActualPayout"].sum() / x["Amount"].iloc[0]).reset_index(name="Ratio")
+df15 = df15.groupby("Sport").apply(lambda x: x["ActualPayout"].sum() / x["Amount"].sum()).reset_index(name="ROI")
+df15["ROI"] = (df15["ROI"]*100).round(2)
+
+# df4["ROI"] = df4["ActualPayout"] / df4["Amount"]
+# df4["ROI"] = (df4["ROI"]*100).round(2)
+
 # Sum column values for A, B and C
 sum_a = df['ActualPayout'].sum()
 sum_b = df['Amount'].sum()
@@ -75,6 +90,9 @@ df13[columns] = df13[columns].round(2)
 
 # Divide sum of A by sum of B
 df13['TotalROI'] = (df13['TotalWon'] / df13['TotalRisked'] * 100).round(2)
+
+# group_sport = df.groupby["Sport"]
+
 
 substr1 = 'W'
 wins = (df.Result.str.count(substr1).sum())
@@ -94,7 +112,7 @@ df14['winning_pct'] = winning_pct.round(2)
 for df in [df9, df10, df11, df12]:
     df.rename(columns={'Amount': 'MoneyRisked'}, inplace=True)
 
-list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14]
+list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15]
 with open('analytics.csv','w+') as f:
     for df in list_of_dfs:
         df.to_csv(f, index=False)
