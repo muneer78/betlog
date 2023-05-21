@@ -100,7 +100,10 @@ for df in [df9, df10, df11, df12]:
     df.rename(columns={'Amount': 'MoneyRisked'}, inplace=True)
 
 list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15]
-with open('analytics.csv','w+') as f:
-    for df in list_of_dfs:
+titles = ["Profit by Sportsbook", "Profit by Sport", "Profit by System", "Profit by Bet Type", "Profit by Month", "Profit by Free Bet vs. Money Bet", "Risk by Free Bet vs. Money Bet", "Risk by Bet Type", "Risk by Sport", "Risk by Sportsbook", "Total Profit", "Total Win Percentage", "ROI By Sport"]
+
+with open('analytics.csv', 'w+') as f:
+    for i, df in enumerate(list_of_dfs):
+        f.write(titles[i] + "\n")  # Write the title
         df.to_csv(f, index=False)
         f.write("\n")
