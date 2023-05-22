@@ -52,34 +52,34 @@ df['ROI'] = (df['ActualPayout']/df['Amount']*100).round(2)
 
 df.to_csv('betlog.csv', index=False)
 
-df3 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index().round(2)
+df3 = df[["Sport", "Amount", "ActualPayout"]]
+df3 = df3.groupby("Sport").sum().reset_index()
+df3["ROI"] = df3["ActualPayout"] / df3["Amount"]
+df3["ROI"] = (df3["ROI"] * 100).round(2)
+df3 = df3.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"])
+
 df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index().round(2)
-df5 = df.groupby(['System'])['ActualPayout'].sum().reset_index().round(2)
-df6 = df.groupby(['BetType'])['ActualPayout'].sum().reset_index().round(2)
-df7 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
-df8 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index().round(2)
-df9 = df.groupby(['FreeBet'])['Amount'].sum().reset_index().round(2)
-df10 = df.groupby(['BetType'])['Amount'].sum().reset_index().round(2)
-df11 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
-df12 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
-
-df15 = df[["Sport", "Amount", "ActualPayout"]]
-df15 = df15.groupby("Sport").sum().reset_index()
-df15["ROI"] = df15["ActualPayout"] / df15["Amount"]
-df15["ROI"] = (df15["ROI"] * 100).round(2)
-
+df5 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
+df6 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
+df7 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index().round(2)
+df8 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
+df9 = df.groupby(['System'])['ActualPayout'].sum().reset_index().round(2)
+df10 = df.groupby(['BetType'])['ActualPayout'].sum().reset_index().round(2)
+df11 = df.groupby(['BetType'])['Amount'].sum().reset_index().round(2)
+df12 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index().round(2)
+df13 = df.groupby(['FreeBet'])['Amount'].sum().reset_index().round(2)
 
 # Sum column values for A, B and C
 sum_a = df['ActualPayout'].sum()
 sum_b = df['Amount'].sum()
 
 # Write only the sums to new data frame
-df13 = pd.DataFrame({'TotalWon':sum_a, 'TotalRisked':sum_b}, index=[0])
+df14 = pd.DataFrame({'TotalWon':sum_a, 'TotalRisked':sum_b}, index=[0])
 columns = ['TotalWon', 'TotalRisked']
-df13[columns] = df13[columns].round(2)
+df14[columns] = df14[columns].round(2)
 
 # Divide sum of A by sum of B
-df13['TotalROI'] = (df13['TotalWon'] / df13['TotalRisked'] * 100).round(2)
+df14['TotalROI'] = (df14['TotalWon'] / df14['TotalRisked'] * 100).round(2)
 
 substr1 = 'W'
 wins = (df.Result.str.count(substr1).sum())
@@ -89,18 +89,19 @@ losses = (df.Result.str.count(substr2).sum())
 
 squareroot = np.sqrt((wins + losses))
 
-df14 = pd.DataFrame({'TotalWon': wins, 'TotalLost': losses}, index=[0])
+df15 = pd.DataFrame({'TotalBetsWon': wins, 'TotalBetsLost': losses}, index=[0])
 
 gamblerz = (wins - losses)/squareroot
-df14['gamblerz'] = gamblerz.round(2)
+df15['gamblerzscore'] = gamblerz.round(2)
 winning_pct = (wins / (wins + losses)) *100
-df14['winning_pct'] = winning_pct.round(2)
+df15['winning_pct'] = winning_pct.round(2)
 
-for df in [df9, df10, df11, df12]:
-    df.rename(columns={'Amount': 'MoneyRisked'}, inplace=True)
+list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df14, df15, df12, df13]
+for df in list_of_dfs:
+    df.rename(columns={'Amount': 'MoneyRisked', 'ActualPayout': 'Profit', }, inplace=True)
 
-list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15]
-titles = ["Profit by Sportsbook", "Profit by Sport", "Profit by System", "Profit by Bet Type", "Profit by Month", "Profit by Free Bet vs. Money Bet", "Risk by Free Bet vs. Money Bet", "Risk by Bet Type", "Risk by Sport", "Risk by Sportsbook", "Total Profit", "Total Win Percentage", "ROI By Sport"]
+# list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15]
+titles = ["ROI By Sport", "Profit by Sport", "Risk by Sport", "Profit by Month", "Profit by Sportsbook", "Risk by Sportsbook", "Profit by System", "Profit by Bet Type", "Risk by Bet Type", "Total ROI", "Total Win Percentage", "Profit by Free Bet vs. Money Bet", "Risk by Free Bet vs. Money Bet"]
 
 with open('analytics.csv', 'w+') as f:
     for i, df in enumerate(list_of_dfs):
