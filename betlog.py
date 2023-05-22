@@ -56,7 +56,7 @@ df3 = df[["Sport", "Amount", "ActualPayout"]]
 df3 = df3.groupby("Sport").sum().reset_index()
 df3["ROI"] = df3["ActualPayout"] / df3["Amount"]
 df3["ROI"] = (df3["ROI"] * 100).round(2)
-df3 = df3.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"])
+df3 = df3.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"]).round(2)
 
 df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index().round(2)
 df5 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
