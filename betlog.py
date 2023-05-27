@@ -1,10 +1,6 @@
 import pandas as pd
 import numpy as np
 import seaborn as sns; sns.set_theme()
-import csv
-import scipy
-from scipy.stats import norm
-
 
 df = pd.read_csv('bet.csv')
 cols = ['Amount', 'Odds']
@@ -13,7 +9,8 @@ df['Date'] = pd.to_datetime(arg=df['Date'],format='%m/%d/%Y')
 
 df['CleanedOdds'] = df['Odds'].abs()
 
-df['PotentialProfit'] = np.where(df['Odds'] > 0, ((df['CleanedOdds']/100)*df['Amount']), (100/(df['CleanedOdds'])*df['Amount'])).round(2)
+df['PotentialProfit'] = np.where(df['Odds'] > 0, ((df['CleanedOdds'] / 100) * df['Amount']), (100 / df['CleanedOdds']) * df['Amount'])
+df['PotentialProfit'] = df['PotentialProfit'].round(2)
 
 cols2 = ['PotentialProfit','CleanedOdds']
 df[cols2] = df[cols2].apply(pd.to_numeric, errors='coerce', axis=1)
@@ -50,7 +47,13 @@ for i, row in df.iterrows():
 
 df['ROI'] = (df['ActualPayout']/df['Amount']*100).round(2)
 
-df.to_csv('betlog.csv', index=False)
+df_copy = df.copy()
+
+currency_columns = ['Amount', 'PushAmount', 'PotentialProfit', 'PotentialPayout', 'Expected Value', 'ActualPayout']
+for col in currency_columns:
+    df_copy[col] = df_copy[col].apply(lambda x: "${:,.2f}".format(x) if pd.notnull(x) else '')
+
+df_copy.to_csv('betlog.csv', index=False)
 
 df3 = df[["Sport", "Amount", "ActualPayout"]]
 df3 = df3.groupby("Sport").sum().reset_index()
@@ -79,7 +82,7 @@ columns = ['TotalWon', 'TotalRisked']
 df14[columns] = df14[columns].round(2)
 
 # Divide sum of A by sum of B
-df14['TotalROI'] = (df14['TotalWon'] / df14['TotalRisked'] * 100).round(2)
+# df14['TotalROI'] = (df14['TotalWon'] / df14['TotalRisked'] * 100).round(2)
 
 substr1 = 'W'
 wins = (df.Result.str.count(substr1).sum())
@@ -98,9 +101,15 @@ df15['winning_pct'] = winning_pct.round(2)
 
 list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df14, df15, df12, df13]
 for df in list_of_dfs:
-    df.rename(columns={'Amount': 'MoneyRisked', 'ActualPayout': 'Profit', }, inplace=True)
+    df.rename(columns={'Amount': 'MoneyRisked', 'ActualPayout': 'Profit',}, inplace=True)
+    try:
+        df["Profit"] = df["Profit"].astype (float).map ("${:,.2f}".format)
+        df["MoneyRisked"] = df["MoneyRisked"].astype (float).map ("${:,.2f}".format)
+        df["TotalWon"] = df["TotalWon"].astype (float).map ("${:,.2f}".format)
+        df["TotalRisked"] = df["TotalRisked"].astype (float).map ("${:,.2f}".format)
+    except KeyError:
+        pass
 
-# list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15]
 titles = ["ROI By Sport", "Profit by Sport", "Risk by Sport", "Profit by Month", "Profit by Sportsbook", "Risk by Sportsbook", "Profit by System", "Profit by Bet Type", "Risk by Bet Type", "Total ROI", "Total Win Percentage", "Profit by Free Bet vs. Money Bet", "Risk by Free Bet vs. Money Bet"]
 
 with open('analytics.csv', 'w+') as f:
