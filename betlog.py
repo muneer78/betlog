@@ -45,8 +45,6 @@ for i, row in df.iterrows():
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
-df['ROI'] = (df['ActualPayout']/df['Amount']*100).round(2)
-
 df_copy = df.copy()
 
 currency_columns = ['Amount', 'PushAmount', 'PotentialProfit', 'PotentialPayout', 'Expected Value', 'ActualPayout']
@@ -82,7 +80,7 @@ columns = ['TotalWon', 'TotalRisked']
 df14[columns] = df14[columns].round(2)
 
 # Divide sum of A by sum of B
-# df14['TotalROI'] = (df14['TotalWon'] / df14['TotalRisked'] * 100).round(2)
+df14['TotalROI'] = (df14['TotalWon'] / df14['TotalRisked'] * 100).round(2)
 
 substr1 = 'W'
 wins = (df.Result.str.count(substr1).sum())
