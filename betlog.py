@@ -16,6 +16,11 @@ cols2 = ['PotentialProfit','CleanedOdds']
 df[cols2] = df[cols2].apply(pd.to_numeric, errors='coerce', axis=1)
 
 df['PotentialPayout'] = df['PotentialProfit'] + df['Amount'].apply(pd.to_numeric, errors='coerce')
+for i, row in df.iterrows():
+    if row['FreeBet'] == 'N':
+        df.at[i, 'PotentialPayout'] = row['PotentialPayout']
+    elif row['FreeBet'] == 'Y':
+        df.at[i, 'PotentialPayout'] = row['PotentialProfit']
 df['PotentialPayout'] = df['PotentialPayout'].round(2)
 
 df['ImpliedProbability'] = np.where(df['Odds'] > 0, ((100 / (100 + df['CleanedOdds']))), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))).round(2)
