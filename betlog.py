@@ -115,3 +115,10 @@ with open('analytics.csv', 'w+') as f:
         f.write(titles[i] + "\n")  # Write the title
         df.to_csv(f, index=False)
         f.write("\n")
+
+df14 = pd.read_csv('betlog.csv')
+filter = df14[df14['Result'] == 'Pe']
+
+columns_to_drop = ['Result', 'PushAmount', 'CleanedOdds', 'ActualPayout']
+filter = filter.drop(columns=columns_to_drop)
+filter.to_csv('pendingbets.csv', index=False)
