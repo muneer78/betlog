@@ -127,3 +127,22 @@ filter = df14[df14['Result'] == 'Pe']
 columns_to_drop = ['Result', 'PushAmount', 'CleanedOdds', 'ActualPayout']
 filter = filter.drop(columns=columns_to_drop)
 filter.to_csv('pendingbets.csv', index=False)
+
+filter2 = pd.read_csv('bet.csv')
+
+filter2 = filter2[filter2['Result'] == 'P']
+filter2['ActualPayout'] = np.nan
+filter2['ActualPayout'] = filter2['ActualPayout'].apply(pd.to_numeric, errors='coerce')
+filter2['ActualPayout'] = filter2['ActualPayout'].astype('float')
+for i, row in filter2.iterrows():
+    if row['Result'] == 'P':
+        filter2.at[i, 'ActualPayout'] = row['PushAmount']
+cols3 = ['Amount', 'ActualPayout']
+filter2[cols3] = filter2[cols3].apply(pd.to_numeric, errors='coerce', axis=1)
+filter2["ROI"] = filter2["ActualPayout"] / filter2["Amount"]
+filter2["ROI"] = (filter2["ROI"] * 100).round(2)
+ilter2 = filter2.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"]).round(2)
+filter2["Amount"] = filter2["Amount"].astype (float).map ("${:,.2f}".format)
+filter2["ActualPayout"] = filter2["ActualPayout"].astype (float).map ("${:,.2f}".format)
+
+filter2.to_csv('cashouts.csv')
