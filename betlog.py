@@ -1,8 +1,11 @@
+"""
+Pandas creates and manipulates the dataframes
+Numpy is used to create the if statement that
+distinguishes how to calculate the profit from negative vs. positive odds
+"""
+
 import pandas as pd
 import numpy as np
-import seaborn as sns
-
-sns.set_theme()
 
 df = pd.read_csv("bet.csv")
 cols = ["Amount", "Odds"]
@@ -76,10 +79,12 @@ currency_columns = [
     "Expected Value",
     "ActualPayout",
 ]
+# for col in currency_columns:
+#     df_copy[col] = df_copy[col].apply(
+#         lambda x: "${:,.2f}".format(x) if pd.notnull(x) else ""
 for col in currency_columns:
-    df_copy[col] = df_copy[col].apply(
-        lambda x: "${:,.2f}".format(x) if pd.notnull(x) else ""
-    )
+    df_copy[col] = df_copy[col].apply(lambda x: f"${x:,.2f}" if pd.notnull(x) else ""
+                                      )
 
 df_copy.to_csv("betlog.csv", index=False)
 
@@ -118,11 +123,11 @@ df14[columns] = df14[columns].round(2)
 # Divide sum of A by sum of B
 df14["TotalROI"] = (df14["TotalWon"] / df14["TotalRisked"] * 100).round(2)
 
-substr1 = "W"
-wins = df.Result.str.count(substr1).sum()
+SUBSTR1 = "W"
+wins = df.Result.str.count(SUBSTR1).sum()
 
-substr2 = "L"
-losses = df.Result.str.count(substr2).sum()
+SUBSTR2 = "L"
+losses = df.Result.str.count(SUBSTR2).sum()
 
 squareroot = np.sqrt((wins + losses))
 
@@ -166,18 +171,18 @@ titles = [
     "Risk by Free Bet vs. Money Bet",
 ]
 
-with open("analytics.csv", "w+") as f:
+with open("analytics.csv", "w+", encoding = 'utf-8') as f:
     for i, df in enumerate(list_of_dfs):
         f.write(titles[i] + "\n")  # Write the title
         df.to_csv(f, index=False)
         f.write("\n")
 
 df14 = pd.read_csv("betlog.csv")
-filter = df14[df14["Result"] == "Pe"]
+filter1 = df14[df14["Result"] == "Pe"]
 
 columns_to_drop = ["Result", "PushAmount", "CleanedOdds", "ActualPayout"]
-filter = filter.drop(columns=columns_to_drop)
-filter.to_csv("pendingbets.csv", index=False)
+filter1 = filter1.drop(columns=columns_to_drop)
+filter1.to_csv("pendingbets.csv", index=False)
 
 filter2 = pd.read_csv("bet.csv")
 
