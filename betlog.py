@@ -33,7 +33,7 @@ df["PotentialPayout"] = df["PotentialPayout"].round(2)
 
 df["ImpliedProbability"] = np.where(
     df["Odds"] > 0,
-    ((100 / (100 + df["CleanedOdds"]))),
+    (100 / (100 + df["CleanedOdds"])),
     ((df["CleanedOdds"]) / (100 + (df["CleanedOdds"]))),
 ).round(2)
 
