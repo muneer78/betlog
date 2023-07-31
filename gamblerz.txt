@@ -1,2 +1,0 @@
-The Gambler Z-Score is -2.11
-The P-value is 1.74%
