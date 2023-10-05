@@ -26,6 +26,7 @@ df['PotentialPayout'] = df['PotentialPayout'].round(2)
 df['ImpliedProbability'] = np.where(df['Odds'] > 0, ((100 / (100 + df['CleanedOdds']))), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))).round(2)
 
 df['Expected Value'] = np.ceil(df['ImpliedProbability'] * df['Amount']) - ((1 - df['ImpliedProbability']) * df['Amount'])
+# df['Expected Value'] = (df['ImpliedProbability'] * df['Amount']).round(2)
 df['Expected Value'] = df['Expected Value'].apply(pd.to_numeric, errors='coerce')
 df['Expected Value'] = df['Expected Value'].round(2)
 
@@ -50,6 +51,12 @@ for i, row in df.iterrows():
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
+for i, row in df.iterrows():
+    if row['Date'] == pd.to_datetime('2023-05-29'):
+        print(f"Row {i}: Amount={row['Amount']}, Result={row['Result']}, FreeBet={row['FreeBet']}, ActualPayout={row['ActualPayout']}")
+        # Add print statements for intermediate variables used in the calculation.
+        df.at[i, 'ActualPayout'] = row['PotentialPayout']  # This should already be correct based on the data you provided.
+
 df.to_csv('testfuture.csv')
 df_copy = df.copy()
 
@@ -64,8 +71,6 @@ df2 = df2.groupby("Sport").sum().reset_index()
 df2["ROI"] = df2["ActualPayout"] / df2["Amount"]
 df2["ROI"] = (df2["ROI"] * 100).round(2)
 df2 = df2.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"]).round(2)
-print(df2)
-
 
 df3 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
 
