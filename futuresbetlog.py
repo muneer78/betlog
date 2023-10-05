@@ -26,7 +26,6 @@ df['PotentialPayout'] = df['PotentialPayout'].round(2)
 df['ImpliedProbability'] = np.where(df['Odds'] > 0, ((100 / (100 + df['CleanedOdds']))), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))).round(2)
 
 df['Expected Value'] = np.ceil(df['ImpliedProbability'] * df['Amount']) - ((1 - df['ImpliedProbability']) * df['Amount'])
-# df['Expected Value'] = (df['ImpliedProbability'] * df['Amount']).round(2)
 df['Expected Value'] = df['Expected Value'].apply(pd.to_numeric, errors='coerce')
 df['Expected Value'] = df['Expected Value'].round(2)
 
@@ -45,6 +44,7 @@ for i, row in df.iterrows():
     elif row['Result'] == 'W' and row['FreeBet'] == 'Y':
         df.at[i, 'ActualPayout'] = row['PotentialProfit']
     elif row['Result'] == 'W' and row['FreeBet'] == 'N':
+        # df.at[i, 'ActualPayout'] = row['PotentialPayout']
         df.at[i, 'ActualPayout'] = row['PotentialPayout']
     elif row['Result'] == 'Pe':
         df.at[i, 'ActualPayout'] = 0
@@ -57,7 +57,6 @@ for i, row in df.iterrows():
         # Add print statements for intermediate variables used in the calculation.
         df.at[i, 'ActualPayout'] = row['PotentialPayout']  # This should already be correct based on the data you provided.
 
-df.to_csv('testfuture.csv')
 df_copy = df.copy()
 
 currency_columns = ['Amount', 'PushAmount', 'PotentialProfit', 'PotentialPayout', 'Expected Value', 'ActualPayout']
