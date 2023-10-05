@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 df = pd.read_csv('futures.csv')
+
 cols = ['Amount', 'Odds']
 df[cols] = df[cols].astype('float').fillna(0)
 df['Date'] = pd.to_datetime(arg=df['Date'], format='%m/%d/%Y')
@@ -49,6 +50,7 @@ for i, row in df.iterrows():
     elif row['Result'] == 'P':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
+df.to_csv('testfuture.csv')
 df_copy = df.copy()
 
 currency_columns = ['Amount', 'PushAmount', 'PotentialProfit', 'PotentialPayout', 'Expected Value', 'ActualPayout']
@@ -57,32 +59,41 @@ for col in currency_columns:
 
 df_copy.to_csv('futuresbetlog.csv', index=False)
 
-df3 = df[["Sport", "Amount", "ActualPayout"]]
-df3 = df3.groupby("Sport").sum().reset_index()
-df3["ROI"] = df3["ActualPayout"] / df3["Amount"]
-df3["ROI"] = (df3["ROI"] * 100).round(2)
-df3 = df3.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"]).round(2)
+df2 = df[["Sport", "Amount", "ActualPayout"]]
+df2 = df2.groupby("Sport").sum().reset_index()
+df2["ROI"] = df2["ActualPayout"] / df2["Amount"]
+df2["ROI"] = (df2["ROI"] * 100).round(2)
+df2 = df2.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"]).round(2)
+print(df2)
 
-df4 = df.groupby(['Sport'])['ActualPayout'].sum().reset_index().round(2)
-df5 = df.groupby(['Sport'])['Amount'].sum().reset_index().round(2)
-df6 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
-df7 = df.groupby(['Sportsbook'])['ActualPayout'].sum().reset_index().round(2)
-df8 = df.groupby(['Sportsbook'])['Amount'].sum().reset_index().round(2)
-df9 = df.groupby(['System'])['ActualPayout'].sum().reset_index().round(2)
-df10 = df.groupby(['FreeBet'])['ActualPayout'].sum().reset_index().round(2)
-df11 = df.groupby(['FreeBet'])['Amount'].sum().reset_index().round(2)
+
+df3 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
+
+df4 = df[["Sportsbook", "Amount", "ActualPayout"]]
+df4 = df4.groupby("Sportsbook").sum().reset_index()
+df4["ROI"] = df4["ActualPayout"] / df4["Amount"]
+df4["ROI"] = (df4["ROI"] * 100).round(2)
+df4 = df4.reindex(columns=["Sportsbook", "ActualPayout", "Amount", "ROI"]).round(2)
+
+df5 = df.groupby(['System'])['ActualPayout'].sum().reset_index().round(2)
+
+df6 = df[["FreeBet", "Amount", "ActualPayout"]]
+df6 = df6.groupby("FreeBet").sum().reset_index()
+df6["ROI"] = df6["ActualPayout"] / df6["Amount"]
+df6["ROI"] = (df6["ROI"] * 100).round(2)
+df6 = df6.reindex(columns=["FreeBet", "ActualPayout", "Amount", "ROI"]).round(2)
 
 # Sum column values for A, B and C
 sum_a = df['ActualPayout'].sum()
 sum_b = df['Amount'].sum()
 
 # Write only the sums to new data frame
-df12 = pd.DataFrame({'TotalWon': sum_a, 'TotalRisked': sum_b}, index=[0])
+df7 = pd.DataFrame({'TotalWon': sum_a, 'TotalRisked': sum_b}, index=[0])
 columns = ['TotalWon', 'TotalRisked']
-df12[columns] = df12[columns].round(2)
+df7[columns] = df7[columns].round(2)
 
 # Divide sum of A by sum of B
-df12['TotalROI'] = (df12['TotalWon'] / df12['TotalRisked'] * 100).round(2)
+df7['TotalROI'] = (df7['TotalWon'] / df7['TotalRisked'] * 100).round(2)
 
 substr1 = 'W'
 wins = (df.Result.str.count(substr1).sum())
@@ -92,14 +103,14 @@ losses = (df.Result.str.count(substr2).sum())
 
 squareroot = np.sqrt((wins + losses))
 
-df15 = pd.DataFrame({'TotalBetsWon': wins, 'TotalBetsLost': losses}, index=[0])
+df8 = pd.DataFrame({'TotalBetsWon': wins, 'TotalBetsLost': losses}, index=[0])
 
 gamblerz = (wins - losses) / squareroot
-df15['gamblerzscore'] = gamblerz.round(2)
-winning_pct = (wins / (wins + losses)) * 100
-df15['winning_pct'] = winning_pct.round(2)
+df8['gamblerzscore'] = gamblerz.round(2)
+winning_pct = (wins / (wins + losses)) * 80
+df8['winning_pct'] = winning_pct.round(2)
 
-list_of_dfs = [df3, df4, df5, df6, df7, df8, df9, df10, df11, df12]
+list_of_dfs = [df2, df3, df4, df5, df6, df7, df8]
 for df in list_of_dfs:
     df.rename(columns={'Amount': 'MoneyRisked', 'ActualPayout': 'Profit'}, inplace=True)
     try:
@@ -110,9 +121,7 @@ for df in list_of_dfs:
     except KeyError:
         pass
 
-titles = ["ROI By Sport", "Profit by Sport", "Risk by Sport", "Profit by Month", "Profit by Sportsbook",
-          "Risk by Sportsbook", "Profit by System", "Profit by Free Bet vs. Money Bet", "Risk by Free Bet vs. Money Bet", "Total Win Percentage",
-          "Total ROI"]
+titles = ["ROI By Sport", "Profit by Month", "ROI by Sportsbook", "Profit by System", "Free Bet ROI", "Total Win Percentage", "Total ROI"]
 
 with open('futuresanalytics.csv', 'w+') as f:
     for i, df in enumerate(list_of_dfs):
@@ -120,8 +129,8 @@ with open('futuresanalytics.csv', 'w+') as f:
         df.to_csv(f, index=False)
         f.write("\n")
 
-df14 = pd.read_csv('futures.csv')
-filter = df14[df14['Result'] == 'Pe']
+df9 = pd.read_csv('futures.csv')
+filter = df9[df9['Result'] == 'Pe']
 
 columns_to_drop = ['Result', 'PushAmount']  # Removed 'CleanedOdds' and 'ActualPayout' from columns_to_drop
 filter = filter.drop(columns=columns_to_drop)
