@@ -32,27 +32,36 @@ results = df.groupby("bet_group").agg({"ROI": ["min", "mean"]}).reset_index()
 results.columns = ['bet_group', 'Minimum ROI', 'Average ROI']
 
 # Create or overwrite the CSV file
-csv_filename = 'betting_results.csv'
+csv_filename = 'bet_builds.csv'
 with open(csv_filename, 'w') as file:
     file.write('')  # Create an empty file
 
-# Display and save the results
 with open(csv_filename, 'w', newline='') as file:
     for group_name, group_data in results.iterrows():
         group_name = group_data['bet_group']
         minimum_roi = group_data['Minimum ROI']
         average_roi = group_data['Average ROI']
 
+        # Print Bet Group title to console
         print(f"Bet Group: {group_name}")
+
+        # Write Bet Group title to CSV file
+        file.write(f"Bet Group: {group_name}\n")
+
+        # Print Betting Results to console
         print("Betting Results:")
         group_df = df[df['bet_group'] == group_name].drop(columns=['bet_group'])
         print(group_df)
+
+        # Write Betting Results to CSV file
+        group_df.to_csv(file, mode='a', header=file.tell() == 0, index=False)
+
+        # Print Minimum and Average ROI to console
         print("Minimum ROI:", minimum_roi)
         print("Average ROI:", average_roi)
         print("\n")
 
-        group_df.to_csv(file, mode='a', header=file.tell() == 0, index=False)
-        file.write('\n')
+        # Write Minimum and Average ROI to CSV file
         file.write(f"Minimum ROI:, {minimum_roi}\n")
         file.write(f"Average ROI:, {average_roi}\n")
         file.write('\n')
