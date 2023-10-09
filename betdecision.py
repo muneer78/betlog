@@ -13,7 +13,7 @@ df = pd.DataFrame(data)
 user_point_spread = float(input("Enter the Point Spread: "))
 
 # Allow user input of bet price
-user_bet_price = int(input("Enter the Bet Price: "))
+user_bet_price = int(input("Enter the Moneyline: "))
 
 # Allow user to enter F for favorite or U for underdog
 user_choice = input("Enter 'F' for Favorite or 'U' for Underdog: ").strip().upper()
