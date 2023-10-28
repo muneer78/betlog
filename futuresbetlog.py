@@ -1,11 +1,23 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('futures.csv')
+# Define the data types you want to assign to specific columns
+dtype_dict = {
+    'Amount': float,
+    'Odds': float,
+    'CleanedOdds': float,
+    'PotentialProfit': float,
+    'PotentialPayout': float,
+    'ImpliedProbability': float,
+    'Expected Value': float,
+    'ActualPayout': float,
+}
 
-cols = ['Amount', 'Odds']
-df[cols] = df[cols].astype('float').fillna(0)
-df['Date'] = pd.to_datetime(arg=df['Date'], format='%m/%d/%Y')
+# Read the CSV file and parse the 'Date' column as datetime
+df = pd.read_csv('futures.csv', dtype = dtype_dict)
+
+# Format the 'Date' column as '%m/%d/%Y'
+df['Date'] = pd.to_datetime(arg=df['Date'],format='%Y-%m-%d')
 
 df['CleanedOdds'] = df['Odds'].abs()
 
@@ -23,7 +35,7 @@ for i, row in df.iterrows():
         df.at[i, 'PotentialPayout'] = row['PotentialProfit']
 df['PotentialPayout'] = df['PotentialPayout'].round(2)
 
-df['ImpliedProbability'] = np.where(df['Odds'] > 0, ((100 / (100 + df['CleanedOdds']))), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))).round(2)
+df['ImpliedProbability'] = np.where(df['Odds'] > 0, (100 / (100 + df['CleanedOdds'])), ((df['CleanedOdds'])/(100+(df['CleanedOdds'])))).round(2)
 
 df['Expected Value'] = np.ceil(df['ImpliedProbability'] * df['Amount']) - ((1 - df['ImpliedProbability']) * df['Amount'])
 df['Expected Value'] = df['Expected Value'].apply(pd.to_numeric, errors='coerce')
@@ -44,18 +56,15 @@ for i, row in df.iterrows():
     elif row['Result'] == 'W' and row['FreeBet'] == 'Y':
         df.at[i, 'ActualPayout'] = row['PotentialProfit']
     elif row['Result'] == 'W' and row['FreeBet'] == 'N':
-        # df.at[i, 'ActualPayout'] = row['PotentialPayout']
         df.at[i, 'ActualPayout'] = row['PotentialPayout']
-    elif row['Result'] == 'Pe':
-        df.at[i, 'ActualPayout'] = 0
     elif row['Result'] == 'P':
+        df.at[i, 'ActualPayout'] = 0
+    elif row['Result'] == 'C':
         df.at[i, 'ActualPayout'] = row['PushAmount']
 
 for i, row in df.iterrows():
     if row['Date'] == pd.to_datetime('2023-05-29'):
-        print(f"Row {i}: Amount={row['Amount']}, Result={row['Result']}, FreeBet={row['FreeBet']}, ActualPayout={row['ActualPayout']}")
-        # Add print statements for intermediate variables used in the calculation.
-        df.at[i, 'ActualPayout'] = row['PotentialPayout']  # This should already be correct based on the data you provided.
+        df.at[i, 'ActualPayout'] = row['PotentialPayout']
 
 df_copy = df.copy()
 
@@ -70,9 +79,7 @@ df2 = df2.groupby("Sport").sum().reset_index()
 df2["ROI"] = df2["ActualPayout"] / df2["Amount"]
 df2["ROI"] = (df2["ROI"] * 100).round(2)
 df2 = df2.reindex(columns=["Sport", "ActualPayout", "Amount", "ROI"]).round(2)
-
-df3 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().round(2).sort_values(by=['Date'])
-
+df3 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().sort_values(by=['Date'])
 df4 = df[["Sportsbook", "Amount", "ActualPayout"]]
 df4 = df4.groupby("Sportsbook").sum().reset_index()
 df4["ROI"] = df4["ActualPayout"] / df4["Amount"]
@@ -125,29 +132,29 @@ for df in list_of_dfs:
     except KeyError:
         pass
 
-titles = ["ROI By Sport", "Profit by Month", "ROI by Sportsbook", "Profit by System", "Free Bet ROI", "Total Win Percentage", "Total ROI"]
+titles = ["ROI By Sport", "Profit by Month", "ROI by Sportsbook", "Profit by System", "Free Bet ROI", "Total ROI", "Total Win Percentage"]
 
 with open('futuresanalytics.csv', 'w+') as f:
-    for i, df in enumerate(list_of_dfs):
+    for i, dfs in enumerate(list_of_dfs):
         f.write(titles[i] + "\n")  # Write the title
-        df.to_csv(f, index=False)
+        dfs.to_csv(f, index=False)
         f.write("\n")
 
 df9 = pd.read_csv('futures.csv')
-filter = df9[df9['Result'] == 'Pe']
+filter_df = df9[df9['Result'] == 'P']
 
 columns_to_drop = ['Result', 'PushAmount']  # Removed 'CleanedOdds' and 'ActualPayout' from columns_to_drop
-filter = filter.drop(columns=columns_to_drop)
-filter.to_csv('pendingfuturesbets.csv', index=False)
+filter_df = filter_df.drop(columns=columns_to_drop)
+filter_df.to_csv('pendingfuturesbets.csv', index=False)
 
 filter2 = pd.read_csv('futures.csv')
 
-filter2 = filter2[filter2['Result'] == 'P']
+filter2 = filter2[filter2['Result'] == 'C']
 filter2['ActualPayout'] = np.nan
 filter2['ActualPayout'] = filter2['ActualPayout'].apply(pd.to_numeric, errors='coerce')
 filter2['ActualPayout'] = filter2['ActualPayout'].astype('float')
 for i, row in filter2.iterrows():
-    if row['Result'] == 'P':
+    if row['Result'] == 'C':
         filter2.at[i, 'ActualPayout'] = row['PushAmount']
 cols3 = ['Amount', 'ActualPayout']
 filter2[cols3] = filter2[cols3].apply(pd.to_numeric, errors='coerce', axis=1)
