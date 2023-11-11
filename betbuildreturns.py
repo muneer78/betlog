@@ -1,6 +1,6 @@
 import pandas as pd
 
-def calculate_and_save_betting_results(group_name, data_list, csv_filename):
+def calculate_and_save_betting_results(group_name, data_list):
     # Create a DataFrame with three columns
     df = pd.DataFrame(data_list, columns=["bet", "bet_amount", "odds"])
 
@@ -38,28 +38,12 @@ def calculate_and_save_betting_results(group_name, data_list, csv_filename):
     average_roi = average_roi.round(2)
 
     # Display the results with the Bet Group Name as the title
-    print("Results:")
+    print("MLB Odds:")
     print(df)
     print("Minimum ROI:", minimum_roi)
     print("Average ROI:", average_roi)
     print("\n")
 
-#     # Append results to the CSV file, separating outputs with a blank row
-#     with open(csv_filename, 'a', newline='') as file:
-#         df.to_csv(file, mode='a', header=file.tell() == 0, index=False)
-#         file.write('\n')
-#         file.write(f"Minimum ROI:, {minimum_roi}\n")
-#         file.write(f"Average ROI:, {average_roi}\n")
-#         file.write('\n')
-#
-# # Create or overwrite the CSV file
-# csv_filename = 'betting_results.csv'
-# with open(csv_filename, 'w') as file:
-#     file.write('')  # Create an empty file
-
 # Example usage with different data for multiple groups of bets
-data_group1 = [("1 hit", 0.1, "+320"), ("2 hits", 0.1, "+320"), ("3 hits", 0.1, "+320")]
-calculate_and_save_betting_results("Group 1", data_group1, csv_filename)
-
-# data_group2 = [("Lions", 0.2, "-150"), ("Packers", 0.2, "+200")]
-# calculate_and_save_betting_results("Group 2", data_group2, csv_filename)
+data = [("Reds", 0.1, "+4000"), ("Guardians", 0.1, "+6000"), ("Brewers", 0.10, "+4000"), ("Cards", 0.10, "+4000"), ("Cubs", 0.10, "+3000"), ("Orioles", 0.10, "+1600")]
+calculate_and_save_betting_results("Group 1", data)

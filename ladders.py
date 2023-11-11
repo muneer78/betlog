@@ -45,11 +45,11 @@ for col in currency_columns:
 df_copy.to_csv('futuresbetlog.csv', index=False)
 
 df2 = df.groupby(df['Date'].dt.strftime('%Y-%m'))['ActualPayout'].sum().reset_index().sort_values(by=['Date'])
-df3 = df[["Team", "Amount", "ActualPayout"]]
-df3 = df3.groupby("Team").sum().reset_index()
+df3 = df[["bet_group", "Amount", "ActualPayout"]]
+df3 = df3.groupby("bet_group").sum().reset_index()
 df3["ROI"] = df3["ActualPayout"] / df3["Amount"]
 df3["ROI"] = (df3["ROI"] * 100).round(2)
-df3 = df3.reindex(columns=["Team", "ActualPayout", "Amount", "ROI"]).round(2)
+df3 = df3.reindex(columns=["bet_group", "ActualPayout", "Amount", "ROI"]).round(2)
 
 # Sum column values for A, B and C
 sum_a = df['ActualPayout'].sum()
