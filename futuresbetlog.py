@@ -44,7 +44,7 @@ df['Expected Value'] = df['Expected Value'].round(2)
 df['ImpliedProbability'] = (df['ImpliedProbability']*100).apply(pd.to_numeric, errors='coerce')
 df['ImpliedProbability'] = (df['ImpliedProbability']).round(2)
 
-df['ActualPayout'] = np.nan
+df['ActualPayout'] = 0
 df['ActualPayout'] = df['ActualPayout'].apply(pd.to_numeric, errors='coerce')
 df['ActualPayout'] = df['ActualPayout'].astype('float')
 
