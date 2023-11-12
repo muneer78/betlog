@@ -1,6 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv('betgroups.csv')
+orig_df = pd.read_csv('futures.csv')
+df = orig_df[orig_df['bet_group'].notnull()]
 
 # Function to convert American odds to decimal odds
 def american_to_decimal(american_odds):
@@ -11,19 +12,19 @@ def american_to_decimal(american_odds):
     return decimal_odds
 
 # Calculate the gross_profit for winning bets
-df["odds"] = df["odds"].apply(lambda x: int(x) if isinstance(x, str) else x)  # Ensure odds are integers
-df["decimal_odds"] = df["odds"].apply(american_to_decimal)
-df["gross_profit"] = df["bet_amount"] * (df["decimal_odds"] - 1)
+df["Odds"] = df["Odds"].apply(lambda x: int(x) if isinstance(x, str) else x)  # Ensure odds are integers
+df["decimal_odds"] = df["Odds"].apply(american_to_decimal)
+df["gross_profit"] = df["Amount"] * (df["decimal_odds"] - 1)
 
 # Calculate the net_profit for each bet separately
-df["net_profit"] = df["gross_profit"] - df.groupby("bet_group")["bet_amount"].transform("sum")
+df["net_profit"] = df["gross_profit"] - df.groupby("bet_group")["Amount"].transform("sum")
 
 # Calculate the ROI
-df["ROI"] = (100 * (df["net_profit"] / df["bet_amount"]))
+df["ROI"] = (100 * (df["net_profit"] / df["Amount"]))
 df["ROI"] = df["ROI"].round(2)
 
 # Format columns as needed
-df["bet_amount"] = df["bet_amount"].map("${:.2f}".format)
+df["Amount"] = df["Amount"].map("${:.2f}".format)
 df["gross_profit"] = df["gross_profit"].map("${:.2f}".format)
 df["net_profit"] = df["net_profit"].map("${:.2f}".format)
 
