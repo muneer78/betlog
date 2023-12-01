@@ -1,11 +1,9 @@
-import polars as pl
-import numpy as np
-from datetime import datetime
 import math
-import csv
+
+import polars as pl
 
 # Load data from CSV using Polars
-df = pl.read_csv('futures.csv', try_parse_dates = True)
+df = pl.read_csv('futures.csv', try_parse_dates=True)
 
 # Define the columns you want to convert to float and fill NaN with 0
 cols_to_convert = ['Amount', 'Odds', 'PushAmount']
@@ -31,7 +29,8 @@ df = df.with_columns(
     .alias('PotentialProfit')
 )
 
-# Convert 'PotentialProfit' and 'CleanedOdds' columns to numeric, handling coercion
+# Convert 'PotentialProfit' and 'CleanedOdds' columns to numeric, handling
+# coercion
 cols2 = ['PotentialProfit', 'CleanedOdds']
 
 # Convert specified columns to float
@@ -62,15 +61,16 @@ df = df.with_columns(
 )
 
 # Calculate 'Expected Value' column
-df = df.with_columns(
-    ((df['ImpliedProbability'] * df['Amount']).ceil() - ((1 - df['ImpliedProbability']) * df['Amount']))
-    .cast(float)
-    .round(2)
-    .alias('Expected Value')
-)
+df = df.with_columns(((df['ImpliedProbability'] *
+                       df['Amount']).ceil() -
+                      ((1 -
+                        df['ImpliedProbability']) *
+                       df['Amount'])) .cast(float) .round(2) .alias('Expected Value'))
 
 # Convert 'ImpliedProbability' column to percentage
-df = df.with_columns((df['ImpliedProbability'] * 100).alias('ImpliedProbability'))
+df = df.with_columns(
+    (df['ImpliedProbability'] *
+     100).alias('ImpliedProbability'))
 
 # df = df.with_columns(pl.col('ActualPayout').fill_nan(0))
 
@@ -91,22 +91,29 @@ df = df.with_columns(
 df_copy = df.clone()
 
 # Format currency columns
-currency_columns = ['Amount', 'PushAmount', 'PotentialProfit', 'PotentialPayout', 'Expected Value', 'ActualPayout']
+currency_columns = [
+    'Amount',
+    'PushAmount',
+    'PotentialProfit',
+    'PotentialPayout',
+    'Expected Value',
+    'ActualPayout']
 for col in currency_columns:
-    df_copy = df_copy.with_columns(df_copy[col].map_elements(lambda x: "${:,.2f}".format(x) if x is not None else ''))
+    df_copy = df_copy.with_columns(df_copy[col].map_elements(
+        lambda x: "${:,.2f}".format(x) if x is not None else ''))
 
 # Save the formatted DataFrame to a CSV file
 df_copy.write_csv('futuresbetlog.csv')
 
 # Group and calculate 'ROI' by 'Sport'
 df2 = df[['Sport', 'Amount', 'ActualPayout']]
-df2 = df2.group_by('Sport').\
+df2 = df2.group_by('Sport'). \
     agg(pl.sum('ActualPayout')
-    .alias('ActualPayout'), pl.sum('Amount')
-    .alias('Amount'), ((pl.sum('ActualPayout') / pl.sum('Amount')) * 100)
-    .round(2)
-    .alias('ROI')
-)
+         .alias('ActualPayout'), pl.sum('Amount')
+         .alias('Amount'), ((pl.sum('ActualPayout') / pl.sum('Amount')) * 100)
+          .round(2)
+          .alias('ROI')
+        )
 
 # Extract year and month from the 'Date' column
 df3 = df.with_columns(
@@ -116,29 +123,29 @@ df3 = df.with_columns(
 
 # Group and calculate 'TotalPayout' by year and month
 df3 = df3.group_by(['Year', 'Month']).agg(pl.sum('ActualPayout')
-    .round(2)
-    .alias('TotalPayout')
-)
+                                          .round(2)
+                                          .alias('TotalPayout')
+                                          )
 
 # Sort the DataFrame by 'Year' and 'Month'
 df3 = df3.sort(['Year', 'Month'])
 
 # Group and calculate 'ROI' by 'Sportsbook'
 df4 = df[['Sportsbook', 'Amount', 'ActualPayout']]
-df4 = df4.group_by('Sportsbook')\
-    .agg(pl.sum('ActualPayout').alias('ActualPayout'),pl.sum('Amount')
-    .alias('Amount'),
-    ((pl.sum('ActualPayout') / pl.sum('Amount')) * 100)
-    .round(2)
-    .alias('ROI')
-)
+df4 = df4.group_by('Sportsbook') \
+    .agg(pl.sum('ActualPayout').alias('ActualPayout'), pl.sum('Amount')
+         .alias('Amount'),
+         ((pl.sum('ActualPayout') / pl.sum('Amount')) * 100)
+         .round(2)
+         .alias('ROI')
+         )
 
 # Group and calculate 'TotalPayout' by 'System'
-df5 = df.group_by('System')\
+df5 = df.group_by('System') \
     .agg(pl.sum('ActualPayout')
-    .round(2)
-    .alias('TotalPayout')
-)
+         .round(2)
+         .alias('TotalPayout')
+         )
 
 # Group and calculate 'ROI' by 'FreeBet'
 df6 = df[['FreeBet', 'Amount', 'ActualPayout']]
@@ -193,7 +200,14 @@ df8 = pl.DataFrame({
 
 # Create a list of DataFrames and corresponding titles
 list_of_dfs = [df2, df3, df4, df5, df6, df7, df8]
-titles = ["ROI By Sport", "Profit by Month", "ROI by Sportsbook", "Profit by System", "Free Bet ROI", "Total Win Percentage", "Total ROI"]
+titles = [
+    "ROI By Sport",
+    "Profit by Month",
+    "ROI by Sportsbook",
+    "Profit by System",
+    "Free Bet ROI",
+    "Total Win Percentage",
+    "Total ROI"]
 
 # Define the CSV file path
 csv_file_path = 'futuresanalytics.csv'
@@ -202,19 +216,29 @@ csv_file_path = 'futuresanalytics.csv'
 with open(csv_file_path, 'w+') as f:
     for i, current_df in enumerate(list_of_dfs):
         # Write the title as a comment in the CSV file
-        f.write(f"# {titles[i]}\n")
+        f.write(f"# {titles [ i ]}\n")
 
         # Create a temporary DataFrame with only the title as a single row
         title_df = pl.DataFrame([titles[i]])
 
         # Write the title DataFrame to the CSV file using polars.write_csv
-        title_df.write_csv(f, has_header=False, separator=',', line_terminator='\n', quote='"')
+        title_df.write_csv(
+            f,
+            has_header=False,
+            separator=',',
+            line_terminator='\n',
+            quote='"')
 
         # Write an empty line to separate sections
         f.write("\n")
 
         # Write the current DataFrame to the CSV file using polars.write_csv
-        current_df.write_csv(f, has_header=True, separator=',', line_terminator='\n', quote='"')
+        current_df.write_csv(
+            f,
+            has_header=True,
+            separator=',',
+            line_terminator='\n',
+            quote='"')
 
 # Filter rows with 'Result' equal to 'Pe' and 'P'
 filter1 = df.filter((df['Result'] == 'Pe') | (df['Result'] == 'P'))
@@ -224,7 +248,12 @@ columns_to_drop = ['Result', 'PushAmount']
 filter1 = filter1.drop(columns_to_drop)
 
 # Save the filtered DataFrame to a CSV file
-filter1.write_csv('pendingfuturesbets.csv', has_header=True, separator=',', line_terminator='\n', quote='"')
+filter1.write_csv(
+    'pendingfuturesbets.csv',
+    has_header=True,
+    separator=',',
+    line_terminator='\n',
+    quote='"')
 
 # Filter rows with 'Result' equal to 'P' and update 'ActualPayout'
 filter2 = df.filter(df['Result'] == 'P')
@@ -239,9 +268,15 @@ filter2 = filter2.with_columns(
 # Select and format columns
 cols3 = ['Amount', 'ActualPayout']
 filter2 = filter2.select(cols3).with_columns(
-    pl.col('Amount').cast(float).map_elements(lambda x: "${:,.2f}".format(x)),
-    pl.col('ActualPayout').cast(float).map_elements(lambda x: "${:,.2f}".format(x))
-)
+    pl.col('Amount').cast(float).map_elements(
+        lambda x: "${:,.2f}".format(x)),
+    pl.col('ActualPayout').cast(float).map_elements(
+        lambda x: "${:,.2f}".format(x)))
 
 # Save the filtered and formatted DataFrame to a CSV file
-filter2.write_csv('futurescashouts.csv', has_header=True, separator=',', line_terminator='\n', quote='"')
+filter2.write_csv(
+    'futurescashouts.csv',
+    has_header=True,
+    separator=',',
+    line_terminator='\n',
+    quote='"')

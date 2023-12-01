@@ -1,13 +1,17 @@
-import pandas as pd
-import numpy as np
 import random
 
+import numpy as np
+import pandas as pd
+
 # Generate random odds between -295 and -110, or between +100 and +200
-data = [random.randrange(-295, -110, 5) if random.random() < 0.5 else random.randrange(100, 201, 5) for i in range(100)]
+data = [random.randrange(-295, -110, 5) if random.random() <
+        0.5 else random.randrange(100, 201, 5) for i in range(100)]
 df = pd.DataFrame(data, columns=['Odds'])
+
 
 def format_currency(x):
     return "${:,.2f}".format(x)
+
 
 np.random.seed(365)
 
@@ -23,23 +27,28 @@ odds = df["Odds"]
 cleaned_odds = abs(df["Odds"])
 
 # Calculate Profit based on Result
-df["Profit"] = np.where(df['Result'] == 'L', df["Amount"] * -1, ((100 / cleaned_odds) * df["Amount"])).round(2)
+df["Profit"] = np.where(df['Result'] == 'L', df["Amount"] * -1,
+                        ((100 / cleaned_odds) * df["Amount"])).round(2)
 
 df["Implied Probability"] = (cleaned_odds / (100 + cleaned_odds)).round(2)
 
-df["EV"] = (df["Implied Probability"] * (df["Profit"])) - ((1-df["Implied Probability"])*((df["Amount"]*(-1))))
+df["EV"] = (df["Implied Probability"] * (df["Profit"])) - (
+    (1 - df["Implied Probability"]) * ((df["Amount"] * (-1))))
 df["EV"] = df["EV"].round(2)
 df["Long Term Profit"] = df["EV"] - df["Amount"]
-df['Implied Probability'] = df['Implied Probability'].map(lambda n: '{:,.2%}'.format(n))
+df['Implied Probability'] = df['Implied Probability'].map(
+    lambda n: '{:,.2%}'.format(n))
 
 # Round all number columns to 2 decimal places
 number_columns = ["Profit", "Amount", "EV", "Long Term Profit"]
 df[number_columns] = df[number_columns].round(2)
 
 # Calculate and add the Grand Total row
-grand_total = df[["Profit", "Amount", "EV", "Long Term Profit"]].sum().to_frame().T
+grand_total = df[["Profit", "Amount", "EV",
+                  "Long Term Profit"]].sum().to_frame().T
 grand_total["Result"] = "Grand Total"
-grand_total = grand_total[["Result", "Profit", "Amount", "EV", "Long Term Profit"]]
+grand_total = grand_total[["Result", "Profit",
+                           "Amount", "EV", "Long Term Profit"]]
 
 # Round all values in the Grand Total row to 2 decimal places
 grand_total = grand_total.round(2)

@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def calculate_and_save_betting_results(group_name, data_list):
     # Create a DataFrame with three columns
     df = pd.DataFrame(data_list, columns=["bet", "bet_amount", "odds"])
@@ -13,12 +14,15 @@ def calculate_and_save_betting_results(group_name, data_list):
         return decimal_odds
 
     # Calculate the gross_profit for winning bets
-    df["odds"] = df["odds"].apply(lambda x: int(x) if isinstance(x, str) else x)  # Ensure odds are integers
+    df["odds"] = df["odds"].apply(
+        lambda x: int(x) if isinstance(
+            x, str) else x)  # Ensure odds are integers
     df["decimal_odds"] = df["odds"].apply(american_to_decimal)
     df["gross_profit"] = df["bet_amount"] * (df["decimal_odds"] - 1)
 
     # Calculate the net_profit
-    df["net_profit"] = df.apply(lambda row: row["gross_profit"] - df[df.index != row.name]["bet_amount"].sum(), axis=1)
+    df["net_profit"] = df.apply(lambda row: row["gross_profit"] -
+                                df[df.index != row.name]["bet_amount"].sum(), axis=1)
 
     # Calculate the ROI
     df["ROI"] = (100 * (df["net_profit"] / df["bet_amount"]))
@@ -44,6 +48,8 @@ def calculate_and_save_betting_results(group_name, data_list):
     print("Average ROI:", average_roi)
     print("\n")
 
+
 # Example usage with different data for multiple groups of bets
-data = [("Reds", 0.1, "+4000"), ("Guardians", 0.1, "+6000"), ("Brewers", 0.10, "+4000"), ("Cards", 0.10, "+4000"), ("Cubs", 0.10, "+3000"), ("Orioles", 0.10, "+1600")]
+data = [("Reds", 0.1, "+4000"), ("Guardians", 0.1, "+6000"), ("Brewers", 0.10, "+4000"),
+        ("Cards", 0.10, "+4000"), ("Cubs", 0.10, "+3000"), ("Orioles", 0.10, "+1600")]
 calculate_and_save_betting_results("Group 1", data)

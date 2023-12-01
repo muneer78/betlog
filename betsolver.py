@@ -6,7 +6,10 @@ prob = LpProblem("Maximize_Size", LpMaximize)
 # Define variables: number of items of each type to buy
 item_1 = LpVariable("Smallest Bet", lowBound=9, cat="Integer")
 item_2 = LpVariable("Medium Bet", lowBound=10, cat="Integer")
-item_3 = LpVariable("Largest Bet", lowBound=11, cat="Integer")  # No lower bound for item_3
+item_3 = LpVariable(
+    "Largest Bet",
+    lowBound=11,
+    cat="Integer")  # No lower bound for item_3
 
 # Define prices and budget
 prices = [1, 1, 1]
@@ -18,7 +21,8 @@ objective_item_2 = item_2
 objective_item_3 = item_3
 
 # Define the constraint: total cost should equal the budget
-prob += prices[0] * item_1 + prices[1] * item_2 + prices[2] * item_3 == budget, "Budget_Constraint"
+prob += prices[0] * item_1 + prices[1] * item_2 + \
+    prices[2] * item_3 == budget, "Budget_Constraint"
 
 # Ensure that the remaining budget is non-negative
 remaining_budget = budget - (

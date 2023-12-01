@@ -22,7 +22,8 @@ def implied_prob_to_american(implied_prob):
         american_odds = -100 / (implied_prob / (1 - implied_prob))
     else:
         american_odds = (1 - implied_prob) / implied_prob * 100
-    return int(american_odds) if american_odds.is_integer() else round(american_odds)
+    return int(american_odds) if american_odds.is_integer(
+    ) else round(american_odds)
 
 
 def calculate_no_vig_to_american(no_vig_odds):
@@ -35,7 +36,8 @@ def calculate_no_vig_to_american(no_vig_odds):
 given_american_odds = (
     10000  # Replace with the American odds you want to remove the vig from
 )
-user_confidence = 0.15  # Replace with the user's confidence in winning (as a decimal)
+# Replace with the user's confidence in winning (as a decimal)
+user_confidence = 0.15
 
 no_vig_odds, edge = calculate_no_vig_odds(given_american_odds, user_confidence)
 american_odds = calculate_no_vig_to_american(no_vig_odds)

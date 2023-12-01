@@ -2,6 +2,7 @@ import pandas as pd
 
 df = pd.read_csv('recladders.csv')
 
+
 # Function to convert American odds to decimal odds
 def american_to_decimal(american_odds):
     if american_odds > 0:
@@ -10,8 +11,10 @@ def american_to_decimal(american_odds):
         decimal_odds = 1 + (100 / abs(american_odds))
     return decimal_odds
 
+
 # Calculate the gross_profit for winning bets
-df["Odds"] = df["Odds"].apply(lambda x: int(x) if isinstance(x, str) else x)  # Ensure odds are integers
+df["Odds"] = df["Odds"].apply(
+    lambda x: int(x) if isinstance(x, str) else x)  # Ensure odds are integers
 df["decimal_odds"] = df["Odds"].apply(american_to_decimal)
 df["profit"] = df["Amount"] * (df["decimal_odds"] - 1)
 
@@ -39,7 +42,8 @@ with open(csv_filename, 'w', newline='') as file:
         file.write(f"Bet Group: {group_name}\n")
 
         # Write headers to CSV file
-        group_df = df[df['bet_group'] == group_name].drop(columns=['bet_group'])
+        group_df = df[df['bet_group'] == group_name].drop(
+            columns=['bet_group'])
         group_df.to_csv(file, header=True, index=False)
 
         # Write Minimum and Average ROI to CSV file

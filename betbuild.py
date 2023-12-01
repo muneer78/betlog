@@ -4,6 +4,8 @@ orig_df = pd.read_csv('futures.csv')
 df = orig_df[orig_df['bet_group'].notnull()]
 
 # Function to convert American odds to decimal odds
+
+
 def american_to_decimal(american_odds):
     if american_odds > 0:
         decimal_odds = 1 + (american_odds / 100)
@@ -11,13 +13,17 @@ def american_to_decimal(american_odds):
         decimal_odds = 1 + (100 / abs(american_odds))
     return decimal_odds
 
+
 # Calculate the gross_profit for winning bets
-df["Odds"] = df["Odds"].apply(lambda x: int(x) if isinstance(x, str) else x)  # Ensure odds are integers
+df["Odds"] = df["Odds"].apply(
+    lambda x: int(x) if isinstance(
+        x, str) else x)  # Ensure odds are integers
 df["decimal_odds"] = df["Odds"].apply(american_to_decimal)
 df["gross_profit"] = df["Amount"] * (df["decimal_odds"] - 1)
 
 # Calculate the net_profit for each bet separately
-df["net_profit"] = df["gross_profit"] - df.groupby("bet_group")["Amount"].transform("sum")
+df["net_profit"] = df["gross_profit"] - \
+    df.groupby("bet_group")["Amount"].transform("sum")
 
 # Calculate the ROI
 df["ROI"] = (100 * (df["net_profit"] / df["Amount"]))
@@ -51,7 +57,8 @@ with open(csv_filename, 'w', newline='') as file:
 
         # Print Betting Results to console
         print("Betting Results:")
-        group_df = df[df['bet_group'] == group_name].drop(columns=['bet_group'])
+        group_df = df[df['bet_group'] == group_name].drop(
+            columns=['bet_group'])
         print(group_df)
 
         # Write Betting Results to CSV file
@@ -66,4 +73,3 @@ with open(csv_filename, 'w', newline='') as file:
         file.write(f"Minimum ROI:, {minimum_roi}\n")
         file.write(f"Average ROI:, {average_roi}\n")
         file.write('\n')
-
