@@ -42,7 +42,7 @@ def calculate_and_save_betting_results(group_name, data_list):
     average_roi = average_roi.round(2)
 
     # Display the results with the Bet Group Name as the title
-    print("MLB Odds:")
+    print("Build Returns:")
     print(df)
     print("Minimum ROI:", minimum_roi)
     print("Average ROI:", average_roi)
@@ -50,6 +50,6 @@ def calculate_and_save_betting_results(group_name, data_list):
 
 
 # Example usage with different data for multiple groups of bets
-data = [("Reds", 0.1, "+4000"), ("Guardians", 0.1, "+6000"), ("Brewers", 0.10, "+4000"),
-        ("Cards", 0.10, "+4000"), ("Cubs", 0.10, "+3000"), ("Orioles", 0.10, "+1600")]
-calculate_and_save_betting_results("Group 1", data)
+data = [("Arizona", 1, "+1100"), ("Auburn", 1, "+2100"), ("Alabama", 1, "+2000"),
+        ("Iowa State", 1, "+2000"), ("Tennessee", 1, "+1400")]
+calculate_and_save_betting_results("Returns", data)
