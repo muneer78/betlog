@@ -41,8 +41,8 @@ def calculate_arbitrage_profit(odds_a, odds_b, stake):
     return outcome_1, outcome_2, stake_b, loss_1, loss_2, payout_outcome_1, payout_outcome_2
 
 # Example usage
-odds_a_american = 131
-odds_b_american = 105
+odds_a_american = -117
+odds_b_american = 150
 stake = 10  # Example stake
 
 outcome_1, outcome_2, stake_b, loss_1, loss_2, payout_outcome_1, payout_outcome_2 = calculate_arbitrage_profit(odds_a_american, odds_b_american, stake)

@@ -78,6 +78,8 @@ for i, row in df.iterrows():
     if row['Date'] == pd.to_datetime('2023-05-29'):
         df.at[i, 'ActualPayout'] = row['PotentialPayout']
 
+df.to_csv('betbuilddata.csv',index=False)
+
 df_copy = df.copy()
 
 currency_columns = [
