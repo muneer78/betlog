@@ -36,8 +36,20 @@ def map_rows_to_csv(csv_file, rows_to_map):
 
 # Define the data for the new rows
 rows_to_map = [
-    {'Date': '2024-04-18', 'Sportsbook': 'FanDuel', 'Sport': 'Basketball', 'System': 'Sportsline', 'Pick': 'Series Win- Knicks', 'FreeBet': 'N', 'Amount': '0.10', 'Odds': '-108', 'Result': 'P'},
-    {'Date': '2024-04-18', 'Sportsbook': 'FanDuel', 'Sport': 'Basketball', 'System': 'Sportsline', 'Pick': 'Series Win- Pacers', 'FreeBet': 'N', 'Amount': '0.10', 'Odds': '+100', 'Result': 'P'    },
+{'Date': '2024-04-20', 'Sportsbook': 'DraftKings', 'Sport': 'Golf', 'System': 'Sportsline', 'Pick': '2024 PGA Championship Winner- Scottie Scheffler', 'FreeBet': 'N', 'Amount': '0.10', 'Odds': '+400', 'Result': 'P', 'bet_group': '2024 PGA Championship Winner'},
+    {'Date' : '2024-04-20' , 'Sportsbook' : 'DraftKings' , 'Sport' : 'Golf' , 'System' : 'Sportsline' ,
+     'Pick' : '2024 PGA Championship Winner- Collin Morikawa' , 'FreeBet' : 'N' , 'Amount' : '0.10' ,
+     'Odds' : '+2200' , 'Result' : 'P' , 'bet_group' : '2024 PGA Championship Winner'} ,
+    {'Date' : '2024-04-20' , 'Sportsbook' : 'DraftKings' , 'Sport' : 'Golf' , 'System' : 'Sportsline' ,
+     'Pick' : '2024 PGA Championship Winner- Ludvig Aberg' , 'FreeBet' : 'N' , 'Amount' : '0.10' ,
+     'Odds' : '+1800' , 'Result' : 'P' , 'bet_group' : '2024 PGA Championship Winner'} ,
+    {'Date' : '2024-04-20' , 'Sportsbook' : 'DraftKings' , 'Sport' : 'Golf' , 'System' : 'Sportsline' ,
+     'Pick' : '2024 PGA Championship Winner- Rory McIlroy' , 'FreeBet' : 'N' , 'Amount' : '0.10' ,
+     'Odds' : '+900' , 'Result' : 'P' , 'bet_group' : '2024 PGA Championship Winner'} ,
+    {'Date' : '2024-04-20' , 'Sportsbook' : 'DraftKings' , 'Sport' : 'Golf' , 'System' : 'Sportsline' ,
+     'Pick' : '2024 PGA Championship Winner- Jon Rahm' , 'FreeBet' : 'N' , 'Amount' : '0.10' ,
+     'Odds' : '+1000' , 'Result' : 'P' , 'bet_group' : '2024 PGA Championship Winner'} ,
+
     # Add more rows as needed
 ]
 
