@@ -19,9 +19,9 @@ def calculate_boosted_payout(american_odds, wager, boost_percent):
   return initial_payout, boosted_payout
 
 # Example usage:
-american_odds = -215
-wager = 25
-boost_percent = 33  # 10% boost
+american_odds = -110
+wager = 10
+boost_percent = 20  # 10% boost
 
 initial_payout, boosted_payout = calculate_boosted_payout(american_odds, wager, boost_percent)
 
