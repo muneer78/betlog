@@ -31,3 +31,5 @@ for index, row in df.iterrows():
 
 # Display the DataFrame with calculated columns
 print(df)
+
+df.to_csv('moneylineodds.csv', index=False)
