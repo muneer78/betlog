@@ -7,7 +7,7 @@ df = pd.DataFrame(columns=['GameNumber', 'Moneyline', 'Risk', 'Win', 'Return', '
 df['GameNumber'] = range(1, 8)
 
 # Populate the 'Moneyline' column with specified values
-moneyline_values = [-150, -125, -110, -105, -120, -130, -110]
+moneyline_values = [-120, -125, 100, 450, 300, 200, 500]
 df['Moneyline'] = moneyline_values
 
 # Initialize the initial investment
