@@ -7,7 +7,7 @@ df = pd.DataFrame(columns=['GameNumber', 'Moneyline', 'Risk', 'Win', 'Return', '
 df['GameNumber'] = range(1, 8)
 
 # Populate the 'Moneyline' column with specified values
-moneyline_values = [-120, -125, 100, 450, 300, 200, 500]
+moneyline_values = [-1600, -1000, -500, -400, -350, -250, -125]
 df['Moneyline'] = moneyline_values
 
 # Initialize the initial investment
@@ -27,7 +27,7 @@ for index, row in df.iterrows():
 
     df.at[index, 'Return'] = df.at[index, 'Risk'] + df.at[index, 'Win']
     df.at[index, 'Profit'] = df.at[index, 'Return'] - initial_investment
-    df.at[index, 'MLRolloverOdds'] = df.at[index, 'Return']
+    df.at[index, 'MLRolloverOdds'] = (df.at[index, 'Profit'] / initial_investment)*100
 
 # Display the DataFrame with calculated columns
 print(df)
