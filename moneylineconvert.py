@@ -4,14 +4,14 @@ import pandas as pd
 df = pd.DataFrame(columns=['GameNumber', 'Moneyline', 'Risk', 'Win', 'Return', 'Profit', 'MLRolloverOdds'])
 
 # Populate the 'GameNumber' column with values 1 through 7
-df['GameNumber'] = range(1, 8)
+df['GameNumber'] = range(1, 7)
 
 # Populate the 'Moneyline' column with specified values
-moneyline_values = [-1600, -1000, -500, -400, -350, -250, -125]
+moneyline_values = [-1500, -400, -350, -250, -150, -125]
 df['Moneyline'] = moneyline_values
 
 # Initialize the initial investment
-initial_investment = 100
+initial_investment = 2.59
 
 # Calculate winnings, return, profit, and cumulative ML rollover odds
 for index, row in df.iterrows():
