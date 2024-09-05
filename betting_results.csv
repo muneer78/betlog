@@ -1,0 +1,88 @@
+name,bet_amount,odds,decimal_odds,gross_profit,net_profit,ROI
+Matt Eberflus,$0.10,1100,12.0,$1.10,$0.90,900.0
+Kyle Shanahan,$0.10,3000,31.0,$3.00,$2.80,2800.0
+
+Minimum ROI:, 900.0
+Average ROI:, 1850.0
+
+Russell Wilson,$0.10,2000,21.0,$2.00,$1.80,1800.0
+Lamar Jackson,$0.10,2500,26.0,$2.50,$2.30,2300.0
+
+Minimum ROI:, 1800.0
+Average ROI:, 2050.0
+
+Aidan Hutchinson,$0.11,2500,26.0,$2.75,$2.54,2309.09
+Micah Parsons,$0.10,650,7.5,$0.65,$0.44,440.0
+
+Minimum ROI:, 440.0
+Average ROI:, 1374.545
+
+Tua Tagovailoa,$0.10,1600,17.0,$1.60,$1.40,1400.0
+Joe Burrow,$0.10,450,5.5,$0.45,$0.25,250.0
+
+Minimum ROI:, 250.0
+Average ROI:, 825.0
+
+Calvin Ridley,$0.10,5000,51.0,$5.00,$4.70,4700.0
+Justin Jefferson,$0.10,550,6.5,$0.55,$0.25,250.0
+Tyreek Hill,$0.10,900,10.0,$0.90,$0.60,600.0
+
+Minimum ROI:, 250.0
+Average ROI:, 1850.0
+
+Cooper Kupp,$0.10,500,6.0,$0.50,$0.30,300.0
+Amon-Ra St. Brown,$0.10,1800,19.0,$1.80,$1.60,1600.0
+
+Minimum ROI:, 300.0
+Average ROI:, 950.0
+
+Jokic,$0.10,450,5.5,$0.45,$0.05,50.0
+Giannis,$0.10,550,6.5,$0.55,$0.15,150.0
+Embiid,$0.10,650,7.5,$0.65,$0.25,250.0
+Tatum,$0.10,900,10.0,$0.90,$0.50,500.0
+
+Minimum ROI:, 50.0
+Average ROI:, 237.5
+
+Devin Booker,$0.10,5000,51.0,$5.00,$4.80,4800.0
+Shai Gilgeous Alexander,$0.10,400,5.0,$0.40,$0.20,200.0
+
+Minimum ROI:, 200.0
+Average ROI:, 2500.0
+
+Nikola Jokic,$0.10,360,4.6,$0.36,$0.16,160.0
+Rudy Gobert,$0.10,400,5.0,$0.40,$0.20,200.0
+
+Minimum ROI:, 160.0
+Average ROI:, 180.0
+
+Holmgren,$0.10,350,4.5,$0.35,$-0.05,-50.0
+Whitmore,$0.10,2000,21.0,$2.00,$1.60,1600.0
+Brandon Miller,$0.10,1200,13.0,$1.20,$0.80,800.0
+Henderson,$0.10,400,5.0,$0.40,$0.00,0.0
+
+Minimum ROI:, -50.0
+Average ROI:, 587.5
+
+Tua Tagovailoa,$0.10,2200,23.0,$2.20,$1.80,1800.0
+Patrick Mahomes,$0.10,700,8.0,$0.70,$0.30,300.0
+Jalen Hurts,$0.10,1100,12.0,$1.10,$0.70,700.0
+Lamar Jackson,$0.10,1500,16.0,$1.50,$1.10,1100.0
+
+Minimum ROI:, 300.0
+Average ROI:, 975.0
+
+Jamarr Chase,$0.10,1100,12.0,$1.10,$0.90,900.0
+Justin Jefferson,$0.10,1300,14.0,$1.30,$1.10,1100.0
+
+Minimum ROI:, 900.0
+Average ROI:, 1000.0
+
+Jordan Addison,$0.10,300,4.0,$0.30,$-0.10,-100.0
+Quentin Johnson,$0.10,350,4.5,$0.35,$-0.05,-50.0
+Rashee Rice,$0.10,1800,19.0,$1.80,$1.40,1400.0
+Jahmyr Gibbs,$0.10,3500,36.0,$3.50,$3.10,3100.0
+
+Minimum ROI:, -100.0
+Average ROI:, 1087.5
+

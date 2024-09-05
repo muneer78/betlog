@@ -1,0 +1,4 @@
+,Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,CleanedOdds,PotentialProfit,PotentialPayout,ImpliedProbability,Expected Value,ActualPayout
+11,2022-10-29,BetMGM,Basketball,538,,Celtics and Nuggets to Reach NBA Finals,Y,50.0,3000.0,L,,3000.0,1500.0,1500.0,3.0,-46.5,
+12,2022-10-29,BetMGM,Hockey,538,,Avalanche to Win Stanley Cup,Y,50.0,425.0,L,,425.0,212.5,212.5,19.0,-30.5,
+60,2023-05-29,FanDuel,Basketball,538,Hedging bet originally made for Celtics and Nuggets to reach the NBA Finals,Heat to win Eastern Conference,N,450.0,245.0,W	,,245.0,1102.5,1552.5,29.0,-188.5,

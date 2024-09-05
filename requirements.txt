@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+polars
+pulp
+aiohttp
+black[d]
+autopep8
+ruff
+tabulate
+prettytable

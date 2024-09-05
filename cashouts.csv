@@ -1,0 +1,32 @@
+,Date,Sportsbook,Sport,System,Notes,Pick,BetType,FreeBet,Amount,Odds,Result,PushAmount,ActualPayout,ROI
+3,9/1/2022,FanDuel,Football,Internet,,Chiefs Make  It To Super Bowl LVII,Futures,Y,$20.00,1000,P,9.26,$9.26,46.3
+28,11/9/2022,Barstool,Football,Internet,The Athletic,Tua Tagavailoa MVP,Prop,N,$2.50,1100,P,1.92,$1.92,76.8
+48,11/13/2022,Barstool,Soccer,Sheehan Newsletter,,Uruguay World Cup Winner,Futures,N,$0.27,5000,P,0.27,$0.27,100.0
+53,11/15/2022,DraftKings,Soccer,Intuition,,Verona Tie No Bet,Moneyline,Y,$0.25,200,P,0.09,$0.09,36.0
+67,11/27/2022,DraftKings,Football,KillerSports,3DP>=55 and A and D,Miami Dolphins,Total,N,$0.10,-110,P,0.1,$0.10,100.0
+69,11/30/2022,FanDuel,Basketball,CBS,,San Antonio Spurs +5,Spread,N,$0.09,-110,P,0.09,$0.09,100.0
+70,11/30/2022,FanDuel,College Basketball,CBS,,Navy,Moneyline,N,$0.09,162,P,0.09,$0.09,100.0
+72,11/30/2022,FanDuel,Basketball,CBS,,San Antonio Spurs,Moneyline,N,$0.09,164,P,0.1,$0.10,111.11
+73,11/30/2022,FanDuel,Basketball,CBS,,Clippers-Jazz score under 225,Total,N,$0.09,-110,P,0.09,$0.09,100.0
+74,11/30/2022,FanDuel,College Basketball,CBS,,Georgetown +16.5,Spread,N,$0.09,-105,P,0.09,$0.09,100.0
+75,11/30/2022,FanDuel,College Basketball,CBS,,George Mason,Moneyline,N,$0.09,162,P,0.12,$0.12,133.33
+76,11/30/2022,FanDuel,Basketball,CBS,,Rockets +11.5,Spread,N,$0.09,-114,P,0.09,$0.09,100.0
+84,11/30/2022,FanDuel,Basketball,CBS,,Pacers-Kings score over 243,Total,N,$0.09,-110,P,0.09,$0.09,100.0
+89,12/1/2022,FanDuel,College Basketball,CBS,,Manhattan,Moneyline,N,$0.09,118,P,0.12,$0.12,133.33
+90,12/1/2022,FanDuel,Basketball,CBS,,Detroit Pistons +7.5,Spread,N,$0.09,-110,P,0.15,$0.15,166.67
+96,12/2/2022,FanDuel,Soccer,CBS,,Brazil Tie No Bet,Moneyline,N,$0.09,-950,P,0.04,$0.04,44.44
+110,12/4/2022,FanDuel,Football,CBS,,Giants,Moneyline,Y,$0.09,108,P,0.09,$0.09,100.0
+113,12/4/2022,FanDuel,Football,Engelstad,,Giants 1-13 winning margin,Prop,Y,$0.09,185,P,0.09,$0.09,100.0
+139,12/8/2022,FanDuel,Football,CBS,,LA Chargers spread 3.5,Spread,Y,$0.09,-114,P,0.06,$0.06,66.67
+181,3/25/2023,DraftKings,Baseball,Internet,Read it on several sites,Angels to Win AL West,Futures,N,$0.50,750,P,0.35,$0.35,70.0
+190,3/26/2023,DraftKings,Baseball,Sheehan Newsletter,,Toronto Blue Jays AL Winner,Futures,N,$0.25,650,P,0.13,$0.13,52.0
+277,5/10/2023,PointsBet,Baseball,Low odds parlays,Trying out The Patent combo parlay,Yankees and Mariners moneylines and Cardinals run line,Parlay,N,$0.50,225,P,0.1,$0.10,20.0
+278,5/11/2023,PointsBet,Baseball,Low odds parlays,Trying out the Lucky 31 combo parlay,"Braves moneyline and Padres, Cubs, Twins, and White Sox run lines",Parlay,Y,$1.00,904,P,0.34,$0.34,34.0
+282,5/12/2023,PointsBet,Baseball,Low odds parlays,Trying out The Goliath combo parlay,8 leg parlay of moneylines and run lines,Parlay,Y,$25.00,2565,P,1.7,$1.70,6.8
+312,5/24/2023,DraftKings,Basketball,Hedge,,Miami Heat to win NBA chapionship,Futures,N,$1.00,360,P,0.16,$0.16,16.0
+344,5/29/2023,PointsBet,Baseball,Low odds parlays,,Rangers and Cardinals moneylines,Parlay,N,$0.50,138,P,0.11,$0.11,22.0
+354,5/30/2023,PointsBet,Baseball,Laghezza,,Royals-Cardinals,Total,N,$0.50,-120,P,0.07,$0.07,14.0
+358,5/31/2023,DraftKings,Baseball,CBS,,Reds and Yankees run lines,Parlay,N,$0.20,162,P,0.27,$0.27,135.0
+367,6/2/2023,PointsBet,Baseball,Laghezza,,Tigers-White Sex,Total,N,$0.50,-115,P,0.06,$0.06,12.0
+394,6/16/2023,DraftKings,Baseball,Low odds parlays,,Cubs and White Sox run lines,Parlay,N,$0.12,137,P,0.16,$0.16,133.33
+417,6/23/2023,DraftKings,Baseball,Sam Wolff,,Rangers F5,Moneyline,N,$0.10,-110,P,,$nan,

@@ -1,0 +1,10 @@
+Date,Sportsbook,Sport,System,Notes,Pick,BetType,FreeBet,Amount,Odds,PotentialProfit,PotentialPayout,ImpliedProbability,Expected Value
+2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Braves to win NL,Futures,N,$1.00,670.0,$6.70,$7.70,13.0,$0.13
+2023-03-26,DraftKings,Baseball,Laghezza,,Esteury Ruiz SB Leader,Futures,N,$0.25,700.0,$1.75,$2.00,12.0,$0.78
+2023-03-29,DraftKings,Baseball,Sheehan Newsletter,,Boston Red Sox finish 4th in division,Futures,N,$0.25,185.0,$0.46,$0.71,35.0,$0.84
+2023-03-29,DraftKings,Baseball,Sheehan Newsletter,,SF Giants finish 4th in division,Futures,N,$0.25,300.0,$0.75,$1.00,25.0,$0.81
+2023-04-22,PointsBet,Football,Intuition,,Chiefs to win AFC Championship,Futures,Y,$2.50,350.0,$8.75,$8.75,22.0,$-0.95
+2023-05-13,DraftKings,Baseball,Intuition,,James Outman to win NL ROY,Futures,N,$0.25,135.0,$0.34,$0.59,43.0,$0.86
+2023-05-25,DraftKings,College Football,Intuition,,Shedeur Sanders Heisman winner,Futures,N,$0.10,15000.0,$15.00,$15.10,1.0,$0.90
+2023-05-25,DraftKings,College Football,Intuition,,Colorado to win Pac 12,Futures,N,$0.10,12000.0,$12.00,$12.10,1.0,$0.90
+2023-05-25,DraftKings,College Football,Intuition,,KU to win Big 12,Futures,N,$0.10,3500.0,$3.50,$3.60,3.0,$0.90
