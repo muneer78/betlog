@@ -1,6 +1,6 @@
 ROI By Sport
 Sport,Profit,MoneyRisked,ROI
-Baseball,$-3.30,$63.70,-5.18
+Baseball,$-6.25,$63.90,-9.78
 Basketball,"$1,553.20",$579.77,267.9
 College Baseball,$-0.56,$1.10,-50.91
 College Basketball,$-3.60,$17.92,-20.09
@@ -26,26 +26,28 @@ Date,Profit
 2023-08,$-1.41
 2023-10,$0.10
 2023-11,$0.46
-2023-12,$0.98
-2024-02,$-5.33
-2024-03,$0.16
+2023-12,$0.68
+2024-02,$-6.79
+2024-03,$-0.93
 2024-04,$-0.11
-2024-05,$0.33
+2024-05,$0.23
+2024-08,$0.00
+2024-09,$0.00
 
 ROI by Sportsbook
 Sportsbook,Profit,MoneyRisked,ROI
 Barstool,$8.66,$4.31,200.93
 BetMGM,$5.00,$149.00,3.36
-Caesars,$0.98,$1.30,75.38
-DraftKings,$-3.97,$33.38,-11.89
-FanDuel,"$1,576.00",$574.96,274.11
+Caesars,$0.68,$1.30,52.31
+DraftKings,$-4.92,$33.58,-14.65
+FanDuel,"$1,574.30",$574.96,273.81
 Fanatics,$0.33,$0.20,165.0
 PointsBet,$8.75,$58.50,14.96
 
 Profit by System
 System,Profit
 538,"$1,552.50"
-Action Network,$-0.10
+Action Network,$-0.50
 Bart Parry,$1.17
 Bart Torvik,$-0.97
 CBS,$-0.30
@@ -54,31 +56,32 @@ Discord,$0.00
 Favorable odds,$0.03
 Golf magazine system,$0.05
 Hedge,$1.46
-Internet,$42.41
-Intuition,$14.21
+Internet,$42.21
+Intuition,$13.95
 KenPom,$4.50
-Laghezza,$-1.86
+Laghezza,$-2.16
 NBA Advanced Stats,$0.12
 Neil Greenberg,$-2.00
 Neil Paine,$-0.10
-Odds history,$-1.16
+Odds history,$-2.56
 Positive odds,$-1.00
 Promo,$0.00
-Sheehan Newsletter,$-13.64
-Sportsline,$1.23
+Sheehan Newsletter,$-13.94
+Sportsline,$1.14
 Trevor May,$0.00
 Wild Card Gets To World Series Angle,$-0.30
 
 Free Bet ROI
 FreeBet,Profit,MoneyRisked,ROI
-N,"$1,534.21",$517.94,296.21
+C,$0.24,$0.20,120.0
+N,"$1,531.02",$517.94,295.6
 Y,$61.54,$303.71,20.26
 
 Total ROI
 TotalWon,TotalRisked,TotalROI
-1595.75,821.65,194.21
+1592.8,821.85,193.81
 
 Total Win Percentage
 TotalBetsWon,TotalBetsLost,gamblerzscore,winning_pct
-38,188,-9.98,13.45
+38,212,-11.0,12.16
 
