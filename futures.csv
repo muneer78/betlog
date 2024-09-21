@@ -201,10 +201,10 @@ Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,be
 2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Cardinals,N,0.1,4000,C,0.09,2024 MLB Champion
 2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Guardians,N,0.1,6000,C,0.09,2024 MLB Champion
 2023-12-01,DraftKings,Football,Discord,,AFC North Champion - Cleveland Browns,Y,0.25,800,L,,
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Reds,N,0.1,2500,P,,2024 MLB NL Champion
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Reds,N,0.1,2500,L,,2024 MLB NL Champion
 2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Cubs,N,0.1,1200,L,,2024 MLB NL Champion
 2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Brewers,N,0.1,1700,P,,2024 MLB NL Champion
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Cardinals,N,0.1,1200,P,,2024 MLB NL Champion
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Cardinals,N,0.1,1200,L,,2024 MLB NL Champion
 2023-12-01,Caesars,Baseball,Sheehan Newsletter,,AL Champion- Guardians,N,0.1,2200,P,,2024 MLB AL Chamption
 2023-12-04,FanDuel,Basketball,KenPom,High defensive rating,ACC Champion- Virginia,N,0.1,650,C,0.10,
 2023-12-04,FanDuel,Basketball,KenPom,High defensive rating,Big 12 Champion - BYU,N,0.1,1000,C,0.10,
@@ -234,11 +234,11 @@ Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,be
 2024-02-26,DraftKings,College Baseball,Odds history,,Champion- LSU,N,0.2,750,C,0.02,2024 NCAA College Baseball Champion
 2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- DET/KC,N,0.2,1900,L,,2024 MLB AL Central Finish 1st and 2nd Place
 2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- CLE/KC,N,0.2,2000,P,,2024 MLB AL Central Finish 1st and 2nd Place
-2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- MIN/KC,N,0.2,650,P,,2024 MLB AL Central Finish 1st and 2nd Place
+2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- MIN/KC,N,0.2,650,L,,2024 MLB AL Central Finish 1st and 2nd Place
 2024-02-26,DraftKings,Baseball,Trevor May,,World Series Exact - Orioles beat Braves,Y,0.1,4000,P,,2024 MLB World Series Exact
-2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Shohei Ohtani,N,0.2,900,P,,2024 MLB Home Run Leader
+2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Shohei Ohtani,N,0.2,900,L,,2024 MLB Home Run Leader
 2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Yordan Alvarez,N,0.2,1300,L,,2024 MLB Home Run Leader
-2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Juan Soto,N,0.2,1400,P,,2024 MLB Home Run Leader
+2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Juan Soto,N,0.2,1400,L,,2024 MLB Home Run Leader
 2024-02-26,FanDuel,Baseball,Odds history,,"Home Run Leader- Vlad, Jr",N,0.2,1900,L,,2024 MLB Home Run Leader
 2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Ronald Acuna,N,0.2,1900,L,,2024 MLB Home Run Leader
 2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Kyle Tucker,N,0.2,3000,L,,2024 MLB Hits Leader
@@ -268,13 +268,13 @@ Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,be
 2024-03-13,DraftKings,Baseball,Sportsline,,AL Winner- Guardians,N,0.1,2800,C,0.19,2024 MLB AL Champion
 2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Yankees,N,0.1,1000,P,,2024 MLB Champion
 2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Phillies,N,0.1,1500,P,,2024 MLB Champion
-2024-03-13,DraftKings,Baseball,Sportsline,,AL Cy Young- Cole Ragans,N,0.1,1800,P,,2024 AL Cy Young
+2024-03-13,DraftKings,Baseball,Sportsline,,AL Cy Young- Cole Ragans,N,0.1,1800,L,,2024 AL Cy Young
 2024-03-13,DraftKings,Baseball,Intuition,,"Runs Leader- Bobby Witt, Jr.",N,0.1,1300,P,,
 2024-03-13,DraftKings,Baseball,Intuition,,"Doubles Leader- Bobby Witt, Jr.",N,0.1,2500,P,,
 2024-03-13,DraftKings,Baseball,Intuition,,League Playoff Seed- Royals #6,N,0.1,2000,P,,
 2024-03-17,DraftKings,Baseball,Laghezza,,Home Run Leader- Adolis Garcia,N,0.1,4500,L,,2024 MLB Home Run Leader
 2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Oneil Cruz,N,0.1,11000,L,,2024 MLB Home Run Leader
-2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Marcell Ozuna,N,0.1,9500,P,,2024 MLB Home Run Leader
+2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Marcell Ozuna,N,0.1,9500,L,,2024 MLB Home Run Leader
 2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Jake Burger,N,0.1,12000,L,,2024 MLB Home Run Leader
 2024-03-17,FanDuel,Baseball,Laghezza,,"Hits Leader- Vlad, Jr.",N,0.1,6500,L,,2024 MLB Hits Leader
 2024-03-17,FanDuel,Baseball,Laghezza,,Stolen Bases Leader- CJ Abrams,N,0.1,850,L,,2024 MLB Stolen Bases Leader
@@ -284,10 +284,10 @@ Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,be
 2024-03-19,DraftKings,Baseball,Sheehan Newsletter,,RBI Leader- Nolan Arenado,N,0.1,5500,L,,2024 MLB RBI Leader
 2024-03-19,DraftKings,Baseball,Sheehan Newsletter,,RBI Leader- Alex Bregman,N,0.1,5500,L,,2024 MLB RBI Leader
 2024-03-19,DraftKings,Baseball,Internet,https://www.mlb.com/news/mlb-strikeout-leader-candidates-for-2024,K Leader- Hunter Greene,N,0.1,1400,L,,2024 MLB K Leader
-2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/baseball-strikeout-leader-odds/,K Leader- Cole Ragans,N,0.1,2500,P,,2024 MLB K Leader
+2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/baseball-strikeout-leader-odds/,K Leader- Cole Ragans,N,0.1,2500,L,,2024 MLB K Leader
 2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/baseball-strikeout-leader-odds/,K Leader- Kodai Senga,N,0.1,2000,L,,2024 MLB K Leader
 2024-03-19,DraftKings,Baseball,Internet,https://www.actionnetwork.com/mlb/mlb-predictions-2024-stat-leaders-best-bets-home-runs-strikeouts-stolen-bases,K Leader- Nick Pivetta,N,0.1,5000,L,,2024 MLB K Leader
-2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/rbi-leader-odds/,RBI Leader- Shohei Ohtani,N,0.1,900,P,,2024 MLB RBI Leader
+2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/rbi-leader-odds/,RBI Leader- Shohei Ohtani,N,0.1,900,L,,2024 MLB RBI Leader
 2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/rbi-leader-odds/,RBI Leader- Ronald Acuna,N,0.1,3000,L,,2024 MLB RBI Leader
 2024-03-19,DraftKings,Baseball,Intuition,,"RBI Leader- Bobby Witt, Jr.",N,0.1,7000,L,,2024 MLB RBI Leader
 2024-03-26,DraftKings,Baseball,Action Network,+200 odds boost,Home Run Leader- Austin Riley,N,0.1,2100,L,,2024 MLB Home Run Leader
@@ -306,4 +306,4 @@ Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,be
 2024-04-20,DraftKings,Golf,Sportsline,,2024 PGA Championship Winner- Rory McIlroy,N,0.10,900,L,,2024 PGA Championship Winner
 2024-04-20,DraftKings,Golf,Sportsline,,2024 PGA Championship Winner- Jon Rahm,N,0.10,1000,L,,2024 PGA Championship Winner
 2024-05-02,Fanatics,Basketball,Intuition,,Series Winner- Wolves,Y,0.20,165,W,,
-2024-05-23,DraftKings,Baseball,Intuition,,AL Cy Young- Seth Lugo,N,0.10,2200,P,,2024 AL Cy Young
+2024-05-23,DraftKings,Baseball,Intuition,,AL Cy Young- Seth Lugo,N,0.10,2200,L,,2024 AL Cy Young
