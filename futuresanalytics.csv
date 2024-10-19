@@ -1,88 +1,49 @@
 ROI By Sport
 Sport,Profit,MoneyRisked,ROI
-Baseball,$-3.28,$65.70,-4.99
-Basketball,"$1,553.20",$579.77,267.9
-College Baseball,$-0.56,$1.10,-50.91
-College Basketball,$-3.60,$17.92,-20.09
-College Football,$-0.27,$0.50,-54.0
-Cricket,$0.00,$10.00,0.0
-Football,$49.39,$59.13,83.53
-Golf,$0.51,$6.90,7.39
-Hockey,$0.00,$75.00,0.0
-Soccer,$0.38,$7.63,4.98
+Baseball,$-0.80,$9.40,-8.51
+Football,$0.00,$0.25,0.0
 
 Profit by Month
 Date,Profit
-2022-09,$37.46
-2022-10,$-20.00
-2022-11,$14.26
-2022-12,$5.20
-2023-02,$0.00
-2023-03,$-3.80
-2023-04,$8.75
-2023-05,"$1,552.11"
-2023-06,$4.75
-2023-07,$1.84
-2023-08,$-1.41
-2023-10,$0.10
 2023-11,$0.46
-2023-12,$0.58
-2024-02,$-2.69
-2024-03,$-1.43
-2024-04,$-0.11
-2024-05,$0.23
+2023-12,$-0.40
+2024-02,$1.84
+2024-03,$-2.80
+2024-05,$-0.10
 2024-08,$0.06
-2024-09,$-0.59
+2024-09,$0.14
 
 ROI by Sportsbook
 Sportsbook,Profit,MoneyRisked,ROI
-Barstool,$8.66,$4.31,200.93
-BetMGM,$5.00,$149.00,3.36
-Caesars,$0.48,$1.40,34.29
-DraftKings,$-1.36,$33.98,-4.0
-FanDuel,"$1,573.91",$576.26,273.12
-Fanatics,$0.33,$0.20,165.0
-PointsBet,$8.75,$58.50,14.96
+Caesars,$-0.50,$0.60,-83.33
+DraftKings,$2.18,$4.75,45.89
+FanDuel,$-2.48,$4.30,-57.67
 
 Profit by System
 System,Profit
-538,"$1,552.50"
 Action Network,$-0.60
-Bart Parry,$1.17
-Bart Torvik,$-0.97
-CBS,$-0.30
-Data analysis,$-0.50
 Discord,$0.00
-Favorable odds,$0.03
-Golf magazine system,$0.05
-Hedge,$1.46
-Internet,$42.21
-Intuition,$17.75
-KenPom,$4.50
-Laghezza,$-2.16
-NBA Advanced Stats,$0.12
-Neil Greenberg,$-2.00
-Neil Paine,$-0.10
-Odds history,$-2.56
-Positive odds,$-1.00
-Promo,$0.00
-Sheehan Newsletter,$-14.18
-Sportsline,$1.14
+Internet,$-0.60
+Intuition,$3.34
+Laghezza,$-0.90
+Odds history,$-2.00
+Sheehan Newsletter,$-0.28
+Sportsline,$0.00
 Trevor May,$0.00
-Wild Card Gets To World Series Angle,$-0.70
-Wild Card Wins World Series Angle,$-0.09
+Wild Card Gets To World Series Angle,$0.08
+Wild Card Wins World Series Angle,$0.16
 
 Free Bet ROI
 FreeBet,Profit,MoneyRisked,ROI
 C,$0.24,$0.20,120.0
-N,"$1,533.99",$519.74,295.15
-Y,$61.54,$303.71,20.26
+N,$-1.04,$9.00,-11.56
+Y,$0.00,$0.45,0.0
 
 Total ROI
 TotalWon,TotalRisked,TotalROI
-1595.77,823.65,193.74
+-0.8,9.65,-8.29
 
 Total Win Percentage
 TotalBetsWon,TotalBetsLost,gamblerzscore,winning_pct
-39,229,-11.61,11.64
+1,62,-7.69,1.27
 

@@ -1,12 +1,4 @@
-Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,bet_group,Unnamed: 12
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,AL Champion- Guardians,N,0.1,2200.0,2024 MLB AL Chamption,
-2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Yankees,N,0.1,1000.0,2024 MLB Champion,
-2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Phillies,N,0.1,1500.0,2024 MLB Champion,
-2024-09-24,DraftKings,Baseball,Wild Card Wins World Series Angle,,ML Champion- Royals,N,0.1,4000.0,2024 MLB Champion,
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.1,5000.0,2024 AL Champion,
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Royals,N,0.1,1600.0,2024 AL Champion,
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.1,1900.0,2024 AL Champion,
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Padres,N,0.1,600.0,2024 NL Champion,
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.1,1400.0,2024 NL Champion,
-2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Padres,N,0.1,1200.0,2024 MLB Champion,
-2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Mets,N,0.1,3000.0,2024 MLB Champion,
+Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,bet_group
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,AL Champion- Guardians,N,0.1,2200,2024 MLB AL Champion
+2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Yankees,N,0.1,1000,2024 MLB Champion
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.1,1400,2024 MLB NL Champion

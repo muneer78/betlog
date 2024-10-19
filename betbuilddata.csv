@@ -1,327 +1,82 @@
-Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,bet_group,Unnamed: 12,CleanedOdds,PotentialProfit,PotentialPayout,ImpliedProbability,Expected Value,ActualPayout
-2022-09-01,FanDuel,Football,Internet,,Jaguars over 6.5 Wins 2022-23,Y,10.0,115.0,W,,,,115.0,11.5,11.5,47.0,-0.3,11.5
-2022-09-01,FanDuel,Football,Internet,,Chiefs over 10.5 Wins Wins 2022-23,Y,10.0,-115.0,W,,,,115.0,8.7,8.7,53.0,1.3,8.7
-2022-09-01,FanDuel,Football,Internet,,Lions over 6.5 Wins 2022-23,Y,10.0,-125.0,W,,,,125.0,8.0,8.0,56.0,1.6,8.0
-2022-09-01,FanDuel,Football,Internet,,AFC Champion 2023- Chiefs,Y,20.0,1000.0,C,9.26,,,1000.0,200.0,200.0,9.0,-16.2,9.26
-2022-09-01,FanDuel,Basketball,Internet,,Western Conference Champion- Golden State Warriors,Y,10.0,320.0,L,,,,320.0,32.0,32.0,24.0,-4.6,0.0
-2022-09-01,FanDuel,Basketball,Internet,,MVP- Luka Doncic,Y,10.0,450.0,L,,,,450.0,45.0,45.0,18.0,-6.2,0.0
-2022-10-15,FanDuel,Baseball,Sheehan Newsletter,,NL Division Series Champion- Braves,N,10.0,120.0,L,,,,120.0,12.0,22.0,45.0,-0.5,-10.0
-2022-10-15,FanDuel,Baseball,Sheehan Newsletter,,NL Champion- Dodgers,Y,10.0,300.0,L,,,,300.0,30.0,30.0,25.0,-4.5,0.0
-2022-10-18,FanDuel,Baseball,Sheehan Newsletter,,AL Champion- Yankees,Y,10.0,480.0,L,,,,480.0,48.0,48.0,17.0,-6.3,0.0
-2022-10-20,BetMGM,Basketball,Internet,,New Orleans Pelicans over 45.5 wins,N,10.0,100.0,L,,,,100.0,10.0,20.0,50.0,0.0,-10.0
-2022-10-20,BetMGM,Basketball,Internet,,NBA Champion- Golden State Warriors,Y,5.0,600.0,L,,,,600.0,30.0,30.0,14.0,-3.3,0.0
-2022-10-29,BetMGM,Hockey,538,,NHL Champion- Avalanche,Y,50.0,425.0,L,,2023 NHL Champion,,425.0,212.5,212.5,19.0,-30.5,0.0
-2022-10-29,BetMGM,Basketball,538,,NBA Finals Matchup- Celtics and Nuggets,Y,50.0,3000.0,L,,,,3000.0,1500.0,1500.0,3.0,-46.5,0.0
-2022-11-05,BetMGM,Baseball,Internet,,MLB Champion- Houston Astros,Y,10.0,115.0,W,,,,115.0,11.5,11.5,47.0,-0.3,11.5
-2022-11-09,Barstool,Football,Internet,The Athletic,MVP- Tua Tagavailoa,N,2.5,1100.0,C,1.92,,,1100.0,27.5,30.0,8.0,-1.3,1.92
-2022-11-10,FanDuel,Cricket,Intuition,,World Cup Champion- India,Y,10.0,300.0,L,,,,300.0,30.0,30.0,25.0,-4.5,0.0
-2022-11-13,Barstool,Soccer,Sheehan Newsletter,,World Cup Champion- Uruguay,N,0.27,5000.0,C,0.27,,,5000.0,13.5,13.77,2.0,0.74,0.27
-2022-11-13,Barstool,College Basketball,Sheehan Newsletter,,ACC Champion- Georgia Tech,N,0.5,15000.0,L,,2023 NCAAB ACC Basketball Champion,,15000.0,75.0,75.5,1.0,0.5,-0.5
-2022-11-16,DraftKings,College Basketball,Hedge,,ACC Champion- UNC,N,0.7,150.0,L,,2023 NCAAB ACC Basketball Champion,,150.0,1.05,1.75,40.0,0.58,-0.7
-2022-11-19,Barstool,College Basketball,Intuition,,Big 12 Champion- KU,N,0.52,240.0,W,,,,240.0,1.25,1.77,29.0,0.63,1.77
-2022-12-09,FanDuel,Soccer,Intuition,,Netherlands to advance,Y,0.09,130.0,L,,,,130.0,0.12,0.12,43.0,0.95,0.0
-2022-12-09,FanDuel,Soccer,Intuition,,Brazil and Netherlands to advance,Y,0.09,165.0,L,,,,165.0,0.15,0.15,38.0,0.94,0.0
-2022-12-09,FanDuel,Soccer,Intuition,,Netherlands to advance,Y,0.09,130.0,L	,,,,130.0,0.12,0.12,43.0,0.95,0.0
-2022-12-09,FanDuel,Soccer,Promo,Odds boost,Brazil & Argentina to qualify for Semi finals,Y,0.09,120.0,L,,,,120.0,0.11,0.11,45.0,0.95,0.0
-2022-12-31,Barstool,Basketball,KenPom,High defensive rating,WCC Champion- Saint Mary’s,N,0.52,900.0,W,,,,900.0,4.68,5.2,10.0,0.53,5.2
-2023-02-16,FanDuel,Baseball,Intuition,,AL Central Champion- Cleveland Guardians,Y,5.0,135.0,L,,,,135.0,6.75,6.75,43.0,0.15,0.0
-2023-03-21,BetMGM,College Basketball,KenPom,,NCAA Tournament Champion- Houston,Y,10.0,400.0,L,,,,400.0,40.0,40.0,20.0,-6.0,0.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Angels 2nd in AL West,N,0.5,310.0,L,,,,310.0,1.55,2.05,24.0,0.62,-0.5
-2023-03-25,DraftKings,Baseball,Internet,Read it on several sites,AL West Champion- Angels,N,0.5,750.0,C,0.35,,,750.0,3.75,4.25,12.0,0.56,0.35
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,NL Champion- Braves,N,1.0,670.0,L,,,,670.0,6.7,7.7,13.0,0.13,-1.0
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Royals 4th in AL Central,N,0.5,180.0,L,,2023 MLB KC Royals Division Finish,,180.0,0.9,1.4,36.0,0.68,-0.5
-2023-03-25,DraftKings,Baseball,Intuition,,Royals 3rd in AL Central,N,0.5,475.0,L,,2023 MLB KC Royals Division Finish,,475.0,2.38,2.88,17.0,0.58,-0.5
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Tigers 5th in AL Central,N,0.5,115.0,L,,,,115.0,0.57,1.07,47.0,0.74,-0.5
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,NL West Champion- Padres,N,0.5,120.0,L,,,,120.0,0.6,1.1,45.0,0.72,-0.5
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,AL Central Champion- White Sox,N,0.5,250.0,L,,,,250.0,1.25,1.75,29.0,0.64,-0.5
-2023-03-25,DraftKings,Baseball,Sheehan Newsletter,,Guardians 2nd place in AL Central,N,0.5,215.0,L,,,,215.0,1.08,1.58,32.0,0.66,-0.5
-2023-03-26,DraftKings,Baseball,Laghezza,,Kyle Tucker over 154.5 hits,N,0.25,-105.0,W,,,,105.0,0.24,0.49,51.0,0.88,0.49
-2023-03-26,DraftKings,Baseball,Laghezza,,AL ROY- Masataka Yoshida,N,0.25,500.0,L,,,,500.0,1.25,1.5,17.0,0.79,-0.25
-2023-03-26,DraftKings,Baseball,Laghezza,,Hits Leader- Steven Kwan,N,0.25,3500.0,L,,,,3500.0,8.75,9.0,3.0,0.76,-0.25
-2023-03-26,DraftKings,Baseball,Laghezza,,AL Cy Young- Shane McClanahan,N,0.25,1200.0,L,,2023 MLB AL Cy Young,,1200.0,3.0,3.25,8.0,0.77,-0.25
-2023-03-26,DraftKings,Baseball,Laghezza,,AL Cy Young- Luis Castillo,N,0.25,1700.0,L,,2023 MLB AL Cy Young,,1700.0,4.25,4.5,6.0,0.76,-0.25
-2023-03-26,DraftKings,Baseball,Laghezza,,Runs Leader- Steven Kwan,N,0.25,7000.0,L,,,,7000.0,17.5,17.75,1.0,0.75,-0.25
-2023-03-26,DraftKings,Baseball,Laghezza,,AL MVP- Kyle Tucker,N,0.25,2500.0,L,,2023 MLB AL MVP,,2500.0,6.25,6.5,4.0,0.76,-0.25
-2023-03-26,DraftKings,Baseball,Sheehan Newsletter,,AL Champion- Toronto Blue Jays,N,0.25,650.0,C,0.13,,,650.0,1.62,1.87,13.0,0.78,0.13
-2023-03-26,DraftKings,Baseball,Intuition,,Spencer Strider over 206.5 K's,N,0.25,-105.0,W,,,,105.0,0.24,0.49,51.0,0.88,0.49
-2023-03-26,DraftKings,Baseball,Intuition,,Jacob deGrom under 198.5 K's,N,0.25,-120.0,W,,,,120.0,0.21,0.46,55.0,0.89,0.46
-2023-03-26,DraftKings,Baseball,Intuition,,Blake Snell under 183.5 K's,N,0.25,-120.0,L,,,,120.0,0.21,0.46,55.0,0.89,-0.25
-2023-03-26,DraftKings,Baseball,Laghezza,,SB Leader- Esteury Ruiz,N,0.25,700.0,L,,,,700.0,1.75,2.0,12.0,0.78,-0.25
-2023-03-26,DraftKings,Baseball,Intuition,,Royals to win 67-72 games,N,0.25,265.0,L,,,,265.0,0.66,0.91,27.0,0.82,-0.25
-2023-03-26,DraftKings,Baseball,Intuition,,AL MVP- Shohei Ohtani,N,0.25,190.0,W,,2023 MLB AL MVP,,190.0,0.48,0.73,34.0,0.84,0.73
-2023-03-29,DraftKings,Baseball,Sheehan Newsletter,,Blue Jays over 101 wins,N,0.25,600.0,L,,,,600.0,1.5,1.75,14.0,0.78,-0.25
-2023-03-29,DraftKings,Baseball,Sheehan Newsletter,,SF Giants finish 4th in division,N,0.25,300.0,W,,,,300.0,0.75,1.0,25.0,0.81,1.0
-2023-03-29,DraftKings,Baseball,Sheehan Newsletter,,Boston Red Sox finish 4th in division,N,0.25,185.0,L,,,,185.0,0.46,0.71,35.0,0.84,-0.25
-2023-04-18,PointsBet,Hockey,538,,NHL Champion- Bruins,Y,25.0,280.0,L,,2023 NHL Champion,,280.0,70.0,70.0,26.0,-11.5,0.0
-2023-04-19,PointsBet,Basketball,538,,Division Series Champion- Cavs,Y,25.0,-125.0,L,,,,125.0,20.0,20.0,56.0,4.0,0.0
-2023-04-22,PointsBet,Soccer,538,,Europa Conference Cup Champion- Fiorentina ,Y,2.5,200.0,L,,,,200.0,5.0,5.0,33.0,-0.67,0.0
-2023-04-22,PointsBet,Soccer,538,,Europa Cup Champion- Bayer Leverkusen,Y,2.5,275.0,L,,,,275.0,6.88,6.88,27.0,-0.82,0.0
-2023-04-22,PointsBet,Football,Intuition,,AFC Champion- Chiefs,Y,2.5,350.0,W,,,,350.0,8.75,8.75,22.0,-0.95,8.75
-2023-05-13,BetMGM,Basketball,Intuition,,Division Series Champion- Lakers,Y,5.0,120.0,L,,,,120.0,6.0,6.0,45.0,0.25,0.0
-2023-05-13,BetMGM,Basketball,Intuition,Hedge against Nuggets winning Western Conference,Western Conference Champion- Lakers,Y,5.0,120.0,L,,,,120.0,6.0,6.0,45.0,0.25,0.0
-2023-05-13,DraftKings,Baseball,Intuition,,NL ROY- James Outman,N,0.25,135.0,L,,,,135.0,0.34,0.59,43.0,0.86,-0.25
-2023-05-24,DraftKings,Basketball,Hedge,,NBA Champion- Miami Heat,N,1.0,360.0,C,0.16,,,360.0,3.6,4.6,22.0,0.22,0.16
-2023-05-25,DraftKings,College Football,Intuition,,Big 12 Champion- KU,N,0.1,3500.0,L,,,,3500.0,3.5,3.6,3.0,0.9,-0.1
-2023-05-25,DraftKings,College Football,Intuition,,Pac 12 Champion- Colorado,N,0.1,12000.0,L,,,,12000.0,12.0,12.1,1.0,0.9,-0.1
-2023-05-25,DraftKings,College Football,Intuition,,Heisman winner- Shedeur Sanders,N,0.1,15000.0,L,,,,15000.0,15.0,15.1,1.0,0.9,-0.1
-2023-05-29,FanDuel,Basketball,538,Hedging bet originally made for Celtics and Nuggets to reach the NBA Finals,Eastern Conference Champion- Heat,N,450.0,245.0,W	,,,,245.0,1102.5,1552.5,29.0,-188.5,1552.5
-2023-06-02,BetMGM,Basketball,Intuition,,NBA Finals ends in 5 games,Y,2.0,175.0,W,,,,175.0,3.5,3.5,36.0,-0.28,3.5
-2023-06-14,BetMGM,Golf,Internet,,Winner - Cameron Smith,Y,2.0,2800.0,L,,,,2800.0,56.0,56.0,3.0,-0.94,0.0
-2023-06-17,DraftKings,College Baseball,Intuition,,College World Series Champion- Wake Forest,Y,0.1,170.0,L,,,,170.0,0.17,0.17,37.0,0.94,0.0
-2023-06-22,DraftKings,Basketball,Data analysis,,"1-3 correct order NBA draft: Wemby, Scoot, Miller",N,0.25,140.0,W	,,,,140.0,0.35,0.6,42.0,0.86,0.0
-2023-06-22,DraftKings,Basketball,Intuition,,Jarace Walker to be drafted over Ausar Thompson,N,0.25,140.0,L,,,,140.0,0.35,0.6,42.0,0.86,-0.25
-2023-06-22,DraftKings,Basketball,Intuition,,Top 10 Pick- Bilal Colulibaly,N,0.25,100.0,W,,,,100.0,0.25,0.5,50.0,0.88,0.5
-2023-06-22,DraftKings,Basketball,Intuition,,Top 10 Pick- Gradey Dick,N,0.25,320.0,L,,,,320.0,0.8,1.05,24.0,0.81,-0.25
-2023-06-22,DraftKings,Basketball,Intuition,,Top 5 Pick- Jarace Walker,N,0.25,140.0,L,,,,140.0,0.35,0.6,42.0,0.86,-0.25
-2023-06-22,DraftKings,Basketball,Hedge,,"1-5 correct order NBA draft: Wemby, Miller, Scoot, Amen, Jarace",N,0.5,2000.0,L,,2023 NBA Draft Order 1-5,,2000.0,10.0,10.5,5.0,0.52,-0.5
-2023-06-22,DraftKings,Basketball,Hedge,,"1-5 correct order NBA draft: Wemby, Miller, Scoot, Amen, Jarace",N,0.5,600.0,L,,2023 NBA Draft Order 1-5,,600.0,3.0,3.5,14.0,0.57,-0.5
-2023-06-22,DraftKings,Basketball,Hedge,,"1-5 correct order NBA draft: Wemby, Miller, Scoot, Amen, Ausar",N,0.5,500.0,W,,2023 NBA Draft Order 1-5,,500.0,2.5,3.0,17.0,0.58,3.0
-2023-06-22,DraftKings,Basketball,Data analysis,,"1-5 correct order NBA draft: Wemby, Scoot, Miller, Amen, Ausar",N,0.5,200.0,L,,2023 NBA Draft Order 1-5,,200.0,1.0,1.5,33.0,0.66,-0.5
-2023-07-19,DraftKings,Soccer,Internet,,Reach Semi Final - Netherlands,N,0.1,350.0,L,,,,350.0,0.35,0.45,22.0,0.92,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Top 5- Cameron Smith,N,0.1,450.0,L,,,,450.0,0.45,0.55,18.0,0.92,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Top 10- Cameron Smith,N,0.1,220.0,L,,,,220.0,0.22,0.32,31.0,0.93,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Top 5- Rory McIlroy,N,0.1,190.0,L,,,,190.0,0.19,0.29,34.0,0.93,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Top 10- Tyrell Hatton,N,0.1,260.0,L,,,,260.0,0.26,0.36,28.0,0.93,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Top 10- Jason Day,N,0.1,100.0,W,,,,100.0,0.1,0.2,50.0,0.95,0.2
-2023-07-19,DraftKings,Golf,Internet,,Top 10- Cameron Young,N,0.1,550.0,W,,,,550.0,0.55,0.65,15.0,0.92,0.65
-2023-07-19,DraftKings,Golf,Internet,,Top 10- Tom Kim,N,0.1,550.0,W,,,,550.0,0.55,0.65,15.0,0.92,0.65
-2023-07-19,DraftKings,Golf,Internet,Odds boost,Winner - Scottie Scheffler,N,0.1,1000.0,L,,2023 PGA The Open Championship,,1000.0,1.0,1.1,9.0,0.91,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Winner - Cameron Smith,N,0.1,2000.0,L,,2023 PGA The Open Championship,,2000.0,2.0,2.1,5.0,0.9,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Top 5- Scottie Scheffler,N,0.1,150.0,L,,,,150.0,0.15,0.25,40.0,0.94,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Reach Semi Final - Germany,N,0.1,110.0,L,,,,110.0,0.11,0.21,48.0,0.95,-0.1
-2023-07-19,DraftKings,Golf,Internet,,Top 10- Collin Morikawa,N,0.1,280.0,L,,,,280.0,0.28,0.38,26.0,0.93,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Top Goalscorer- Barbra Banda,N,0.1,2500.0,C,0.01,,,2500.0,2.5,2.6,4.0,0.9,0.01
-2023-07-19,DraftKings,Football,Internet,,Denver Broncos to lsoe in Wild Card Round,N,0.1,450.0,C,0.04,,,450.0,0.45,0.55,18.0,0.92,0.04
-2023-07-19,DraftKings,Football,Internet,,Chiefs to lose in Super Bowl,N,0.1,750.0,C,0.1,,,750.0,0.75,0.85,12.0,0.91,0.1
-2023-07-19,DraftKings,Soccer,Internet,,Goals Leader- Sophia Smith,N,0.1,600.0,L,,2023 Women's World Cup Goals Leader,,600.0,0.6,0.7,14.0,0.91,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Goals Leader- Sam Kerr,N,0.1,750.0,C,0.02,2023 Women's World Cup Goals Leader,,750.0,0.75,0.85,12.0,0.91,0.02
-2023-07-19,DraftKings,Soccer,Internet,,Reach Semi Final - Denmark,N,0.1,750.0,L,,,,750.0,0.75,0.85,12.0,0.91,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Name the Final - USA v. Germany,N,0.1,650.0,L,,,,650.0,0.65,0.75,13.0,0.91,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Goals Leader- Bethany England,N,0.1,6500.0,C,0.02,2023 Women's World Cup Goals Leader,,6500.0,6.5,6.6,2.0,0.9,0.02
-2023-07-19,DraftKings,Soccer,Internet,,Group Winner - Denmark,N,0.1,1000.0,L,,,,1000.0,1.0,1.1,9.0,0.91,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Name the Final - USA v. England,N,0.1,450.0,L,,,,450.0,0.45,0.55,18.0,0.92,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Goals Leader- Alex Morgan,N,0.1,400.0,C,0.01,2023 Women's World Cup Goals Leader,,400.0,0.4,0.5,20.0,0.92,0.01
-2023-07-19,DraftKings,Soccer,Internet,,Winner - USA,N,0.1,250.0,L,,,,250.0,0.25,0.35,29.0,0.93,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Name the Final - USA v. England,N,0.1,700.0,W,,,,700.0,0.7,0.8,12.0,0.91,0.8
-2023-07-19,DraftKings,Soccer,Internet,,Winner - England,N,0.1,350.0,L	,,,,350.0,0.35,0.45,22.0,0.92,0.0
-2023-07-19,DraftKings,Soccer,Internet,,Winner - Spain,N,0.1,450.0,W,,,,450.0,0.45,0.55,18.0,0.92,0.55
-2023-07-19,DraftKings,Soccer,Internet,,Reach Quarter Final - Zambia,N,0.1,2000.0,L,,,,2000.0,2.0,2.1,5.0,0.9,-0.1
-2023-07-19,DraftKings,Soccer,Internet,,Reach Semi Final - Norway,N,0.2,400.0,L,,,,400.0,0.8,1.0,20.0,0.84,-0.2
-2023-07-19,DraftKings,Soccer,Internet,,Goals Leader- Alexandra Popp,N,0.1,900.0,L,,2023 Women's World Cup Goals Leader,,900.0,0.9,1.0,10.0,0.91,-0.1
-2023-07-20,DraftKings,Football,Internet,,Chiefs to lose in conference championship,N,0.1,450.0,C,0.11,,,450.0,0.45,0.55,18.0,0.92,0.11
-2023-07-20,DraftKings,Football,Internet,,NFL Champion- Jaguars,N,0.23,2500.0,C,0.1,2023 NFL Champion,,2500.0,5.75,5.98,4.0,0.78,0.1
-2023-07-20,DraftKings,Football,Internet,,NFL Champion- Falcons,N,0.1,6000.0,C,0.04,2023 NFL Champion,,6000.0,6.0,6.1,2.0,0.9,0.04
-2023-07-21,DraftKings,Football,Internet,,MVP- Tua Tagovailoa,N,0.1,2200.0,L,,2023 NFL MVP,,2200.0,2.2,2.3,4.0,0.9,-0.1
-2023-07-21,DraftKings,Football,Internet,,MVP-Patrick Mahomes,N,0.1,700.0,L,,2023 NFL MVP,,700.0,0.7,0.8,12.0,0.91,-0.1
-2023-07-21,DraftKings,Football,Internet,,MVP- Jalen Hurts,N,0.1,1100.0,L,,2023 NFL MVP,,1100.0,1.1,1.2,8.0,0.91,-0.1
-2023-07-21,DraftKings,Football,Internet,,Offensive POY- Jamarr Chase,N,0.1,1100.0,L,,2023 NFL OPOY,,1100.0,1.1,1.2,8.0,0.91,-0.1
-2023-07-21,DraftKings,Football,Internet,,Offensive POY- Justin Jefferson,N,0.1,1300.0,L,,2023 NFL OPOY,,1300.0,1.3,1.4,7.0,0.91,-0.1
-2023-07-21,DraftKings,Football,Internet,,Defensive POY- Aidan Hutchinson,N,0.11,2500.0,L,,,,2500.0,2.75,2.86,4.0,0.89,-0.11
-2023-07-21,DraftKings,Football,Internet,,Coach of the Year- Matt Eberflus,N,0.1,1100.0,L,,2023 NFL Coach of the Year,,1100.0,1.1,1.2,8.0,0.91,-0.1
-2023-07-21,DraftKings,Football,Internet,,Passing TDs Leader- Tua,N,0.1,1600.0,L,,2023 NFL Passing TDs Leader,,1600.0,1.6,1.7,6.0,0.91,-0.1
-2023-07-21,DraftKings,Football,Internet,,Passing TDs Leader- Joe Burrow,N,0.1,450.0,L,,2023 NFL Passing TDs Leader,,450.0,0.45,0.55,18.0,0.92,-0.1
-2023-07-21,DraftKings,Football,Internet,,Rushing Yards Leader- Najee Harris,N,0.1,3000.0,L,,,,3000.0,3.0,3.1,3.0,0.9,-0.1
-2023-07-21,DraftKings,Football,Internet,,Receiving Yards Leader- Calvin Ridley,N,0.1,5000.0,L,,2023 NFL Rec Yds Leader,,5000.0,5.0,5.1,2.0,0.9,-0.1
-2023-07-21,DraftKings,Football,Internet,,Receiving Yards Leader- Justin Jefferson,N,0.1,550.0,L,,2023 NFL Rec Yds Leader,,550.0,0.55,0.65,15.0,0.92,-0.1
-2023-07-21,DraftKings,Football,Internet,,Rushing TDs Leader- Damien Harris,N,0.1,5000.0,L,,,,5000.0,5.0,5.1,2.0,0.9,-0.1
-2023-07-21,DraftKings,Golf,Internet,Odds boost,Top 5- Tommy Fleetwood,N,0.1,153.0,L,,,,153.0,0.15,0.25,40.0,0.94,-0.1
-2023-07-21,DraftKings,Football,Internet,,Coach of the Year- Kyle Shanahan,N,0.1,3000.0,L,,2023 NFL Coach of the Year,,3000.0,3.0,3.1,3.0,0.9,-0.1
-2023-07-30,DraftKings,Football,Internet,,Receiving Yards Leader- Tyreek Hill,N,0.1,900.0,W,,2023 NFL Rec Yds Leader,,900.0,0.9,1.0,10.0,0.91,1.0
-2023-07-30,DraftKings,Football,Internet,,MVP-Lamar Jackson,N,0.1,1500.0,W,,2023 NFL MVP,,1500.0,1.5,1.6,6.0,0.91,1.6
-2023-07-30,DraftKings,Football,Internet,,AFC North Champion- Steelers,N,0.1,425.0,C,0.1,,,425.0,0.43,0.53,19.0,0.92,0.1
-2023-07-30,DraftKings,Football,Internet,,Offensive ROY- Anthony Richardson,N,0.1,600.0,L,,,,600.0,0.6,0.7,14.0,0.91,-0.1
-2023-07-30,DraftKings,Football,Internet,,Defensive POY- Micah Parsons,N,0.1,650.0,L,,,,650.0,0.65,0.75,13.0,0.91,-0.1
-2023-07-30,DraftKings,Football,Internet,,NFC North Champion- Bears,N,0.14,400.0,C,0.02,,,400.0,0.56,0.7,20.0,0.89,0.02
-2023-07-30,DraftKings,Baseball,Sheehan Newsletter,,Al East Champion- Blue Jays,N,0.1,330.0,L,,,,330.0,0.33,0.43,23.0,0.92,-0.1
-2023-07-30,DraftKings,Football,Internet,,Receptions Leader- Cooper Kupp,N,0.1,500.0,L,,2023 NFL Receptions Leader,,500.0,0.5,0.6,17.0,0.92,-0.1
-2023-07-30,DraftKings,Baseball,Sheehan Newsletter,,Padres to make playoffs,N,0.1,270.0,L,,,,270.0,0.27,0.37,27.0,0.93,-0.1
-2023-07-30,DraftKings,Football,Intuition,,NFL Champion- Chiefs,N,0.1,600.0,C,0.08,,,600.0,0.6,0.7,14.0,0.91,0.08
-2023-07-30,DraftKings,Baseball,Sheehan Newsletter,,Make Playoffs - Padres,N,0.1,270.0,L,,,,270.0,0.27,0.37,27.0,0.93,-0.1
-2023-07-30,DraftKings,Football,Internet,,Receptions Leader- Amon Ra St. Brown,N,0.1,1800.0,L,,2023 NFL Receptions Leader,,1800.0,1.8,1.9,5.0,0.9,-0.1
-2023-07-31,DraftKings,Basketball,Internet,,Joel Embiid MVP,N,0.1,650.0,L,,2024 NBA MVP,,650.0,0.65,0.75,13.0,0.91,-0.1
-2023-07-31,DraftKings,Basketball,Internet,,Giannis MVP,N,0.1,550.0,L,,2024 NBA MVP,,550.0,0.55,0.65,15.0,0.92,-0.1
-2023-07-31,DraftKings,Basketball,Internet,,Jayson Tatum MVP,N,0.1,900.0,L,,2024 NBA MVP,,900.0,0.9,1.0,10.0,0.91,-0.1
-2023-07-31,DraftKings,Basketball,Internet,,Nikola Jokic MVP,N,0.1,450.0,W,,2024 NBA MVP,,450.0,0.45,0.55,18.0,0.92,0.55
-2023-07-31,DraftKings,Basketball,Internet,,Cam Whitmore ROY,N,0.1,2000.0,L	,,2024 NBA ROY,,2000.0,2.0,2.1,5.0,0.9,0.0
-2023-07-31,DraftKings,Basketball,Internet,,Brandon Miller ROY,N,0.1,1200.0,L,,2024 NBA ROY,,1200.0,1.2,1.3,8.0,0.91,-0.1
-2023-07-31,DraftKings,Basketball,Internet,,Scoot Henderson ROY,N,0.1,400.0,L,,2024 NBA ROY,,400.0,0.4,0.5,20.0,0.92,-0.1
-2023-07-31,DraftKings,Basketball,Internet,,Chet Holmgren ROY,N,0.1,350.0,L,,2024 NBA ROY,,350.0,0.35,0.45,22.0,0.92,-0.1
-2023-08-05,DraftKings,Football,Internet,,Comeback Player- Russell Wilson,N,0.1,2000.0,L,,2023 NFL Comeback Player of the Year,,2000.0,2.0,2.1,5.0,0.9,-0.1
-2023-08-05,DraftKings,Football,Internet,,Comeback Player- Lamar Jackson,N,0.1,2500.0,L,,2023 NFL Comeback Player of the Year,,2500.0,2.5,2.6,4.0,0.9,-0.1
-2023-08-05,DraftKings,Soccer,Internet,Odds boost,To Qualify - USA,N,0.1,100.0,L,,,,100.0,0.1,0.2,50.0,0.95,-0.1
-2023-08-05,DraftKings,Football,Internet,,Rookies Receving Yards Leader- Rashee Rice,N,0.1,190.0,L,,2023 NFL Rookie Rec Yds Leader,,190.0,0.19,0.29,34.0,0.93,-0.1
-2023-08-05,DraftKings,Golf,Intuition,Odds boost,Top 5- Billy Horschel,N,0.1,102.0,W,,,,102.0,0.1,0.2,50.0,0.95,0.2
-2023-08-06,DraftKings,Football,Internet,,Rookies Receving Yards Leader- Jordan Addison,N,0.1,300.0,L,,2023 NFL Rookie Rec Yds Leader,,300.0,0.3,0.4,25.0,0.92,-0.1
-2023-08-06,DraftKings,Football,Internet,,Rookies Receving Yards Leader- Jahmyr Gibbs,N,0.1,3500.0,L,,2023 NFL Rookie Rec Yds Leader,,3500.0,3.5,3.6,3.0,0.9,-0.1
-2023-08-06,DraftKings,Football,Internet,,Rookies Receving Yards Leader- Quentin Johnston,N,0.1,350.0,L,,2023 NFL Rookie Rec Yds Leader,,350.0,0.35,0.45,22.0,0.92,-0.1
-2023-08-07,DraftKings,Golf,Positive odds,,Top 10 - Viktor Hovland,N,0.1,190.0,L,,2023 PGA Fedex St. Jude Top 10,,190.0,0.19,0.29,34.0,0.93,-0.1
-2023-08-07,DraftKings,Golf,Positive odds,,Top 10 - Jon Rahm,N,0.1,-105.0,L,,2023 PGA Fedex St. Jude Top 10,,105.0,0.1,0.2,51.0,0.95,-0.1
-2023-08-07,DraftKings,Golf,Positive odds,,Top 10 - Rickie Fowler,N,0.1,260.0,L,,2023 PGA Fedex St. Jude Top 10,,260.0,0.26,0.36,28.0,0.93,-0.1
-2023-08-07,DraftKings,Golf,Golf magazine system,,Top 10 - Tony Finau,N,0.1,280.0,L,,2023 PGA Fedex St. Jude Top 10,,280.0,0.28,0.38,26.0,0.93,-0.1
-2023-08-07,DraftKings,Golf,Golf magazine system,,Winner - Sam Burns,N,0.1,3500.0,L,,2023 PGA Fedex St. Jude Champion,,3500.0,3.5,3.6,3.0,0.9,-0.1
-2023-08-07,DraftKings,Golf,Golf magazine system,,Winner - Tony Finau,N,0.1,3000.0,L,,2023 PGA Fedex St. Jude Champion,,3000.0,3.0,3.1,3.0,0.9,-0.1
-2023-08-07,DraftKings,Golf,Positive odds,,Top 10 - Collin Morikawa,N,0.1,220.0,L,,2023 PGA Fedex St. Jude Top 10,,220.0,0.22,0.32,31.0,0.93,-0.1
-2023-08-07,DraftKings,Golf,Positive odds,,Top 10 - Cameron Young,N,0.1,330.0,L,,2023 PGA Fedex St. Jude Top 10,,330.0,0.33,0.43,23.0,0.92,-0.1
-2023-08-07,DraftKings,Golf,Positive odds,,Top 20 - Cameron Young,N,0.1,130.0,L,,2023 PGA Fedex St. Jude Top 20,,130.0,0.13,0.23,43.0,0.94,-0.1
-2023-08-07,DraftKings,Golf,Positive odds,,Top 20 - Rickie Fowler,N,0.1,105.0,L,,2023 PGA Fedex St. Jude Top 20,,105.0,0.11,0.21,49.0,0.95,-0.1
-2023-08-07,DraftKings,Golf,Golf magazine system,,Top 10 - Tommy Fleetwood,N,0.1,230.0,W,,2023 PGA Fedex St. Jude Top 10,,230.0,0.23,0.33,30.0,0.93,0.33
-2023-08-07,DraftKings,Golf,Positive odds,,Top 20 - Tony Finau,N,0.1,110.0,L,,2023 PGA Fedex St. Jude Top 20,,110.0,0.11,0.21,48.0,0.95,-0.1
-2023-08-07,DraftKings,Golf,Internet,,Winner - Scottie Scheffler,N,0.1,600.0,C,0.01,2023 PGA Fedex St. Jude Champion,,600.0,0.6,0.7,14.0,0.91,0.01
-2023-08-07,DraftKings,Golf,Positive odds,Odds boost,Top 10 - Tom Kim,N,0.1,107.0,L,,2023 PGA Fedex St. Jude Top 10,,107.0,0.11,0.21,48.0,0.95,-0.1
-2023-08-07,DraftKings,Golf,Golf magazine system,,Winner - Collin Morikawa,N,0.1,2500.0,C,0.02,2023 PGA Fedex St. Jude Champion,,2500.0,2.5,2.6,4.0,0.9,0.02
-2023-08-07,DraftKings,Golf,Positive odds,,Top 5- Scottie Scheffler,N,0.1,140.0,L,,,,140.0,0.14,0.24,42.0,0.94,-0.1
-2023-08-24,DraftKings,College Football,Internet,23% Boost,Oregon to make CFP,N,0.1,676.0,C,0.13,,,676.0,0.68,0.78,13.0,0.91,0.13
-2023-08-25,DraftKings,College Football,Internet,,Pac 12 Champion- Oregon,N,0.1,381.0,L,,,,381.0,0.38,0.48,21.0,0.92,-0.1
-2023-10-02,DraftKings,Baseball,Intuition,,"Parlay of +1.5 games won spreads - Twins, Brewers, Phillies",N,0.1,-116.0,L,,,,116.0,0.09,0.19,54.0,0.95,-0.1
-2023-10-02,DraftKings,Baseball,Bart Parry,,Series Correct Number of Games - Phillies 2-0,N,0.1,180.0,W,,,,180.0,0.18,0.28,36.0,0.94,0.28
-2023-10-02,DraftKings,Baseball,Bart Parry,,Series Winner - Rangers,N,0.1,130.0,W,,,,130.0,0.13,0.23,43.0,0.94,0.23
-2023-10-02,DraftKings,Baseball,Bart Parry,,Series Winner - DBacks,N,0.1,140.0,W,,,,140.0,0.14,0.24,42.0,0.94,0.24
-2023-10-06,DraftKings,Baseball,Bart Parry,,Parlay - Dodgers and Braves to win series,N,0.1,130.0,L,,,,130.0,0.13,0.23,43.0,0.94,-0.1
-2023-10-07,DraftKings,Basketball,CBS,,PPG Leader- Devin Booker,N,0.1,5000.0,L,,2024 NBA PPG Leader,,5000.0,5.0,5.1,2.0,0.9,-0.1
-2023-10-07,DraftKings,Basketball,CBS,,Rebounds Per Game Leader- Nikola Jokic,N,0.1,360.0,L,,2024 NBA RPG Leader,,360.0,0.36,0.46,22.0,0.92,-0.1
-2023-10-07,DraftKings,Basketball,CBS,,PPG Leader- Shai Gilgeous Alexander,Y,0.1,400.0,L,,2024 NBA PPG Leader,,400.0,0.4,0.4,20.0,0.92,0.0
-2023-10-07,DraftKings,Basketball,CBS,,Rebounds Per Game Leader-  Rudy Gobert,N,0.1,400.0,L,,2024 NBA RPG Leader,,400.0,0.4,0.5,20.0,0.92,-0.1
-2023-10-08,DraftKings,Basketball,NBA Advanced Stats,,PPG Leader- Trae Young,N,0.1,10000.0,L,,2024 NBA PPG Leader,,10000.0,10.0,10.1,1.0,0.9,-0.1
-2023-10-08,DraftKings,Basketball,NBA Advanced Stats,,Rebounds Per Game Leader- Jonas Valaciunas,N,0.1,2800.0,L,,2024 NBA RPG Leader,,2800.0,2.8,2.9,3.0,0.9,-0.1
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,World Series Exact Result- Phillies Beat Astros,N,0.1,650.0,L,,2023 MLB World Series Exact Result,,650.0,0.65,0.75,13.0,0.91,-0.1
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,MLB Champion- Phillies,N,0.1,125.0,C,0.13,2023 MLB Champion,,125.0,0.12,0.22,44.0,0.94,0.13
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,World Series Exact Result- Rangers Beat Phillies,N,0.1,700.0,L,,2023 MLB World Series Exact Result,,700.0,0.7,0.8,12.0,0.91,-0.1
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,World Series Exact Result- Astros Beat DBacks,N,0.1,475.0,L,,2023 MLB World Series Exact Result,,475.0,0.48,0.58,17.0,0.92,-0.1
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,MLB Champion- Rangers,N,0.1,120.0,C,0.01,2023 MLB Champion,,120.0,0.12,0.22,45.0,0.94,0.01
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,World Series Exact Result- DBacks Beat Astros,N,0.1,800.0,L,,2023 MLB World Series Exact Result,,800.0,0.8,0.9,11.0,0.91,-0.1
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,MLB Champion- DBacks,N,0.1,140.0,C,0.06,2023 MLB Champion,,140.0,0.14,0.24,42.0,0.94,0.06
-2023-10-12,DraftKings,Baseball,Wild Card Gets To World Series Angle,,World Series Exact Result- Astros Beat Phillies,N,0.1,550.0,L,,2023 MLB World Series Exact Result,,550.0,0.55,0.65,15.0,0.92,-0.1
-2023-10-15,DraftKings,Baseball,Favorable odds,Odds boost,ALCS Champion- Astros,N,0.1,-112.0,C,0.03,,,112.0,0.09,0.19,53.0,0.95,0.03
-2023-10-18,FanDuel,Basketball,Internet,Odds boost,Assists Per Game Leader - Nikola Jokic,N,0.1,850.0,L,,,,850.0,0.85,0.95,11.0,0.91,-0.1
-2023-10-23,FanDuel,Basketball,Neil Paine,,NBA Finals Matchup- Celtics and Suns,N,0.1,1170.0,L,,,,1170.0,1.17,1.27,8.0,0.91,-0.1
-2023-10-25,FanDuel,Baseball,Bart Parry,Odds boost,World Series - 5 games,N,0.1,415.0,W,,,,415.0,0.42,0.52,19.0,0.92,0.52
-2023-11-03,FanDuel,Baseball,Sheehan Newsletter,,MLB Champion- Reds,N,0.1,5000.0,C,0.1,2024 MLB Champion,,5000.0,5.0,5.1,2.0,0.9,0.1
-2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Cubs,N,0.1,2800.0,C,0.09,2024 MLB Champion,,2800.0,2.8,2.9,3.0,0.9,0.09
-2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Brewers,N,0.1,4000.0,C,0.09,2024 MLB Champion,,4000.0,4.0,4.1,2.0,0.9,0.09
-2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Cardinals,N,0.1,4000.0,C,0.09,2024 MLB Champion,,4000.0,4.0,4.1,2.0,0.9,0.09
-2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Guardians,N,0.1,6000.0,C,0.09,2024 MLB Champion,,6000.0,6.0,6.1,2.0,0.9,0.09
-2023-12-01,DraftKings,Football,Discord,,AFC North Champion - Cleveland Browns,Y,0.25,800.0,L,,,,800.0,2.0,2.0,11.0,0.78,0.0
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Reds,N,0.1,2500.0,L,,2024 MLB NL Champion,,2500.0,2.5,2.6,4.0,0.9,-0.1
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Cubs,N,0.1,1200.0,L,,2024 MLB NL Champion,,1200.0,1.2,1.3,8.0,0.91,-0.1
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Brewers,N,0.1,1700.0,L,,2024 MLB NL Champion,,1700.0,1.7,1.8,6.0,0.91,-0.1
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Cardinals,N,0.1,1200.0,L,,2024 MLB NL Champion,,1200.0,1.2,1.3,8.0,0.91,-0.1
-2023-12-01,Caesars,Baseball,Sheehan Newsletter,,AL Champion- Guardians,N,0.1,2200.0,P,,2024 MLB AL Chamption,,2200.0,2.2,2.3,4.0,0.9,0.0
-2023-12-04,FanDuel,Basketball,KenPom,High defensive rating,ACC Champion- Virginia,N,0.1,650.0,C,0.1,,,650.0,0.65,0.75,13.0,0.91,0.1
-2023-12-04,FanDuel,Basketball,KenPom,High defensive rating,Big 12 Champion - BYU,N,0.1,1000.0,C,0.1,,,1000.0,1.0,1.1,9.0,0.91,0.1
-2023-12-04,FanDuel,Basketball,KenPom,High defensive rating,SEC Champion- Mississippi State,N,0.1,1400.0,L,,2024 NCAAB SEC Champion,,1400.0,1.4,1.5,7.0,0.91,-0.1
-2023-12-04,FanDuel,Basketball,KenPom,High defensive rating,SEC Champion- Auburn,N,0.1,600.0,C,0.1,2024 NCAAB SEC Champion,,600.0,0.6,0.7,14.0,0.91,0.1
-2023-12-04,FanDuel,Basketball,KenPom,High defensive rating,Big 10 Champion - Illinois,N,0.1,800.0,C,0.1,,,800.0,0.8,0.9,11.0,0.91,0.1
-2023-12-04,FanDuel,Basketball,NBA Advanced Stats,High defensive rating,Northwest Division Champion- OKC Thunder,N,0.1,500.0,C,0.1,,,500.0,0.5,0.6,17.0,0.92,0.1
-2023-12-04,FanDuel,Basketball,NBA Advanced Stats,High defensive rating,Atlantic Division Champion- NY Knicks,N,0.1,3100.0,L,,,,3100.0,3.1,3.2,3.0,0.9,-0.1
-2023-12-04,FanDuel,Basketball,NBA Advanced Stats,High defensive rating,Western Conference Champion- Minnesota Timberwolves,N,0.1,1200.0,C,0.1,,,1200.0,1.2,1.3,8.0,0.91,0.1
-2023-12-04,FanDuel,Basketball,NBA Advanced Stats,High defensive rating,Eastern Conference Champion- Orlando Magic,N,0.1,5500.0,C,0.1,,,5500.0,5.5,5.6,2.0,0.9,0.1
-2023-12-10,Caesars,Football,Internet,,NFC South Champion- Tampa Bay Buccaneers,N,0.1,375.0,W,,,,375.0,0.38,0.48,21.0,0.92,0.48
-2023-12-10,Caesars,Football,Internet,,NC Champion- Los Angeles Rams,N,0.1,5000.0,L,,,,5000.0,5.0,5.1,2.0,0.9,-0.1
-2023-12-10,Caesars,Football,Internet,,NFL Champion- Baltimore Ravens,N,0.1,650.0,C,0.1,,,650.0,0.65,0.75,13.0,0.91,0.1
-2024-02-09,DraftKings,Baseball,Intuition,,"AL MVP- Bobby Witt, Jr.",Y,0.1,2200.0,L,,,,2200.0,2.2,2.2,4.0,0.9,0.0
-2024-02-21,FanDuel,College Basketball,Neil Greenberg,,Champion- Arizona,N,1.0,1100.0,L,,2024 NCAAB Champion,,1100.0,11.0,12.0,8.0,0.08,-1.0
-2024-02-21,FanDuel,College Basketball,Neil Greenberg,,Champion- Auburn,N,1.0,2100.0,L,,2024 NCAAB Champion,,2100.0,21.0,22.0,5.0,0.05,-1.0
-2024-02-21,FanDuel,College Basketball,KenPom,,Champion- Tennessee,N,1.0,1400.0,L,,2024 NCAAB Champion,,1400.0,14.0,15.0,7.0,0.07,-1.0
-2024-02-21,FanDuel,College Basketball,Bart Torvik,,Champion- Alabama,N,1.0,2000.0,C,0.03,2024 NCAAB Champion,,2000.0,20.0,21.0,5.0,0.05,0.03
-2024-02-21,FanDuel,College Basketball,Bart Torvik,,Champion- Iowa State,N,1.0,2000.0,L,,2024 NCAAB Champion,,2000.0,20.0,21.0,5.0,0.05,-1.0
-2024-02-22,PointsBet,College Basketball,Intuition,,Champion- Kansas,Y,1.0,2000.0,L,,2024 NCAAB Champion,,2000.0,20.0,20.0,5.0,0.05,0.0
-2024-02-25,FanDuel,Baseball,Intuition,,"Stolen Bases Leader- Bobby Witt, Jr.",N,0.1,1100.0,L,,2024 MLB Stolen Bases Leader,,1100.0,1.1,1.2,8.0,0.91,-0.1
-2024-02-25,DraftKings,Baseball,Intuition,,AL Central Champion- KC Royals,C,0.2,850.0,C,0.24,,,850.0,1.7,1.9,11.0,0.82,0.24
-2024-02-26,DraftKings,College Baseball,Odds history,,Champion- Wake Forest,N,0.2,700.0,L,,2024 NCAA College Baseball Champion,,700.0,1.4,1.6,12.0,0.82,-0.2
-2024-02-26,DraftKings,College Baseball,Odds history,,Champion- Oregon State,N,0.2,1800.0,L,,2024 NCAA College Baseball Champion,,1800.0,3.6,3.8,5.0,0.81,-0.2
-2024-02-26,DraftKings,College Baseball,Odds history,,Champion- Florida,N,0.2,900.0,C,0.02,2024 NCAA College Baseball Champion,,900.0,1.8,2.0,10.0,0.82,0.02
-2024-02-26,DraftKings,College Baseball,Odds history,,Champion- Arkansas,N,0.2,1000.0,L,,2024 NCAA College Baseball Champion,,1000.0,2.0,2.2,9.0,0.82,-0.2
-2024-02-26,DraftKings,College Baseball,Odds history,,Champion- LSU,N,0.2,750.0,C,0.02,2024 NCAA College Baseball Champion,,750.0,1.5,1.7,12.0,0.82,0.02
-2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- DET/KC,N,0.2,1900.0,L,,2024 MLB AL Central Finish 1st and 2nd Place,,1900.0,3.8,4.0,5.0,0.81,-0.2
-2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- CLE/KC,N,0.2,2000.0,W,,2024 MLB AL Central Finish 1st and 2nd Place,,2000.0,4.0,4.2,5.0,0.81,4.2
-2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- MIN/KC,N,0.2,650.0,L,,2024 MLB AL Central Finish 1st and 2nd Place,,650.0,1.3,1.5,13.0,0.83,-0.2
-2024-02-26,DraftKings,Baseball,Trevor May,,World Series Exact - Orioles beat Braves,Y,0.1,4000.0,L,,2024 MLB World Series Exact,,4000.0,4.0,4.0,2.0,0.9,0.0
-2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Shohei Ohtani,N,0.2,900.0,L,,2024 MLB Home Run Leader,,900.0,1.8,2.0,10.0,0.82,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Yordan Alvarez,N,0.2,1300.0,L,,2024 MLB Home Run Leader,,1300.0,2.6,2.8,7.0,0.81,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Juan Soto,N,0.2,1400.0,L,,2024 MLB Home Run Leader,,1400.0,2.8,3.0,7.0,0.81,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,"Home Run Leader- Vlad, Jr",N,0.2,1900.0,L,,2024 MLB Home Run Leader,,1900.0,3.8,4.0,5.0,0.81,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Ronald Acuna,N,0.2,1900.0,L,,2024 MLB Home Run Leader,,1900.0,3.8,4.0,5.0,0.81,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Kyle Tucker,N,0.2,3000.0,L,,2024 MLB Hits Leader,,3000.0,6.0,6.2,3.0,0.81,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Jose Altuve,N,0.2,2100.0,L,,2024 MLB Hits Leader,,2100.0,4.2,4.4,5.0,0.81,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Freddie Freeman,N,0.2,1000.0,L,,2024 MLB Hits Leader,,1000.0,2.0,2.2,9.0,0.82,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Jose Ramirez,N,0.2,2100.0,L,,2024 MLB Hits Leader,,2100.0,4.2,4.4,5.0,0.81,-0.2
-2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Bo Bichette,N,0.2,1200.0,L,,2024 MLB Hits Leader,,1200.0,2.4,2.6,8.0,0.82,-0.2
-2024-02-26,FanDuel,Baseball,Intuition,,"Triples Leader- Bobby Witt, Jr.",N,0.1,1100.0,L,,,,1100.0,1.1,1.2,8.0,0.91,-0.1
-2023-03-01,FanDuel,College Basketball,Internet,,Mountain West Champion- San Diego State,N,0.1,650.0,L,,,,650.0,0.65,0.75,13.0,0.91,-0.1
-2023-03-01,FanDuel,College Basketball,Internet,,Big East Champion- Marquette,N,0.1,320.0,L,,,,320.0,0.32,0.42,24.0,0.92,-0.1
-2024-03-02,Caesars,Golf,Sportsline,,Masters Winner- Viktor Hovland,N,0.1,1400.0,L,,2024 PGA Masters,,1400.0,1.4,1.5,7.0,0.91,-0.1
-2024-03-02,Caesars,Golf,Sportsline,,Masters Winner- Justin Thomas,N,0.1,2500.0,L,,2024 PGA Masters,,2500.0,2.5,2.6,4.0,0.9,-0.1
-2024-03-02,Caesars,Golf,Sportsline,,Masters Winner- Jon Rahm,N,0.1,900.0,L,,2024 PGA Masters,,900.0,0.9,1.0,10.0,0.91,-0.1
-2024-03-02,Caesars,Golf,Sportsline,,Masters Winner- Rory McIlroy,N,0.1,900.0,L,,2024 PGA Masters,,900.0,0.9,1.0,10.0,0.91,-0.1
-2024-03-02,Caesars,Golf,Sportsline,,Masters Winner- Scottie Scheffler,N,0.1,800.0,W,,2024 PGA Masters,,800.0,0.8,0.9,11.0,0.91,0.9
-2024-03-13,DraftKings,Golf,Sportsline,,Players Winner- Scottie Scheffler,N,0.1,850.0,W,,2024 PGA Players Winner,,850.0,0.85,0.95,11.0,0.91,0.95
-2024-03-13,DraftKings,Golf,Sportsline,,Players Winner- Collin Morikawa,N,0.1,2800.0,L,,2024 PGA Players Winner,,2800.0,2.8,2.9,3.0,0.9,-0.1
-2024-03-13,DraftKings,Golf,Sportsline,,Players Winner- Will Zalatoris,N,0.1,2800.0,L,,2024 PGA Players Winner,,2800.0,2.8,2.9,3.0,0.9,-0.1
-2024-03-13,DraftKings,Golf,Sportsline,,Players Winner- Corey Conners,N,0.1,6000.0,L,,2024 PGA Players Winner,,6000.0,6.0,6.1,2.0,0.9,-0.1
-2024-03-13,DraftKings,Golf,Sportsline,,Players Winner- Aaron Rai,N,0.1,10000.0,L,,2024 PGA Players Winner,,10000.0,10.0,10.1,1.0,0.9,-0.1
-2024-03-13,DraftKings,Golf,Sportsline,,Players Top 5- Rory McIlroy,N,0.1,330.0,L,,2024 PGA Players Top 5,,330.0,0.33,0.43,23.0,0.92,-0.1
-2024-03-13,DraftKings,Golf,Sportsline,,Players Top 5- Justin Thomas,N,0.1,500.0,L,,2024 PGA Players Top 5,,500.0,0.5,0.6,17.0,0.92,-0.1
-2024-03-13,DraftKings,Golf,Sportsline,,Players Top 5- Collin Morikawa,N,0.1,550.0,L,,2024 PGA Players Top 5,,550.0,0.55,0.65,15.0,0.92,-0.1
-2024-03-13,DraftKings,Golf,Sportsline,,Players Top 5- Xander Schauffele,N,0.1,400.0,W,,2024 PGA Players Top 5,,400.0,0.4,0.5,20.0,0.92,0.5
-2024-03-13,DraftKings,Golf,Sportsline,,Players Top 5- Patrick Cantlay,N,0.1,600.0,L,,2024 PGA Players Top 5,,600.0,0.6,0.7,14.0,0.91,-0.1
-2024-03-13,DraftKings,Baseball,Sportsline,,AL Winner- Mariners,N,0.1,900.0,C,0.01,2024 MLB AL Champion,,900.0,0.9,1.0,10.0,0.91,0.01
-2024-03-13,DraftKings,Baseball,Sportsline,,AL Winner- Guardians,N,0.1,2800.0,C,0.19,2024 MLB AL Champion,,2800.0,2.8,2.9,3.0,0.9,0.19
-2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Yankees,N,0.1,1000.0,P,,2024 MLB Champion,,1000.0,1.0,1.1,9.0,0.91,0.0
-2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Phillies,N,0.1,1500.0,P,,2024 MLB Champion,,1500.0,1.5,1.6,6.0,0.91,0.0
-2024-03-13,DraftKings,Baseball,Sportsline,,AL Cy Young- Cole Ragans,N,0.1,1800.0,L,,2024 AL Cy Young,,1800.0,1.8,1.9,5.0,0.9,-0.1
-2024-03-13,DraftKings,Baseball,Intuition,,"Runs Leader- Bobby Witt, Jr.",N,0.1,1300.0,L,,,,1300.0,1.3,1.4,7.0,0.91,-0.1
-2024-03-13,DraftKings,Baseball,Intuition,,"Doubles Leader- Bobby Witt, Jr.",N,0.1,2500.0,L,,,,2500.0,2.5,2.6,4.0,0.9,-0.1
-2024-03-13,DraftKings,Baseball,Intuition,,League Playoff Seed- Royals #6,N,0.1,2000.0,L,,,,2000.0,2.0,2.1,5.0,0.9,-0.1
-2024-03-17,DraftKings,Baseball,Laghezza,,Home Run Leader- Adolis Garcia,N,0.1,4500.0,L,,2024 MLB Home Run Leader,,4500.0,4.5,4.6,2.0,0.9,-0.1
-2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Oneil Cruz,N,0.1,11000.0,L,,2024 MLB Home Run Leader,,11000.0,11.0,11.1,1.0,0.9,-0.1
-2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Marcell Ozuna,N,0.1,9500.0,L,,2024 MLB Home Run Leader,,9500.0,9.5,9.6,1.0,0.9,-0.1
-2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Jake Burger,N,0.1,12000.0,L,,2024 MLB Home Run Leader,,12000.0,12.0,12.1,1.0,0.9,-0.1
-2024-03-17,FanDuel,Baseball,Laghezza,,"Hits Leader- Vlad, Jr.",N,0.1,6500.0,L,,2024 MLB Hits Leader,,6500.0,6.5,6.6,2.0,0.9,-0.1
-2024-03-17,FanDuel,Baseball,Laghezza,,Stolen Bases Leader- CJ Abrams,N,0.1,850.0,L,,2024 MLB Stolen Bases Leader,,850.0,0.85,0.95,11.0,0.91,-0.1
-2024-03-17,FanDuel,Baseball,Laghezza,,Stolen Bases Leader- Nico Hoerner,N,0.1,4500.0,L,,2024 MLB Stolen Bases Leader,,4500.0,4.5,4.6,2.0,0.9,-0.1
-2024-03-17,DraftKings,Baseball,Laghezza,,Saves Leader- Raisel Iglesias,N,0.1,1500.0,L,,2024 MLB Saves Leader,,1500.0,1.5,1.6,6.0,0.91,-0.1
-2024-03-17,FanDuel,Baseball,Laghezza,,Saves Leader- Andres Munoz,N,0.1,2100.0,L,,2024 MLB Saves Leader,,2100.0,2.1,2.2,5.0,0.9,-0.1
-2024-03-19,DraftKings,Baseball,Sheehan Newsletter,,RBI Leader- Nolan Arenado,N,0.1,5500.0,L,,2024 MLB RBI Leader,,5500.0,5.5,5.6,2.0,0.9,-0.1
-2024-03-19,DraftKings,Baseball,Sheehan Newsletter,,RBI Leader- Alex Bregman,N,0.1,5500.0,L,,2024 MLB RBI Leader,,5500.0,5.5,5.6,2.0,0.9,-0.1
-2024-03-19,DraftKings,Baseball,Internet,https://www.mlb.com/news/mlb-strikeout-leader-candidates-for-2024,K Leader- Hunter Greene,N,0.1,1400.0,L,,2024 MLB K Leader,,1400.0,1.4,1.5,7.0,0.91,-0.1
-2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/baseball-strikeout-leader-odds/,K Leader- Cole Ragans,N,0.1,2500.0,L,,2024 MLB K Leader,,2500.0,2.5,2.6,4.0,0.9,-0.1
-2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/baseball-strikeout-leader-odds/,K Leader- Kodai Senga,N,0.1,2000.0,L,,2024 MLB K Leader,,2000.0,2.0,2.1,5.0,0.9,-0.1
-2024-03-19,DraftKings,Baseball,Internet,https://www.actionnetwork.com/mlb/mlb-predictions-2024-stat-leaders-best-bets-home-runs-strikeouts-stolen-bases,K Leader- Nick Pivetta,N,0.1,5000.0,L,,2024 MLB K Leader,,5000.0,5.0,5.1,2.0,0.9,-0.1
-2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/rbi-leader-odds/,RBI Leader- Shohei Ohtani,N,0.1,900.0,L,,2024 MLB RBI Leader,,900.0,0.9,1.0,10.0,0.91,-0.1
-2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/rbi-leader-odds/,RBI Leader- Ronald Acuna,N,0.1,3000.0,L,,2024 MLB RBI Leader,,3000.0,3.0,3.1,3.0,0.9,-0.1
-2024-03-19,DraftKings,Baseball,Intuition,,"RBI Leader- Bobby Witt, Jr.",N,0.1,7000.0,L,,2024 MLB RBI Leader,,7000.0,7.0,7.1,1.0,0.9,-0.1
-2024-03-26,DraftKings,Baseball,Action Network,+200 odds boost,Home Run Leader- Austin Riley,N,0.1,2100.0,L,,2024 MLB Home Run Leader,,2100.0,2.1,2.2,5.0,0.9,-0.1
-2024-03-26,DraftKings,Baseball,Action Network,,Stolen Bases Leader- Julio Rodriguez,N,0.1,3000.0,L,,,,3000.0,3.0,3.1,3.0,0.9,-0.1
-2024-03-26,DraftKings,Baseball,Action Network,,Division 1st Place- Rays,N,0.1,550.0,L,,,,550.0,0.55,0.65,15.0,0.92,-0.1
-2024-03-26,DraftKings,Baseball,Action Network,,Division 3rd Place- Royals,N,0.1,260.0,L,,,,260.0,0.26,0.36,28.0,0.93,-0.1
-2024-03-26,DraftKings,Baseball,Action Network,,"Division 1,2,3- Min, Cle, KC",N,0.1,800.0,L,,,,800.0,0.8,0.9,11.0,0.91,-0.1
-2024-03-26,DraftKings,Baseball,Action Network,,Royals 65-70 wins,N,0.1,450.0,L,,,,450.0,0.45,0.55,18.0,0.92,-0.1
-2024-03-31,DraftKings,Baseball,Sheehan Newsletter,,World Series Exact - Dodgers beat Astros,N,0.1,1800.0,L,,2024 MLB World Series Exact,,1800.0,1.8,1.9,5.0,0.9,-0.1
-2024-03-31,DraftKings,Basketball,NBA Advanced Stats,High defensive rating,Western Conference Champion- OKC Thunder,N,0.1,800.0,C,0.12,,,800.0,0.8,0.9,11.0,0.91,0.12
-2024-04-18,FanDuel,Basketball,Sportsline,,Series Win- Knicks,N,0.1,-108.0,W,,,,108.0,0.09,0.19,52.0,0.95,0.19
-2024-04-18,FanDuel,Basketball,Sportsline,,Series Win- Pacers,N,0.1,100.0,W,,,,100.0,0.1,0.2,50.0,0.95,0.2
-2024-04-20,DraftKings,Golf,Sportsline,,2024 PGA Championship Winner- Scottie Scheffler,N,0.1,400.0,L,,2024 PGA Championship Winner,,400.0,0.4,0.5,20.0,0.92,-0.1
-2024-04-20,DraftKings,Golf,Sportsline,,2024 PGA Championship Winner- Collin Morikawa,N,0.1,2200.0,L,,2024 PGA Championship Winner,,2200.0,2.2,2.3,4.0,0.9,-0.1
-2024-04-20,DraftKings,Golf,Sportsline,,2024 PGA Championship Winner- Ludvig Aberg,N,0.1,1800.0,L,,2024 PGA Championship Winner,,1800.0,1.8,1.9,5.0,0.9,-0.1
-2024-04-20,DraftKings,Golf,Sportsline,,2024 PGA Championship Winner- Rory McIlroy,N,0.1,900.0,L,,2024 PGA Championship Winner,,900.0,0.9,1.0,10.0,0.91,-0.1
-2024-04-20,DraftKings,Golf,Sportsline,,2024 PGA Championship Winner- Jon Rahm,N,0.1,1000.0,L,,2024 PGA Championship Winner,,1000.0,1.0,1.1,9.0,0.91,-0.1
-2024-05-02,Fanatics,Basketball,Intuition,,Series Winner- Wolves,Y,0.2,165.0,W,,,,165.0,0.33,0.33,38.0,0.88,0.33
-2024-05-23,DraftKings,Baseball,Intuition,,AL Cy Young- Seth Lugo,N,0.1,2200.0,L,,2024 AL Cy Young,,2200.0,2.2,2.3,4.0,0.9,-0.1
-2024-08-06,DraftKings,Baseball,Sheehan Newsletter,,NL West Winner- Padres,N,0.1,1000.0,C,0.06,,,1000.0,1.0,1.1,9.0,0.91,0.06
-2024-09-01,Caesars,Baseball,Sheehan Newsletter,,Make Playoffs- Cubs,N,0.1,,L,,,,,,,,,-0.1
-2024-09-24,DraftKings,Baseball,Wild Card Wins World Series Angle,,ML Champion- Royals,N,0.1,4000.0,P,,2024 MLB Champion,,4000.0,4.0,4.1,2.0,0.9,0.0
-2024-09-24,DraftKings,Baseball,Wild Card Wins World Series Angle,,ML Champion- Braves,N,0.1,3500.0,L,,2024 MLB Champion,,3500.0,3.5,3.6,3.0,0.9,-0.1
-2024-09-24,DraftKings,Baseball,Wild Card Wins World Series Angle,,ML Champion- Orioles,N,0.1,1200.0,L,,2024 MLB Champion,,1200.0,1.2,1.3,8.0,0.91,-0.1
-2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Diamondbacks,N,0.1,3000.0,L,,2024 MLB Champion,,3000.0,3.0,3.1,3.0,0.9,-0.1
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Orioles,N,0.1,480.0,L,,2024 AL Champion,,480.0,0.48,0.58,17.0,0.92,-0.1
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Diamondbacks,N,0.1,1400.0,L,,2024 NL Champion,,1400.0,1.4,1.5,7.0,0.91,-0.1
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Braves,N,0.1,1700.0,L,,2024 NL Champion,,1700.0,1.7,1.8,6.0,0.91,-0.1
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.1,5000.0,P,,2024 AL Champion,,5000.0,5.0,5.1,2.0,0.9,0.0
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Orioles,N,0.1,480.0,L,,2024 AL Champion,,480.0,0.48,0.58,17.0,0.92,-0.1
-2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Royals,N,0.1,3600.0,C,0.21,2024 MLB Champion,,3600.0,3.6,3.7,3.0,0.9,0.21
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Royals,N,0.1,1600.0,P,,2024 AL Champion,,1600.0,1.6,1.7,6.0,0.91,0.0
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.1,1900.0,P,,2024 AL Champion,,1900.0,1.9,2.0,5.0,0.9,0.0
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Padres,N,0.1,600.0,P,,2024 NL Champion,,600.0,0.6,0.7,14.0,0.91,0.0
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.1,1400.0,P,,2024 NL Champion,,1400.0,1.4,1.5,7.0,0.91,0.0
-2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Padres,N,0.1,1200.0,P,,2024 MLB Champion,,1200.0,1.2,1.3,8.0,0.91,0.0
-2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Mets,N,0.1,3000.0,P,,2024 MLB Champion,,3000.0,3.0,3.1,3.0,0.9,0.0
+Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,bet_group,CleanedOdds,PotentialProfit,PotentialPayout,ImpliedProbability,Expected Value,ActualPayout
+2023-11-03,FanDuel,Baseball,Sheehan Newsletter,,MLB Champion- Reds,N,0.1,5000.0,C,0.1,2024 MLB Champion,5000.0,5.0,5.1,2.0,0.9,0.1
+2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Cubs,N,0.1,2800.0,C,0.09,2024 MLB Champion,2800.0,2.8,2.9,3.0,0.9,0.09
+2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Brewers,N,0.1,4000.0,C,0.09,2024 MLB Champion,4000.0,4.0,4.1,2.0,0.9,0.09
+2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Cardinals,N,0.1,4000.0,C,0.09,2024 MLB Champion,4000.0,4.0,4.1,2.0,0.9,0.09
+2023-11-12,DraftKings,Baseball,Sheehan Newsletter,,MLB Champion- Guardians,N,0.1,6000.0,C,0.09,2024 MLB Champion,6000.0,6.0,6.1,2.0,0.9,0.09
+2023-12-01,DraftKings,Football,Discord,,AFC North Champion - Cleveland Browns,Y,0.25,800.0,L,,,800.0,2.0,2.0,11.0,0.78,0.0
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Reds,N,0.1,2500.0,L,,2024 MLB NL Champion,2500.0,2.5,2.6,4.0,0.9,-0.1
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Cubs,N,0.1,1200.0,L,,2024 MLB NL Champion,1200.0,1.2,1.3,8.0,0.91,-0.1
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Brewers,N,0.1,1700.0,L,,2024 MLB NL Champion,1700.0,1.7,1.8,6.0,0.91,-0.1
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,NL Champion- Cardinals,N,0.1,1200.0,L,,2024 MLB NL Champion,1200.0,1.2,1.3,8.0,0.91,-0.1
+2023-12-01,Caesars,Baseball,Sheehan Newsletter,,AL Champion- Guardians,N,0.1,2200.0,P,,2024 MLB AL Champion,2200.0,2.2,2.3,4.0,0.9,0.0
+2024-02-09,DraftKings,Baseball,Intuition,,"AL MVP- Bobby Witt, Jr.",Y,0.1,2200.0,L,,,2200.0,2.2,2.2,4.0,0.9,0.0
+2024-02-25,FanDuel,Baseball,Intuition,,"Stolen Bases Leader- Bobby Witt, Jr.",N,0.1,1100.0,L,,2024 MLB Stolen Bases Leader,1100.0,1.1,1.2,8.0,0.91,-0.1
+2024-02-25,DraftKings,Baseball,Intuition,,AL Central Champion- KC Royals,C,0.2,850.0,C,0.24,,850.0,1.7,1.9,11.0,0.82,0.24
+2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- DET/KC,N,0.2,1900.0,L,,2024 MLB AL Central Finish 1st and 2nd Place,1900.0,3.8,4.0,5.0,0.81,-0.2
+2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- CLE/KC,N,0.2,2000.0,W,,2024 MLB AL Central Finish 1st and 2nd Place,2000.0,4.0,4.2,5.0,0.81,4.2
+2024-02-26,DraftKings,Baseball,Intuition,,AL Central Top 2 Finish- MIN/KC,N,0.2,650.0,L,,2024 MLB AL Central Finish 1st and 2nd Place,650.0,1.3,1.5,13.0,0.83,-0.2
+2024-02-26,DraftKings,Baseball,Trevor May,,World Series Exact - Orioles beat Braves,Y,0.1,4000.0,L,,2024 MLB World Series Exact,4000.0,4.0,4.0,2.0,0.9,0.0
+2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Shohei Ohtani,N,0.2,900.0,L,,2024 MLB Home Run Leader,900.0,1.8,2.0,10.0,0.82,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Yordan Alvarez,N,0.2,1300.0,L,,2024 MLB Home Run Leader,1300.0,2.6,2.8,7.0,0.81,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Juan Soto,N,0.2,1400.0,L,,2024 MLB Home Run Leader,1400.0,2.8,3.0,7.0,0.81,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,"Home Run Leader- Vlad, Jr",N,0.2,1900.0,L,,2024 MLB Home Run Leader,1900.0,3.8,4.0,5.0,0.81,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Home Run Leader- Ronald Acuna,N,0.2,1900.0,L,,2024 MLB Home Run Leader,1900.0,3.8,4.0,5.0,0.81,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Kyle Tucker,N,0.2,3000.0,L,,2024 MLB Hits Leader,3000.0,6.0,6.2,3.0,0.81,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Jose Altuve,N,0.2,2100.0,L,,2024 MLB Hits Leader,2100.0,4.2,4.4,5.0,0.81,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Freddie Freeman,N,0.2,1000.0,L,,2024 MLB Hits Leader,1000.0,2.0,2.2,9.0,0.82,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Jose Ramirez,N,0.2,2100.0,L,,2024 MLB Hits Leader,2100.0,4.2,4.4,5.0,0.81,-0.2
+2024-02-26,FanDuel,Baseball,Odds history,,Hits Leader- Bo Bichette,N,0.2,1200.0,L,,2024 MLB Hits Leader,1200.0,2.4,2.6,8.0,0.82,-0.2
+2024-02-26,FanDuel,Baseball,Intuition,,"Triples Leader- Bobby Witt, Jr.",N,0.1,1100.0,L,,,1100.0,1.1,1.2,8.0,0.91,-0.1
+2024-03-13,DraftKings,Baseball,Sportsline,,AL Winner- Mariners,N,0.1,900.0,C,0.01,2024 MLB AL Champion,900.0,0.9,1.0,10.0,0.91,0.01
+2024-03-13,DraftKings,Baseball,Sportsline,,AL Winner- Guardians,N,0.1,2800.0,C,0.19,2024 MLB AL Champion,2800.0,2.8,2.9,3.0,0.9,0.19
+2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Yankees,N,0.1,1000.0,P,,2024 MLB Champion,1000.0,1.0,1.1,9.0,0.91,0.0
+2024-03-13,DraftKings,Baseball,Sportsline,,MLB Champion- Phillies,N,0.1,1500.0,L,,2024 MLB Champion,1500.0,1.5,1.6,6.0,0.91,-0.1
+2024-03-13,DraftKings,Baseball,Sportsline,,AL Cy Young- Cole Ragans,N,0.1,1800.0,L,,2024 AL Cy Young,1800.0,1.8,1.9,5.0,0.9,-0.1
+2024-03-13,DraftKings,Baseball,Intuition,,"Runs Leader- Bobby Witt, Jr.",N,0.1,1300.0,L,,,1300.0,1.3,1.4,7.0,0.91,-0.1
+2024-03-13,DraftKings,Baseball,Intuition,,"Doubles Leader- Bobby Witt, Jr.",N,0.1,2500.0,L,,,2500.0,2.5,2.6,4.0,0.9,-0.1
+2024-03-13,DraftKings,Baseball,Intuition,,League Playoff Seed- Royals #6,N,0.1,2000.0,L,,,2000.0,2.0,2.1,5.0,0.9,-0.1
+2024-03-17,DraftKings,Baseball,Laghezza,,Home Run Leader- Adolis Garcia,N,0.1,4500.0,L,,2024 MLB Home Run Leader,4500.0,4.5,4.6,2.0,0.9,-0.1
+2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Oneil Cruz,N,0.1,11000.0,L,,2024 MLB Home Run Leader,11000.0,11.0,11.1,1.0,0.9,-0.1
+2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Marcell Ozuna,N,0.1,9500.0,L,,2024 MLB Home Run Leader,9500.0,9.5,9.6,1.0,0.9,-0.1
+2024-03-17,FanDuel,Baseball,Laghezza,,Home Run Leader- Jake Burger,N,0.1,12000.0,L,,2024 MLB Home Run Leader,12000.0,12.0,12.1,1.0,0.9,-0.1
+2024-03-17,FanDuel,Baseball,Laghezza,,"Hits Leader- Vlad, Jr.",N,0.1,6500.0,L,,2024 MLB Hits Leader,6500.0,6.5,6.6,2.0,0.9,-0.1
+2024-03-17,FanDuel,Baseball,Laghezza,,Stolen Bases Leader- CJ Abrams,N,0.1,850.0,L,,2024 MLB Stolen Bases Leader,850.0,0.85,0.95,11.0,0.91,-0.1
+2024-03-17,FanDuel,Baseball,Laghezza,,Stolen Bases Leader- Nico Hoerner,N,0.1,4500.0,L,,2024 MLB Stolen Bases Leader,4500.0,4.5,4.6,2.0,0.9,-0.1
+2024-03-17,DraftKings,Baseball,Laghezza,,Saves Leader- Raisel Iglesias,N,0.1,1500.0,L,,2024 MLB Saves Leader,1500.0,1.5,1.6,6.0,0.91,-0.1
+2024-03-17,FanDuel,Baseball,Laghezza,,Saves Leader- Andres Munoz,N,0.1,2100.0,L,,2024 MLB Saves Leader,2100.0,2.1,2.2,5.0,0.9,-0.1
+2024-03-19,DraftKings,Baseball,Sheehan Newsletter,,RBI Leader- Nolan Arenado,N,0.1,5500.0,L,,2024 MLB RBI Leader,5500.0,5.5,5.6,2.0,0.9,-0.1
+2024-03-19,DraftKings,Baseball,Sheehan Newsletter,,RBI Leader- Alex Bregman,N,0.1,5500.0,L,,2024 MLB RBI Leader,5500.0,5.5,5.6,2.0,0.9,-0.1
+2024-03-19,DraftKings,Baseball,Internet,https://www.mlb.com/news/mlb-strikeout-leader-candidates-for-2024,K Leader- Hunter Greene,N,0.1,1400.0,L,,2024 MLB K Leader,1400.0,1.4,1.5,7.0,0.91,-0.1
+2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/baseball-strikeout-leader-odds/,K Leader- Cole Ragans,N,0.1,2500.0,L,,2024 MLB K Leader,2500.0,2.5,2.6,4.0,0.9,-0.1
+2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/baseball-strikeout-leader-odds/,K Leader- Kodai Senga,N,0.1,2000.0,L,,2024 MLB K Leader,2000.0,2.0,2.1,5.0,0.9,-0.1
+2024-03-19,DraftKings,Baseball,Internet,https://www.actionnetwork.com/mlb/mlb-predictions-2024-stat-leaders-best-bets-home-runs-strikeouts-stolen-bases,K Leader- Nick Pivetta,N,0.1,5000.0,L,,2024 MLB K Leader,5000.0,5.0,5.1,2.0,0.9,-0.1
+2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/rbi-leader-odds/,RBI Leader- Shohei Ohtani,N,0.1,900.0,L,,2024 MLB RBI Leader,900.0,0.9,1.0,10.0,0.91,-0.1
+2024-03-19,DraftKings,Baseball,Internet,https://www.sportsbookreview.com/picks/mlb/rbi-leader-odds/,RBI Leader- Ronald Acuna,N,0.1,3000.0,L,,2024 MLB RBI Leader,3000.0,3.0,3.1,3.0,0.9,-0.1
+2024-03-19,DraftKings,Baseball,Intuition,,"RBI Leader- Bobby Witt, Jr.",N,0.1,7000.0,L,,2024 MLB RBI Leader,7000.0,7.0,7.1,1.0,0.9,-0.1
+2024-03-26,DraftKings,Baseball,Action Network,+200 odds boost,Home Run Leader- Austin Riley,N,0.1,2100.0,L,,2024 MLB Home Run Leader,2100.0,2.1,2.2,5.0,0.9,-0.1
+2024-03-26,DraftKings,Baseball,Action Network,,Stolen Bases Leader- Julio Rodriguez,N,0.1,3000.0,L,,,3000.0,3.0,3.1,3.0,0.9,-0.1
+2024-03-26,DraftKings,Baseball,Action Network,,Division 1st Place- Rays,N,0.1,550.0,L,,,550.0,0.55,0.65,15.0,0.92,-0.1
+2024-03-26,DraftKings,Baseball,Action Network,,Division 3rd Place- Royals,N,0.1,260.0,L,,,260.0,0.26,0.36,28.0,0.93,-0.1
+2024-03-26,DraftKings,Baseball,Action Network,,"Division 1,2,3- Min, Cle, KC",N,0.1,800.0,L,,,800.0,0.8,0.9,11.0,0.91,-0.1
+2024-03-26,DraftKings,Baseball,Action Network,,Royals 65-70 wins,N,0.1,450.0,L,,,450.0,0.45,0.55,18.0,0.92,-0.1
+2024-03-31,DraftKings,Baseball,Sheehan Newsletter,,World Series Exact - Dodgers beat Astros,N,0.1,1800.0,L,,2024 MLB World Series Exact,1800.0,1.8,1.9,5.0,0.9,-0.1
+2024-05-23,DraftKings,Baseball,Intuition,,AL Cy Young- Seth Lugo,N,0.1,2200.0,L,,2024 AL Cy Young,2200.0,2.2,2.3,4.0,0.9,-0.1
+2024-08-06,DraftKings,Baseball,Sheehan Newsletter,,NL West Winner- Padres,N,0.1,1000.0,C,0.06,,1000.0,1.0,1.1,9.0,0.91,0.06
+2024-09-01,Caesars,Baseball,Sheehan Newsletter,,Make Playoffs- Cubs,N,0.1,750.0,L,,,750.0,0.75,0.85,12.0,0.91,-0.1
+2024-09-24,DraftKings,Baseball,Wild Card Wins World Series Angle,,ML Champion- Royals,N,0.1,4000.0,C,0.12,2024 MLB Champion,4000.0,4.0,4.1,2.0,0.9,0.12
+2024-09-24,DraftKings,Baseball,Wild Card Wins World Series Angle,,ML Champion- Braves,N,0.1,3500.0,L,,2024 MLB Champion,3500.0,3.5,3.6,3.0,0.9,-0.1
+2024-09-24,DraftKings,Baseball,Wild Card Wins World Series Angle,,ML Champion- Orioles,N,0.1,1200.0,L,,2024 MLB Champion,1200.0,1.2,1.3,8.0,0.91,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Diamondbacks,N,0.1,3000.0,L,,2024 MLB Champion,3000.0,3.0,3.1,3.0,0.9,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Orioles,N,0.1,480.0,L,,2024 MLB AL Champion,480.0,0.48,0.58,17.0,0.92,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Diamondbacks,N,0.1,1400.0,L,,2024 MLB NL Champion,1400.0,1.4,1.5,7.0,0.91,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Braves,N,0.1,1700.0,L,,2024 MLB NL Champion,1700.0,1.7,1.8,6.0,0.91,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.1,5000.0,C,0.2,2024 MLB AL Champion,5000.0,5.0,5.1,2.0,0.9,0.2
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Orioles,N,0.1,480.0,L,,2024 MLB AL Champion,480.0,0.48,0.58,17.0,0.92,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Royals,N,0.1,3600.0,C,0.21,2024 MLB Champion,3600.0,3.6,3.7,3.0,0.9,0.21
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Royals,N,0.1,1600.0,C,0.14,2024 MLB AL Champion,1600.0,1.6,1.7,6.0,0.91,0.14
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.1,1900.0,C,0.24,2024 MLB AL Champion,1900.0,1.9,2.0,5.0,0.9,0.24
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Padres,N,0.1,600.0,L,,2024 MLB NL Champion,600.0,0.6,0.7,14.0,0.91,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.1,1400.0,P,,2024 MLB NL Champion,1400.0,1.4,1.5,7.0,0.91,0.0
+2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Padres,N,0.1,1200.0,L,,2024 MLB Champion,1200.0,1.2,1.3,8.0,0.91,-0.1
+2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Mets,N,0.1,3000.0,C,0.23,2024 MLB Champion,3000.0,3.0,3.1,3.0,0.9,0.23
