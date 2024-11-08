@@ -322,7 +322,12 @@ Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,be
 2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Royals,N,0.10,1600,C,0.14,2024 MLB AL Champion
 2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.10,1900,C,0.24,2024 MLB AL Champion
 2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Padres,N,0.10,600,L,,2024 MLB NL Champion
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.10,1400,P,,2024 MLB NL Champion
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.10,1400,L,,2024 MLB NL Champion
 2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Padres,N,0.10,1200,L,,2024 MLB Champion
 2024-10-20,Fanatics,Basketball,Intuition,Got a 20% boost,PPG Leader- Shai Gilgeous-Alexander,N,0.20,625,P,,2025 NBA PPG Leader
 2024-10-20,Fanatics,Basketball,Intuition,Got a 20% boost,PPG Leader- Joel Embiid,N,0.20,375,P,,2025 NBA PPG Leader
+2024-10-26,DraftKings,Basketball,Intuition,,Rebounds Leader- Rudy Gobert,N,0.10,500,P,,2025 NBA Rebounds Leader
+2024-10-26,DraftKings,Basketball,Intuition,,Rebounds Leader- Victor Wembanyama,N,0.10,600,P,,2025 NBA Rebounds Leader
+2024-10-26,DraftKings,Basketball,Intuition,,Rebounds Leader- Jalen Duren,N,0.10,1600,P,,2025 NBA Rebounds Leader
+2024-10-26,DraftKings,Basketball,Intuition,,Assists Leader- Lamelo Ball,N,0.10,3000,P,,2025 NBA Assists Leader
+2024-10-26,DraftKings,Basketball,Intuition,,Assists Leader- Luka Doncic,N,0.10,600,P,,2025 NBA Assists Leader

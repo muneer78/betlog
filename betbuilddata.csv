@@ -322,7 +322,12 @@ Date,Sportsbook,Sport,System,Notes,Pick,FreeBet,Amount,Odds,Result,PushAmount,be
 2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Royals,N,0.1,1600.0,C,0.14,2024 MLB AL Champion,1600.0,1.6,1.7,6.0,0.91,0.14
 2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,AL Champion- Tigers,N,0.1,1900.0,C,0.24,2024 MLB AL Champion,1900.0,1.9,2.0,5.0,0.9,0.24
 2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Padres,N,0.1,600.0,L,,2024 MLB NL Champion,600.0,0.6,0.7,14.0,0.91,-0.1
-2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.1,1400.0,P,,2024 MLB NL Champion,1400.0,1.4,1.5,7.0,0.91,0.0
+2024-09-24,FanDuel,Baseball,Wild Card Gets To World Series Angle,,NL Champion- Mets,N,0.1,1400.0,L,,2024 MLB NL Champion,1400.0,1.4,1.5,7.0,0.91,-0.1
 2024-09-24,FanDuel,Baseball,Wild Card Wins World Series Angle,,ML Champion- Padres,N,0.1,1200.0,L,,2024 MLB Champion,1200.0,1.2,1.3,8.0,0.91,-0.1
 2024-10-20,Fanatics,Basketball,Intuition,Got a 20% boost,PPG Leader- Shai Gilgeous-Alexander,N,0.2,625.0,P,,2025 NBA PPG Leader,625.0,1.25,1.45,14.0,0.83,0.0
 2024-10-20,Fanatics,Basketball,Intuition,Got a 20% boost,PPG Leader- Joel Embiid,N,0.2,375.0,P,,2025 NBA PPG Leader,375.0,0.75,0.95,21.0,0.84,0.0
+2024-10-26,DraftKings,Basketball,Intuition,,Rebounds Leader- Rudy Gobert,N,0.1,500.0,P,,2025 NBA Rebounds Leader,500.0,0.5,0.6,17.0,0.92,0.0
+2024-10-26,DraftKings,Basketball,Intuition,,Rebounds Leader- Victor Wembanyama,N,0.1,600.0,P,,2025 NBA Rebounds Leader,600.0,0.6,0.7,14.0,0.91,0.0
+2024-10-26,DraftKings,Basketball,Intuition,,Rebounds Leader- Jalen Duren,N,0.1,1600.0,P,,2025 NBA Rebounds Leader,1600.0,1.6,1.7,6.0,0.91,0.0
+2024-10-26,DraftKings,Basketball,Intuition,,Assists Leader- Lamelo Ball,N,0.1,3000.0,P,,2025 NBA Assists Leader,3000.0,3.0,3.1,3.0,0.9,0.0
+2024-10-26,DraftKings,Basketball,Intuition,,Assists Leader- Luka Doncic,N,0.1,600.0,P,,2025 NBA Assists Leader,600.0,0.6,0.7,14.0,0.91,0.0
