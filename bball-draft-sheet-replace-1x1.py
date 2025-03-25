@@ -1,0 +1,11 @@
+dffgpit = dffgpit.replace(r'[^\w\s]|_\*', '', regex=True).replace(r'\bJr$', '', regex=True).replace(r'II$', '', regex=True)
+dfstuff = dfstuff.replace(r'[^\w\s]|_\*', '', regex=True).replace(r'\bJr$', '', regex=True).replace(r'II$', '', regex=True)
+dfadp= dfadp.replace(r'[^\w\s]|_\*', '', regex=True).replace(r'\bJr$', '', regex=True).replace(r'II$', '',regex=True)
+dfzpit= dfzpit.replace(r'[^\w\s]|_\*', '', regex=True).replace(r'\bJr$', '', regex=True).replace(r'II$', '',regex=True)
+dffghit= dffghit.replace(r'[^\w\s]|_\*', '', regex=True).replace(r'\bJr$', '', regex=True).replace(r'II$', '',regex=True)
+dfzhit= dfzhit.replace(r'[^\w\s]|_\*', '', regex=True).replace(r'\bJr$', '', regex=True).replace(r'II$', '',regex=True)
+dflaghezza= dflaghezza.replace(r'[^\w\s]|_\*', '', regex=True).replace(r'\bJr$', '', regex=True).replace(r'II$', '',regex=True)
+
+dffghit.columns = dffghit.columns.str.strip()
+dfstuff.columns = dfstuff.columns.str.strip()
+dfadp.columns = dfadp.columns.str.strip()
