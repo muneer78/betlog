@@ -37,6 +37,7 @@ if decimal_odds_leg1 is not None:
 
     print(f"Odds needed to reach a parlay of +100: {required_odds:.2f}")
     print(
-        f"American odds needed to reach a parlay of +100: {required_american_odds:+d}")
+        f"American odds needed to reach a parlay of +100: {required_american_odds:+d}"
+    )
 else:
     print("American odds of 0 cannot be converted to decimal odds.")

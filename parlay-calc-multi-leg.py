@@ -33,7 +33,8 @@ total_decimal_odds = 1.0  # Initialize total decimal odds to 1.0
 # Input American odds for each leg of the parlay
 while True:
     american_odds = float(
-        input("Enter American odds for the next leg (or 0 to calculate): "))
+        input("Enter American odds for the next leg (or 0 to calculate): ")
+    )
 
     if american_odds == 0:
         break
@@ -63,7 +64,8 @@ else:
     required_odds_american = decimal_to_american(required_odds)
 
     print(
-        f"To achieve a parlay odds of +100 with the current legs and a new leg, the next leg needs to have American odds of {required_odds_american:+d}")
+        f"To achieve a parlay odds of +100 with the current legs and a new leg, the next leg needs to have American odds of {required_odds_american:+d}"
+    )
 
 # Display the total American odds for the parlay
 total_american_odds = decimal_to_american(total_decimal_odds)

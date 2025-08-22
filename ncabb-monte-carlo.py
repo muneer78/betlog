@@ -3,7 +3,8 @@ import random
 import math
 from collections import Counter
 
-year = '2025'
+year = "2025"
+
 
 # Function to simulate a single round
 def simulate_round(teams):
@@ -23,9 +24,12 @@ def simulate_round(teams):
             winners_per_round.append(teams[i][0])
     return next_round_teams, winners_per_round
 
+
 # write round of 64 bracket to list
 next_round_teams = []
-with open(fr'/Users/muneer78/Documents/Projects/fantasy-sports/bracket{year}.csv', mode='r') as file:
+with open(
+    rf"/Users/muneer78/Documents/Projects/fantasy-sports/bracket{year}.csv", mode="r"
+) as file:
     csv_file = csv.reader(file)
     for line in csv_file:
         next_round_teams.append(line)
@@ -48,11 +52,11 @@ for round_num, winners in round_winners.items():
     most_common_winners_per_round[round_num] = Counter(winners).most_common()
 
 # Write the most common winners for each game in each round to final output
-with open(fr"/Users/muneer78/Downloads/{year}_montecarlo_results.txt", "w") as f:
+with open(rf"/Users/muneer78/Downloads/{year}_montecarlo_results.txt", "w") as f:
     for round_num, winners in most_common_winners_per_round.items():
-        print(f"Round of {2**(6-round_num)}:", file=f)
+        print(f"Round of {2 ** (6 - round_num)}:", file=f)
         for i, (winner, count) in enumerate(winners):
-            print(f"Team {i+1}: {winner} ({count} times)", file=f)
+            print(f"Team {i + 1}: {winner} ({count} times)", file=f)
         print("\n", file=f)
 
 print(f"Simulation complete. Results written to {year}_montecarlo_results.txt")

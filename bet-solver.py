@@ -7,9 +7,8 @@ prob = LpProblem("Maximize_Size", LpMaximize)
 item_1 = LpVariable("Smallest Bet", lowBound=9, cat="Integer")
 item_2 = LpVariable("Medium Bet", lowBound=10, cat="Integer")
 item_3 = LpVariable(
-    "Largest Bet",
-    lowBound=11,
-    cat="Integer")  # No lower bound for item_3
+    "Largest Bet", lowBound=11, cat="Integer"
+)  # No lower bound for item_3
 
 # Define prices and budget
 prices = [1, 1, 1]
@@ -21,14 +20,16 @@ objective_item_2 = item_2
 objective_item_3 = item_3
 
 # Define the constraint: total cost should equal the budget
-prob += prices[0] * item_1 + prices[1] * item_2 + \
-    prices[2] * item_3 == budget, "Budget_Constraint"
+prob += (
+    prices[0] * item_1 + prices[1] * item_2 + prices[2] * item_3 == budget,
+    "Budget_Constraint",
+)
 
 # Ensure that the remaining budget is non-negative
 remaining_budget = budget - (
-    (prices[0] * item_1 if item_1.varValue is not None else 0) +
-    (prices[1] * item_2 if item_2.varValue is not None else 0) +
-    (prices[2] * item_3 if item_3.varValue is not None else 0)
+    (prices[0] * item_1 if item_1.varValue is not None else 0)
+    + (prices[1] * item_2 if item_2.varValue is not None else 0)
+    + (prices[2] * item_3 if item_3.varValue is not None else 0)
 )
 prob += remaining_budget >= 0, "Non_Negative_Budget"
 
@@ -37,9 +38,9 @@ prob.solve()
 
 # Calculate the total cost of the purchased items
 total_cost = (
-    (prices[0] * item_1.varValue if item_1.varValue is not None else 0) +
-    (prices[1] * item_2.varValue if item_2.varValue is not None else 0) +
-    (prices[2] * item_3.varValue if item_3.varValue is not None else 0)
+    (prices[0] * item_1.varValue if item_1.varValue is not None else 0)
+    + (prices[1] * item_2.varValue if item_2.varValue is not None else 0)
+    + (prices[2] * item_3.varValue if item_3.varValue is not None else 0)
 )
 
 # Calculate the remaining budget

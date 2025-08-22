@@ -1,6 +1,7 @@
 """
 First asking for input to calc the EV
 """
+
 amount = float(input("How much is at stake?\n"))
 odds = int(input("What are the odds?\n"))
 

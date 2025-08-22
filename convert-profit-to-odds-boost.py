@@ -8,6 +8,7 @@ def american_to_decimal(american_odds):
         return None  # Return None for American odds of 0
     return decimal_odds
 
+
 def decimal_to_american(decimal_odds):
     if decimal_odds > 2:
         american_odds = (decimal_odds - 1) * 100
@@ -16,6 +17,7 @@ def decimal_to_american(decimal_odds):
     else:
         return 0  # Return 0 for even odds (decimal odds of 2)
     return int(american_odds)
+
 
 # Input American odds for the current leg (Leg1 odds)
 american_odds = float(input("Enter American odds: "))
@@ -26,8 +28,7 @@ odds_decimal = american_to_decimal(american_odds)
 
 # Calculate boosted odds profit to original odds profit ratio
 minus_stake = odds_decimal - 1
-boosted = (minus_stake * (1+ (boost/100))) +1
+boosted = (minus_stake * (1 + (boost / 100))) + 1
 american_odds_after_boost = decimal_to_american(boosted)
 
 print(f"The odds after the boost are {american_odds_after_boost}")
-

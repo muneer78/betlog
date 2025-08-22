@@ -3,6 +3,8 @@ def american_to_decimal(odds):
         return round((100 / abs(odds)) + 1, 2)
     else:
         return round((odds / 100) + 1, 2)
+
+
 def calculate_arbitrage_profit(odds_a, odds_b, stake):
     # Convert American odds to decimal
     odds_a_decimal = american_to_decimal(odds_a)
@@ -27,8 +29,8 @@ def calculate_arbitrage_profit(odds_a, odds_b, stake):
     profit_a = (stake * odds_a_decimal) - stake_b
 
     # Calculate potential losses if each bet loses
-    loss_1 = (-1 * stake)
-    loss_2 = (-1 * stake_b)
+    loss_1 = -1 * stake
+    loss_2 = -1 * stake_b
 
     # Adjust profit for each outcome if each bet loses
     outcome_1 = profit_a + loss_1
@@ -38,14 +40,25 @@ def calculate_arbitrage_profit(odds_a, odds_b, stake):
     payout_outcome_1 = stake + outcome_1
     payout_outcome_2 = stake_b + outcome_2
 
-    return outcome_1, outcome_2, stake_b, loss_1, loss_2, payout_outcome_1, payout_outcome_2
+    return (
+        outcome_1,
+        outcome_2,
+        stake_b,
+        loss_1,
+        loss_2,
+        payout_outcome_1,
+        payout_outcome_2,
+    )
+
 
 # Example usage
 odds_a_american = -117
 odds_b_american = 150
 stake = 10  # Example stake
 
-outcome_1, outcome_2, stake_b, loss_1, loss_2, payout_outcome_1, payout_outcome_2 = calculate_arbitrage_profit(odds_a_american, odds_b_american, stake)
+outcome_1, outcome_2, stake_b, loss_1, loss_2, payout_outcome_1, payout_outcome_2 = (
+    calculate_arbitrage_profit(odds_a_american, odds_b_american, stake)
+)
 print("Stake for outcome B: ${:.2f}".format(stake_b))
 print("Profit for Outcome 1: ${:.2f}".format(outcome_1))
 print("Profit for Outcome 2: ${:.2f}".format(outcome_2))

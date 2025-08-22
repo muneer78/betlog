@@ -22,8 +22,7 @@ def implied_prob_to_american(implied_prob):
         american_odds = -100 / (implied_prob / (1 - implied_prob))
     else:
         american_odds = (1 - implied_prob) / implied_prob * 100
-    return int(american_odds) if american_odds.is_integer(
-    ) else round(american_odds)
+    return int(american_odds) if american_odds.is_integer() else round(american_odds)
 
 
 def calculate_no_vig_to_american(no_vig_odds):

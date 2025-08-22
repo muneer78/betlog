@@ -2,40 +2,43 @@ import csv
 import random
 import math
 
-year = '2025'
+year = "2025"
 
 # write round of 64 bracket to list
 next_round_teams = []
-with open(fr'/Users/muneer78/Documents/Projects/fantasy-sports/bracket{year}.csv', mode ='r')as file:
+with open(
+    rf"/Users/muneer78/Documents/Projects/fantasy-sports/bracket{year}.csv", mode="r"
+) as file:
     csv_file = csv.reader(file)
     for line in csv_file:
         next_round_teams.append(line)
-    
+
 # write everything to results text file
-with open(fr"/Users/muneer78/Downloads/{year}_single_sim_results.txt", "w") as f:
+with open(rf"/Users/muneer78/Downloads/{year}_single_sim_results.txt", "w") as f:
     while 1:
-        
         # define list of teams for this round and clean list for next round
         teams = next_round_teams
         next_round_teams = []
 
         # print which round we are in
-        print(f'######### ROUND OF {len(teams)} #########\n', file=f)
+        print(f"######### ROUND OF {len(teams)} #########\n", file=f)
 
         # loop through all the teams, 2 at a time (each pass of the loop those two teams play eachother)
         for i in range(0, len(teams), 2):
-
             # print the teams playing one another
-            print(f'#{teams[i][1]} {teams[i][0]} plays #{teams[i+1][1]} {teams[i+1][0]}', file=f)
+            print(
+                f"#{teams[i][1]} {teams[i][0]} plays #{teams[i + 1][1]} {teams[i + 1][0]}",
+                file=f,
+            )
 
             # get the difference in team seeding
-            seed_weight = int(teams[i][1]) - int(teams[i+1][1])
+            seed_weight = int(teams[i][1]) - int(teams[i + 1][1])
 
             # compute a 'correction' factor based on the difference in seeding
-            correction = round(math.sqrt(abs(seed_weight)*50), 4)
+            correction = round(math.sqrt(abs(seed_weight) * 50), 4)
             if seed_weight < 0:
-                correction = -1*correction
-            
+                correction = -1 * correction
+
             # compute a random number between 0 and 100
             r1 = random.randint(0, 100)
 
@@ -43,24 +46,26 @@ with open(fr"/Users/muneer78/Downloads/{year}_single_sim_results.txt", "w") as f
             # print(f'seed weight: {correction:.4f}', file=f)
             # print(f'random integer (0-100): {r1}', file=f)
 
-            # pick winner based on random number and 'correction' factor 
+            # pick winner based on random number and 'correction' factor
             if r1 < (50 + correction):
-                next_round_teams.append(teams[i+1])
+                next_round_teams.append(teams[i + 1])
             else:
                 next_round_teams.append(teams[i])
-            
+
             # # print results
             # print(f'since {r1} '>' if r1 > 50+{correction} else '<' 50+{correction}:.4f}'+
             #       f' #{next_round_teams[-1][1]} {next_round_teams[-1][0]} wins\n', file=f)
-            
+
             # print winner of each game
-            print(f'Winner: #{next_round_teams[-1][1]} {next_round_teams[-1][0]}', file=f)
-        
+            print(
+                f"Winner: #{next_round_teams[-1][1]} {next_round_teams[-1][0]}", file=f
+            )
+
         # add a few line break between rounds
-        print('\n\n', file=f)
+        print("\n\n", file=f)
 
         # if the number of next round teams is 1, we know we just finished the last round
         if len(next_round_teams) == 1:
             break
 
-print('Done')
+print("Done")

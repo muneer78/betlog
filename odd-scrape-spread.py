@@ -18,7 +18,7 @@
 
 # # Filter out games with status containing 'Final' or 'OT' and check the spread odds condition
 # filtered_games = [
-#     game for game in games 
+#     game for game in games
 #     if 'Final' not in game.get('status', '') and 'OT' not in game.get('status', '') and (
 #         any(odds > 11 for odds in game.get('home_spread', {}).values()) or
 #         any(odds > 11 for odds in game.get('away_spread', {}).values())
@@ -39,21 +39,24 @@ for sport in sports:
 
 # Filter out games with status containing 'Final' or 'OT' and check the spread odds condition
 filtered_games = [
-    game for game in games 
-    if 'Final' not in game.get('status', '') and 'OT' not in game.get('status', '') and (
-        any(odds > 15 for odds in game.get('home_spread', {}).values()) or
-        any(odds > 15 for odds in game.get('away_spread', {}).values())
+    game
+    for game in games
+    if "Final" not in game.get("status", "")
+    and "OT" not in game.get("status", "")
+    and (
+        any(odds > 15 for odds in game.get("home_spread", {}).values())
+        or any(odds > 15 for odds in game.get("away_spread", {}).values())
     )
 ]
 
 # Extract and print only the 'spread_odds' responses
 spread_odds_responses = [
     {
-        'date': game.get('date', ''),
-        'home_team': game.get('home_team', {}),
-        'home_spread': game.get('home_spread', {}),
-        'away_team': game.get('away_team', {}),
-        'away_spread': game.get('away_spread', {})
+        "date": game.get("date", ""),
+        "home_team": game.get("home_team", {}),
+        "home_spread": game.get("home_spread", {}),
+        "away_team": game.get("away_team", {}),
+        "away_spread": game.get("away_spread", {}),
     }
     for game in filtered_games
 ]

@@ -8,6 +8,7 @@ def american_to_decimal(american_odds):
         return None  # Return None for American odds of 0
     return decimal_odds
 
+
 # Input American odds for the current leg (Leg1 odds)
 american_odds = float(input("Enter American odds: "))
 boost = float(input("Enter boosted odds: "))
@@ -20,4 +21,3 @@ boost_decimal = american_to_decimal(boost)
 boost_percent = (boost_decimal / odds_decimal) - 1
 
 print(f"The boosted odds increased your payout by {boost_percent * 100:.2f}%")
-

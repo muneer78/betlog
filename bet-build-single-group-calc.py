@@ -15,17 +15,19 @@ def calculate_and_save_betting_results(group_name, data_list):
 
     # Calculate the gross_profit for winning bets
     df["odds"] = df["odds"].apply(
-        lambda x: int(x) if isinstance(
-            x, str) else x)  # Ensure odds are integers
+        lambda x: int(x) if isinstance(x, str) else x
+    )  # Ensure odds are integers
     df["decimal_odds"] = df["odds"].apply(american_to_decimal)
     df["gross_profit"] = df["bet_amount"] * (df["decimal_odds"] - 1)
 
     # Calculate the net_profit
-    df["net_profit"] = df.apply(lambda row: row["gross_profit"] -
-                                df[df.index != row.name]["bet_amount"].sum(), axis=1)
+    df["net_profit"] = df.apply(
+        lambda row: row["gross_profit"] - df[df.index != row.name]["bet_amount"].sum(),
+        axis=1,
+    )
 
     # Calculate the ROI
-    df["ROI"] = (100 * (df["net_profit"] / df["bet_amount"]))
+    df["ROI"] = 100 * (df["net_profit"] / df["bet_amount"])
     df["ROI"] = df["ROI"].round(2)
 
     # Format columns as needed
@@ -50,6 +52,11 @@ def calculate_and_save_betting_results(group_name, data_list):
 
 
 # Example usage with different data for multiple groups of bets
-data = [("Arizona", 1, "+1100"), ("Auburn", 1, "+2100"), ("Alabama", 1, "+2000"),
-        ("Iowa State", 1, "+2000"), ("Tennessee", 1, "+1400")]
+data = [
+    ("Arizona", 1, "+1100"),
+    ("Auburn", 1, "+2100"),
+    ("Alabama", 1, "+2000"),
+    ("Iowa State", 1, "+2000"),
+    ("Tennessee", 1, "+1400"),
+]
 calculate_and_save_betting_results("Returns", data)
