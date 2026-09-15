@@ -1,62 +1,84 @@
-import pandas as pd
+from collections.abc import Sequence
+from typing import TypeAlias
+
+import polars as pl
+
+Bet: TypeAlias = tuple[str, float, int | str]
 
 
-def calculate_and_save_betting_results(group_name, data_list):
-    # Create a DataFrame with three columns
-    df = pd.DataFrame(data_list, columns=["bet", "bet_amount", "odds"])
+def calculate_betting_results(data: Sequence[Bet]) -> pl.DataFrame:
+    """Calculate the return for each possible winning bet in a bet group."""
+    if not data:
+        raise ValueError("data must contain at least one bet")
 
-    # Function to convert American odds to decimal odds
-    def american_to_decimal(american_odds):
-        if american_odds > 0:
-            decimal_odds = 1 + (american_odds / 100)
-        else:
-            decimal_odds = 1 + (100 / abs(american_odds))
-        return decimal_odds
+    results = pl.DataFrame(
+        data,
+        schema={
+            "bet": pl.String,
+            "bet_amount": pl.Float64,
+            "odds": pl.String,
+        },
+        orient="row",
+    ).with_columns(pl.col("odds").cast(pl.Int64))
 
-    # Calculate the gross_profit for winning bets
-    df["odds"] = df["odds"].apply(
-        lambda x: int(x) if isinstance(x, str) else x
-    )  # Ensure odds are integers
-    df["decimal_odds"] = df["odds"].apply(american_to_decimal)
-    df["gross_profit"] = df["bet_amount"] * (df["decimal_odds"] - 1)
+    if results["bet_amount"].le(0).any():
+        raise ValueError("bet amounts must be greater than zero")
+    if results["odds"].eq(0).any():
+        raise ValueError("American odds cannot be zero")
 
-    # Calculate the net_profit
-    df["net_profit"] = df.apply(
-        lambda row: row["gross_profit"] - df[df.index != row.name]["bet_amount"].sum(),
-        axis=1,
+    total_staked = pl.col("bet_amount").sum()
+    decimal_odds = (
+        pl.when(pl.col("odds") > 0)
+        .then(1 + pl.col("odds") / 100)
+        .otherwise(1 + 100 / pl.col("odds").abs())
     )
 
-    # Calculate the ROI
-    df["ROI"] = 100 * (df["net_profit"] / df["bet_amount"])
-    df["ROI"] = df["ROI"].round(2)
-
-    # Format columns as needed
-    df["bet_amount"] = df["bet_amount"].map("${:.2f}".format)
-    df["gross_profit"] = df["gross_profit"].map("${:.2f}".format)
-    df["net_profit"] = df["net_profit"].map("${:.2f}".format)
-
-    # Calculate the minimum ROI
-    minimum_roi = df["ROI"].min()
-    minimum_roi = minimum_roi.round(2)
-
-    # Calculate the average ROI
-    average_roi = df["ROI"].mean()
-    average_roi = average_roi.round(2)
-
-    # Display the results with the Bet Group Name as the title
-    print("Build Returns:")
-    print(df)
-    print("Minimum ROI:", minimum_roi)
-    print("Average ROI:", average_roi)
-    print("\n")
+    return (
+        results.with_columns(decimal_odds.alias("decimal_odds"))
+        .with_columns(
+            (pl.col("bet_amount") * (pl.col("decimal_odds") - 1)).alias("gross_profit")
+        )
+        .with_columns(
+            (pl.col("gross_profit") - (total_staked - pl.col("bet_amount"))).alias(
+                "net_profit"
+            )
+        )
+        .with_columns(
+            (100 * pl.col("net_profit") / pl.col("bet_amount")).round(2).alias("ROI")
+        )
+    )
 
 
-# Example usage with different data for multiple groups of bets
-data = [
-    ("Arizona", 1, "+1100"),
-    ("Auburn", 1, "+2100"),
-    ("Alabama", 1, "+2000"),
-    ("Iowa State", 1, "+2000"),
-    ("Tennessee", 1, "+1400"),
-]
-calculate_and_save_betting_results("Returns", data)
+def calculate_and_save_betting_results(
+    group_name: str, data_list: Sequence[Bet]
+) -> pl.DataFrame:
+    """Calculate and display betting results; return the numeric DataFrame."""
+    results = calculate_betting_results(data_list)
+
+    display_results = results.with_columns(
+        pl.col("bet_amount", "gross_profit", "net_profit").map_elements(
+            lambda value: f"${value:.2f}",
+            return_dtype=pl.String,
+        )
+    )
+
+    minimum_roi = results["ROI"].min()
+    average_roi = results["ROI"].mean()
+
+    print(f"{group_name}:")
+    print(display_results)
+    print(f"Minimum ROI: {minimum_roi:.2f}")
+    print(f"Average ROI: {average_roi:.2f}\n")
+
+    return results
+
+
+if __name__ == "__main__":
+    data = [
+        ("Arizona", 1, "+1100"),
+        ("Auburn", 1, "+2100"),
+        ("Alabama", 1, "+2000"),
+        ("Iowa State", 1, "+2000"),
+        ("Tennessee", 1, "+1400"),
+    ]
+    calculate_and_save_betting_results("Build Returns", data)
