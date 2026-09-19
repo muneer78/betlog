@@ -1,44 +1,31 @@
-def american_to_implied_prob(american_odds):
-    if american_odds > 0:
-        implied_prob = 100 / (american_odds + 100)
-    else:
-        implied_prob = -american_odds / (-american_odds + 100)
-    return implied_prob
+def american_to_probability(odds):
+    if odds > 0:
+        return 100 / (odds + 100)
+    return -odds / (-odds + 100)
 
 
-def calculate_no_vig_odds(american_odds, user_confidence):
-    implied_prob = american_to_implied_prob(american_odds)
-    no_vig_prob = 1 / (implied_prob - (1 - implied_prob))
-    no_vig_odds = 1 / no_vig_prob
-
-    # Calculate the edge
-    edge = user_confidence - implied_prob
-
-    return no_vig_odds, edge
+def expected_value(odds, probability):
+    profit = odds / 100 if odds > 0 else 100 / -odds
+    return probability * profit - (1 - probability)
 
 
-def implied_prob_to_american(implied_prob):
-    if implied_prob > 0.5:
-        american_odds = -100 / (implied_prob / (1 - implied_prob))
-    else:
-        american_odds = (1 - implied_prob) / implied_prob * 100
-    return int(american_odds) if american_odds.is_integer() else round(american_odds)
+def calculate_edge(odds, probability):
+    return probability - american_to_probability(odds)
 
 
-def calculate_no_vig_to_american(no_vig_odds):
-    implied_prob = 1 / no_vig_odds
-    american_odds = implied_prob_to_american(implied_prob)
-    return american_odds
+def main():
+    odds = 10000
+    probability = 0.15
+
+    implied_probability = american_to_probability(odds)
+    edge = calculate_edge(odds, probability)
+    ev = expected_value(odds, probability)
+
+    print(f"Implied probability: {implied_probability:.2%}")
+    print(f"Your probability: {probability:.2%}")
+    print(f"Edge: {edge:.2%}")
+    print(f"EV: {ev:.2f} units")
 
 
-# Example usage:
-given_american_odds = (
-    10000  # Replace with the American odds you want to remove the vig from
-)
-# Replace with the user's confidence in winning (as a decimal)
-user_confidence = 0.15
-
-no_vig_odds, edge = calculate_no_vig_odds(given_american_odds, user_confidence)
-american_odds = calculate_no_vig_to_american(no_vig_odds)
-
-print(f"Edge: {edge:.2%}")
+if __name__ == "__main__":
+    main()

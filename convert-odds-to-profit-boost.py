@@ -1,23 +1,20 @@
-# Function to convert American odds to decimal odds
-def american_to_decimal(american_odds):
-    if american_odds > 0:
-        decimal_odds = 1 + (american_odds / 100)
-    elif american_odds < 0:
-        decimal_odds = 1 + (100 / abs(american_odds))
-    else:
-        return None  # Return None for American odds of 0
-    return decimal_odds
+def profit_multiplier(odds):
+    return odds / 100 if odds > 0 else 100 / abs(odds)
 
 
-# Input American odds for the current leg (Leg1 odds)
-american_odds = float(input("Enter American odds: "))
-boost = float(input("Enter boosted odds: "))
+def american_odds(multiplier):
+    return multiplier * 100 if multiplier >= 1 else -100 / multiplier
 
-# Convert American odds to decimal odds
-odds_decimal = american_to_decimal(american_odds)
-boost_decimal = american_to_decimal(boost)
 
-# Calculate boosted odds profit to original odds profit ratio
-boost_percent = (boost_decimal / odds_decimal) - 1
+odds = float(input("Enter American odds: "))
+boost = float(input("Enter profit boost %: "))
+bet = input("Enter bet amount (optional): ")
 
-print(f"The boosted odds increased your payout by {boost_percent * 100:.2f}%")
+profit = profit_multiplier(odds) * (1 + boost / 100)
+
+print(f"Boosted odds: {american_odds(profit):+.0f}")
+
+if bet:
+    bet = float(bet)
+    print(f"Profit: ${bet * profit:.2f}")
+    print(f"Payout: ${bet * (1 + profit):.2f}")

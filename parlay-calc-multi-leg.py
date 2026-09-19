@@ -1,72 +1,43 @@
-# Function to convert positive American odds to decimal odds
-def american_to_decimal_positive(american_odds):
-    decimal_odds = (american_odds / 100) + 1
-    return decimal_odds
+def american_to_decimal(odds):
+    if odds > 0:
+        return 1 + odds / 100
+    return 1 + 100 / abs(odds)
 
 
-# Function to convert negative American odds to decimal odds
-def american_to_decimal_negative(american_odds):
-    decimal_odds = (100 / abs(american_odds)) + 1
-    return decimal_odds
+def decimal_to_american(odds):
+    if odds >= 2:
+        return round((odds - 1) * 100)
+    return round(-100 / (odds - 1))
 
 
-# Function to convert decimal odds to American odds
-def decimal_to_american(decimal_odds):
-    if decimal_odds > 2.0:
-        american_odds = (decimal_odds - 1) * 100
-    else:
-        american_odds = -100 / (decimal_odds - 1)
-    return int(american_odds)
+decimal_odds = 1.0
 
-
-# Function to calculate odds needed to reach a target parlay of 2
-# (equivalent to +100 in American odds)
-def calculate_parlay_odds(target_parlay_odds, current_parlay_odds):
-    needed_odds = target_parlay_odds / current_parlay_odds
-    return needed_odds
-
-
-# Initialize variables
-legs = []  # List to store American odds for each leg
-total_decimal_odds = 1.0  # Initialize total decimal odds to 1.0
-
-# Input American odds for each leg of the parlay
 while True:
-    american_odds = float(
-        input("Enter American odds for the next leg (or 0 to calculate): ")
-    )
+    odds = float(input("Enter leg odds (0 to finish): "))
 
-    if american_odds == 0:
+    if odds == 0:
         break
 
-    legs.append(american_odds)
+    decimal_odds *= american_to_decimal(odds)
 
-    if american_odds > 0:
-        decimal_odds = american_to_decimal_positive(american_odds)
+    current_odds = decimal_to_american(decimal_odds)
+    print(f"Current parlay: {current_odds:+d}")
+
+    if decimal_odds < 2:
+        needed_decimal = 2 / decimal_odds
+        needed_odds = decimal_to_american(needed_decimal)
+        print(f"Next leg needed for +100: {needed_odds:+d}")
     else:
-        decimal_odds = american_to_decimal_negative(american_odds)
+        print("Parlay has reached +100 or better.")
 
-    total_decimal_odds *= decimal_odds  # Update total decimal odds based on each leg
 
-# Calculate and display the total decimal odds
-print(f"Total Decimal Odds for the Parlay: {total_decimal_odds:.2f}")
+bet = float(input("\nBet amount: $"))
 
-# Check if the total decimal odds are already above 2.0 (equivalent to
-# +100 in American odds)
-if total_decimal_odds >= 2.0:
-    print("This parlay is already above +100 in American odds")
-else:
-    # Calculate the odds needed for the next leg to make the parlay reach 2.0
-    # in decimal odds
-    required_odds = calculate_parlay_odds(2.0, total_decimal_odds)
+american_odds = decimal_to_american(decimal_odds)
+profit = bet * (decimal_odds - 1)
+payout = bet * decimal_odds
 
-    # Convert the required decimal odds to American odds for the output
-    required_odds_american = decimal_to_american(required_odds)
-
-    print(
-        f"To achieve a parlay odds of +100 with the current legs and a new leg, the next leg needs to have American odds of {required_odds_american:+d}"
-    )
-
-# Display the total American odds for the parlay
-total_american_odds = decimal_to_american(total_decimal_odds)
-print(f"Total American Odds for the Parlay: {total_american_odds:+d}")
+print(f"\nFinal parlay odds: {american_odds:+d}")
+print(f"Bet: ${bet:.2f}")
+print(f"Profit: ${profit:.2f}")
+print(f"Payout: ${payout:.2f}")

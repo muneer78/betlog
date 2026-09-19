@@ -1,273 +1,144 @@
-"""
-Provides some arithmetic functions and ability to use regex
-"""
-
-import re
-import pandas as pd
-from skimpy import skim
-
-"""
-Code to show today's plays
-""" ""
-
-dfschedtoday = pd.read_excel("roster-resource-download.xlsx", usecols=[0, 1])
-dfpropstoday = pd.read_csv("fangraphs-leaderboards.csv")
-
-dfpropstoday["K/GS"] = dfpropstoday["SO"] / dfpropstoday["GS"]
-dfpropstoday["K/GS"] = dfpropstoday["K/GS"].round(2)
-dfpropstoday["BB/GS"] = dfpropstoday["BB"] / dfpropstoday["GS"]
-dfpropstoday["BB/GS"] = dfpropstoday["BB/GS"].round(2)
-dfpropstoday["IP/G"] = dfpropstoday["IP"] / dfpropstoday["GS"]
-dfpropstoday["IP/G"] = dfpropstoday["IP/G"].round(0)
-
-# Filter rows where GS > 1
-dfpropstoday = dfpropstoday.loc[
-    (dfpropstoday["GS"] > 1)
-    & (dfpropstoday["IP/G"] >= 5)
-    & (dfpropstoday["IP/G"] < 8)
-    & (dfpropstoday["K/GS"] <= 9)
-    & (dfpropstoday["BB/GS"] <= 6)
-]
-
-dfschedtoday.rename(columns={dfschedtoday.columns[1]: "Name"}, inplace=True)
-dfschedtoday = dfschedtoday.fillna(0)
-
-dfopponentstoday = pd.read_csv(
-    "fangraphs-leaderboards (1).csv", usecols=["Team", "K%", "BB%"]
-)
-
-dfopponentstoday.sort_values("K%", ascending=False, ignore_index=True, inplace=True)
-# Add a new column called "KRank"
-dfopponentstoday["KRank"] = range(1, len(dfopponentstoday) + 1)
-
-
-dfopponentstoday.sort_values("BB%", ascending=True, ignore_index=True, inplace=True)
-dfopponentstoday["BBRank"] = range(1, len(dfopponentstoday) + 1)
-
-dfschedtoday["Name"] = dfschedtoday["Name"].str.strip()
-opposing_teamstoday = dfschedtoday.iloc[:, 1].str.split("\n").str[0]
-dfschedtoday["OpposingTeam"] = opposing_teamstoday
-dfschedtoday["OpposingTeam"] = dfschedtoday["OpposingTeam"].str.replace("@ ", "")
-
-"""
-Deletes first line in cell from roster resource file
-"""
-
-
-def delete_first_line(cell_value):
-    lines = cell_value.split("\n")
-    if len(lines) > 1:
-        lines.pop(0)
-    return "\n".join(lines)
-
-
-"""
-Applies delete_first_line function
-"""
-dfschedtoday = dfschedtoday.applymap(delete_first_line)
-
-"""
-Remove the R or L from after pitcher name
-"""
-
-
-def remove_text(cell_value):
-    pattern = r"\s*\(R\)|\s*\(L\)"
-    return re.sub(pattern, "", cell_value)
-
-
-dfschedtoday = dfschedtoday.applymap(remove_text)
-
-# Generate dfopponents again
-dfopponentstoday = pd.read_csv(
-    "fangraphs-leaderboards (1).csv", usecols=["Team", "K%", "BB%"]
-)
-
-# Sort and add ranking columns
-dfopponentstoday.sort_values("K%", ascending=False, ignore_index=True, inplace=True)
-dfopponentstoday["KRank"] = range(1, len(dfopponentstoday) + 1)
-dfopponentstoday.sort_values("BB%", ascending=True, ignore_index=True, inplace=True)
-dfopponentstoday["BBRank"] = range(1, len(dfopponentstoday) + 1)
-
-# Update merged_merged_dfschedtoday with opponent data again
-dfschedtoday = pd.merge(
-    dfschedtoday, dfopponentstoday[["Team", "KRank", "BBRank"]], on="Team", how="left"
-)
-
-dfsortedBBtoday = dfpropstoday.sort_values("BB%+", ascending=True)
-dfbbtop25today = dfsortedBBtoday.head(25).fillna(0)
-
-dfsortedKtoday = dfpropstoday.sort_values("K%+", ascending=False)
-dfktop25today = dfsortedKtoday.head(25).fillna(0)
-
-matching_dfbbtop25today = dfschedtoday[
-    dfschedtoday["Name"].isin(dfbbtop25today["Name"])
-]
-matching_dfktop25today = dfschedtoday[dfschedtoday["Name"].isin(dfktop25today["Name"])]
-
-matching_dfbbtop25today = dfschedtoday[
-    (dfschedtoday["Name"].isin(dfbbtop25today["Name"])) & (dfschedtoday["BBRank"] <= 10)
-]
-matching_dfktop25today = dfschedtoday[
-    (dfschedtoday["Name"].isin(dfktop25today["Name"])) & (dfschedtoday["KRank"] <= 10)
-]
-
-matching_dfktop25today = pd.merge(
-    matching_dfktop25today,
-    dfktop25today[["Name", "K%+", "BB%+", "xFIP", "K/GS"]],
-    on="Name",
-    how="left",
-)
-matching_dfbbtop25today = pd.merge(
-    matching_dfbbtop25today,
-    dfbbtop25today[["Name", "K%+", "BB%+", "xFIP", "BB/GS"]],
-    on="Name",
-    how="left",
-)
-
-matching_dfktop25today = matching_dfktop25today.sort_values(by="K%+", ascending=False)
-matching_dfbbtop25today = matching_dfbbtop25today.sort_values(by="BB%+", ascending=True)
-
-
-"""
-Code to show tomorrow's plays
-""" ""
-
-dfschedtmr = pd.read_excel("roster-resource-download.xlsx", usecols=[0, 1, 2])
-dfpropstmr = pd.read_csv("fangraphs-leaderboards.csv")
-skim(dfpropstmr)
-
-
-dfpropstmr["K/GS"] = dfpropstmr["SO"] / dfpropstmr["GS"]
-dfpropstmr["K/GS"] = dfpropstmr["K/GS"].round(2)
-dfpropstmr["BB/GS"] = dfpropstmr["BB"] / dfpropstmr["GS"]
-dfpropstmr["BB/GS"] = dfpropstmr["BB/GS"].round(2)
-dfpropstmr["IP/G"] = dfpropstmr["IP"] / dfpropstmr["GS"]
-dfpropstmr["IP/G"] = dfpropstmr["IP/G"].round(0)
-dfpropstmr.fillna(0)
-
-# Filter rows where GS > 1
-dfpropstmr = dfpropstmr.loc[
-    (dfpropstmr["GS"] > 1)
-    & (dfpropstmr["IP/G"] >= 5)
-    & (dfpropstmr["IP/G"] < 8)
-    & (dfpropstmr["K/GS"] <= 9)
-    & (dfpropstmr["BB/GS"] <= 6)
-]
-
-dfschedtmr.rename(columns={dfschedtmr.columns[2]: "Name"}, inplace=True)
-dfschedtmr = dfschedtmr.fillna(0)
-
-# Delete the second column from dfschedtmr
-dfschedtmr = dfschedtmr.drop(dfschedtmr.columns[1], axis=1)
-
-dfopponentstmr = pd.read_csv(
-    "fangraphs-leaderboards (1).csv", usecols=["Team", "K%", "BB%"]
-)
-
-dfopponentstmr.sort_values("K%", ascending=False, ignore_index=True, inplace=True)
-
-# Add a new column called "KRank"
-dfopponentstmr["KRank"] = range(1, len(dfopponentstmr) + 1)
-
-
-dfopponentstmr.sort_values("BB%", ascending=True, ignore_index=True, inplace=True)
-dfopponentstmr["BBRank"] = range(1, len(dfopponentstmr) + 1)
-
-dfschedtmr["Name"] = dfschedtmr["Name"].str.strip()
-opposing_teamstmr = dfschedtmr.iloc[:, 1].str.split("\n").str[0]
-dfschedtmr["OpposingTeam"] = opposing_teamstmr
-dfschedtmr["OpposingTeam"] = dfschedtmr["OpposingTeam"].str.replace("@ ", "")
-
-"""
-Deletes first line in cell from roster resource file
-"""
-
-
-def delete_first_line(cell_value):
-    lines = cell_value.split("\n")
-    if len(lines) > 1:
-        lines.pop(0)
-    return "\n".join(lines)
-
-
-"""
-Applies delete_first_line function
-"""
-dfschedtmr = dfschedtmr.applymap(delete_first_line)
-
-"""
-Remove the R or L from after pitcher name
-"""
-
-
-def remove_text(cell_value):
-    pattern = r"\s*\(R\)|\s*\(L\)"
-    return re.sub(pattern, "", cell_value)
-
-
-dfschedtmr = dfschedtmr.applymap(remove_text)
-
-merged_dfschedtmr = pd.merge(
-    dfschedtmr, dfopponentstmr[["Team", "KRank", "BBRank"]], on="Team", how="left"
-)
-
-dfsortedBBtmr = dfpropstmr.sort_values("BB%+", ascending=True)
-dfbbtop25tmr = dfsortedBBtmr.head(25).fillna(0)
-skim(dfsortedBBtmr)
-
-dfsortedKtmr = dfpropstmr.sort_values("K%+", ascending=False)
-dfktop25tmr = dfsortedKtmr.head(25).fillna(0)
-
-matching_dfbbtop25tmr = merged_dfschedtmr[
-    merged_dfschedtmr["Name"].isin(dfbbtop25tmr["Name"])
-]
-matching_dfktop25tmr = merged_dfschedtmr[
-    merged_dfschedtmr["Name"].isin(dfktop25tmr["Name"])
-]
-
-matching_dfbbtop25tmr = merged_dfschedtmr[
-    (merged_dfschedtmr["Name"].isin(dfbbtop25tmr["Name"]))
-    & (merged_dfschedtmr["BBRank"] <= 10)
-]
-matching_dfktop25tmr = merged_dfschedtmr[
-    (merged_dfschedtmr["Name"].isin(dfktop25tmr["Name"]))
-    & (merged_dfschedtmr["KRank"] <= 10)
-]
-
-matching_dfktop25tmr = pd.merge(
-    matching_dfktop25tmr,
-    dfktop25tmr[["Name", "K%+", "BB%+", "xFIP", "K/GS"]],
-    on="Name",
-    how="left",
-)
-matching_dfbbtop25tmr = pd.merge(
-    matching_dfbbtop25tmr,
-    dfbbtop25tmr[["Name", "K%+", "BB%+", "xFIP", "BB/GS"]],
-    on="Name",
-    how="left",
-)
-
-matching_dfktop25tmr = matching_dfktop25tmr.sort_values(by="K%+", ascending=False)
-matching_dfbbtop25tmr = matching_dfbbtop25tmr.sort_values(by="BB%+", ascending=True)
-
-list_of_dfs = [
-    matching_dfktop25today,
-    matching_dfbbtop25today,
-    matching_dfktop25tmr,
-    matching_dfbbtop25tmr,
-]
-
-titles = [
-    "Pitcher High Strikeout Props Today",
-    "Pitcher Low BB Props Today",
-    "Pitcher High Strikeout Props Tomorrow",
-    "Pitcher Low BB Props Tomorrow",
-]
-
-with open("props.csv", "w+", encoding="utf8") as f:
-    for i, df in enumerate(list_of_dfs):
-        if not df.empty:  # Check if the dataframe is not empty
-            f.write(titles[i] + "\n")  # Write the title
-            df.round(2).to_csv(f, index=False)  # Round numbers to 2 digits
-            f.write("\n")
+import polars as pl
+from scipy.stats import poisson
+
+SCHEDULE_FILE = "roster-resource-download.xlsx"
+PITCHERS_FILE = "fangraphs-leaderboards.csv"
+TEAMS_FILE = "fangraphs-leaderboards (1).csv"
+
+
+def implied_probability(odds):
+    if odds > 0:
+        return 100 / (odds + 100)
+    return abs(odds) / (abs(odds) + 100)
+
+
+def fair_odds(probability):
+    if probability >= 0.5:
+        return round(-100 * probability / (1 - probability))
+    return round(100 * (1 - probability) / probability)
+
+
+def prop_probability(average, line, side):
+    cutoff = int(line)
+
+    if side == "OVER":
+        return poisson.sf(cutoff, average)
+
+    return poisson.cdf(cutoff, average)
+
+
+def load_pitchers():
+    return (
+        pl.read_csv(PITCHERS_FILE)
+        .with_columns(
+            (pl.col("SO") / pl.col("GS")).alias("K/GS"),
+            (pl.col("BB") / pl.col("GS")).alias("BB/GS"),
+            (pl.col("IP") / pl.col("GS")).alias("IP/G"),
+        )
+        .filter(
+            (pl.col("GS") > 1)
+            & pl.col("IP/G").is_between(5, 7)
+            & (pl.col("K/GS") <= 9)
+            & (pl.col("BB/GS") <= 6)
+        )
+    )
+
+
+def load_teams():
+    teams = pl.read_csv(TEAMS_FILE).select("Team", "K%", "BB%")
+
+    k_rank = (
+        teams.sort("K%", descending=True)
+        .with_row_index("KRank", offset=1)
+        .select("Team", "KRank")
+    )
+
+    bb_rank = (
+        teams.sort("BB%").with_row_index("BBRank", offset=1).select("Team", "BBRank")
+    )
+
+    return k_rank.join(bb_rank, on="Team")
+
+
+def load_schedule(day):
+    pitcher_col = 1 if day == "today" else 2
+
+    df = pl.read_excel(SCHEDULE_FILE).select(pl.all().gather([0, pitcher_col]))
+
+    team_col, pitcher_col = df.columns
+
+    return (
+        df.rename({pitcher_col: "Name"})
+        .with_columns(
+            pl.col("Name")
+            .str.split("\n")
+            .list.slice(1)
+            .list.join("\n")
+            .str.replace_all(r"\s*\([RL]\)", "")
+            .str.strip_chars(),
+            pl.col(team_col)
+            .str.split("\n")
+            .list.first()
+            .str.replace("@ ", "")
+            .alias("Team"),
+        )
+        .select("Name", "Team")
+    )
+
+
+def find_candidates(day):
+    pitchers = load_pitchers()
+    schedule = load_schedule(day).join(
+        load_teams(),
+        on="Team",
+        how="left",
+    )
+
+    k_overs = (
+        schedule.join(
+            pitchers.sort("K%+", descending=True).head(25).select("Name", "K/GS"),
+            on="Name",
+        )
+        .filter(pl.col("KRank") <= 10)
+        .select(
+            "Name",
+            pl.lit("K").alias("Prop"),
+            pl.lit("OVER").alias("Side"),
+            pl.col("K/GS").alias("Average"),
+        )
+    )
+
+    bb_unders = (
+        schedule.join(
+            pitchers.sort("BB%+").head(25).select("Name", "BB/GS"),
+            on="Name",
+        )
+        .filter(pl.col("BBRank") <= 10)
+        .select(
+            "Name",
+            pl.lit("BB").alias("Prop"),
+            pl.lit("UNDER").alias("Side"),
+            pl.col("BB/GS").alias("Average"),
+        )
+    )
+
+    return pl.concat([k_overs, bb_unders])
+
+
+def evaluate_bet(name, prop, side, average, line, odds):
+    probability = prop_probability(average, line, side)
+    implied = implied_probability(odds)
+    edge = probability - implied
+
+    return {
+        "Name": name,
+        "Prop": prop,
+        "Side": side,
+        "Average": round(average, 2),
+        "Line": line,
+        "Probability": round(probability, 4),
+        "Fair Odds": fair_odds(probability),
+        "Book Odds": odds,
+        "Edge": round(edge, 4),
+        "Bet": edge > 0,
+    }
